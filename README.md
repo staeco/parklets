@@ -5,6 +5,7 @@ Simple static microsite built off of HTML5 template. This project is a joint col
 
 **How To Run:**
 - Open `index.html` in browser :)
+- Just a simple vanilla HTML + CSS microsite with embedded Mapbox/Kepler map viz (not pulling any dynamic data)
 
 **Dependencies:**
 - No CSS precompiler needed
@@ -18,4 +19,7 @@ Simple static microsite built off of HTML5 template. This project is a joint col
   - Parallax effect
   - Carousel
   - Particle effect
+  - Google Web Fonts
+- Can load external libraries via CDN link however because this site will be hosted on the SF Planning domain, they might block certain paths (mostly Google IP related) due to security protocol
+- 
   
