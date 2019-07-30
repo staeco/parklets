@@ -1,88 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="517px" height="269px" viewBox="0 0 517 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="517px" height="279px" viewBox="0 0 517 279" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
     <title>Group</title>
     <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Section-03:-The-Ripple-Effect-Copy-2" transform="translate(-446.000000, -244.000000)">
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Section-03-02" transform="translate(-446.000000, -244.000000)">
             <g id="Group" transform="translate(443.000000, 243.000000)">
-                <g id="Chart" transform="translate(0.000000, 10.000000)">
-                    <polyline id="Path-15" stroke="#9F82AE" stroke-width="6" stroke-linejoin="bevel" points="56 51 111.555556 96.0222542 160.347826 163.220002 208.173913 234 257.449275 119.629784 307.207729 163.220002 356.966184 163.220002 406.724638 124.029279 456 113.363676"></polyline>
-                    <polyline id="Path-16" stroke="#85C9C0" stroke-width="6" stroke-linejoin="bevel" points="56 91.9587621 111.555556 113.242778 160.347826 163.001233 208.173913 258 258.420067 74 307.207729 163.001233 356.966184 154.649202 406.724638 135.162882 456 129.233177"></polyline>
-                    <path d="M40.4789579,226.663115 L517.521042,226.663115" id="Line-2" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
-                    <path d="M40.5,0 L40.5,226.663115" id="Line" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
-                    <g id="Bottom-axis" transform="translate(41.000000, 235.000000)" fill="#393A44" font-family="Helvetica" font-size="11" font-weight="normal">
-                        <text id="2009">
-                            <tspan x="3.26464844" y="10">2009</tspan>
-                        </text>
-                        <text id="2010">
-                            <tspan x="56.2646484" y="10">2010</tspan>
-                        </text>
-                        <text id="2011">
-                            <tspan x="108.823486" y="10">201</tspan>
-                            <tspan x="114.941162" y="23">1</tspan>
-                        </text>
-                        <text id="2012">
-                            <tspan x="153.264648" y="10">2012</tspan>
-                        </text>
-                        <text id="2013">
-                            <tspan x="202.764648" y="10">2013</tspan>
-                        </text>
-                        <text id="2014">
-                            <tspan x="251.764648" y="10">2014</tspan>
-                        </text>
-                        <text id="2015">
-                            <tspan x="302.264648" y="10">2015</tspan>
-                        </text>
-                        <text id="2016">
-                            <tspan x="351.764648" y="10">2016</tspan>
-                        </text>
-                        <text id="2017">
-                            <tspan x="401.764648" y="10">2017</tspan>
-                        </text>
-                        <text id="2018">
-                            <tspan x="451.764648" y="10">2018</tspan>
-                        </text>
-                    </g>
-                    <g id="Left-axis" transform="translate(0.000000, 18.000000)" fill="#393A44" font-family="Helvetica" font-size="11" font-weight="normal">
-                        <text id="0%">
-                            <tspan x="16.1015625" y="211">0%</tspan>
-                        </text>
-                        <text id="+5%">
-                            <tspan x="9.67773438" y="144">+5%</tspan>
-                        </text>
-                        <text id="+10%">
-                            <tspan x="2.56005859" y="77">+10%</tspan>
-                        </text>
-                        <text id="+15%">
-                            <tspan x="3.56005859" y="10">+15%</tspan>
-                        </text>
-                    </g>
-                    <text id="Citywide" font-family="Helvetica" font-size="11" font-weight="normal" fill="#85C9C0">
-                        <tspan x="56" y="146">Citywide</tspan>
-                    </text>
-                    <text id="Blocks-with-parklets" font-family="Helvetica" font-size="11" font-weight="normal" fill="#9F82AE">
-                        <tspan x="56" y="15">Blocks with parklets</tspan>
-                    </text>
-                </g>
-                <g id="Toolltip" transform="translate(301.000000, 0.000000)" fill="#979797" font-family="Helvetica" font-size="9" font-weight="normal">
+                <g id="Toolltip" transform="translate(261.000000, 0.000000)" fill="#979797" font-family="DMSans-Bold, DM Sans" font-size="9" font-weight="bold">
                     <text id="Avg.-value-$78k/sqft">
                         <tspan x="103" y="21" text-decoration="underline">Avg. value</tspan>
-                        <tspan x="103" y="34" font-size="11">$78k/sqft</tspan>
-                        <tspan x="103" y="49" font-size="11">$72k/sqft</tspan>
+                        <tspan x="103" y="35" font-family="DMSans-Regular, DM Sans" font-size="11" font-weight="normal">$78k/sqft</tspan>
+                        <tspan x="103" y="51" font-family="DMSans-Regular, DM Sans" font-size="11" font-weight="normal">$72k/sqft</tspan>
                     </text>
                     <text id="Blocks-with-parklets" line-spacing="14">
                         <tspan x="88" y="20"></tspan>
-                        <tspan x="8.97314453" y="36">Blocks with parklets</tspan>
-                        <tspan x="53.9907227" y="52">Citywide</tspan>
+                        <tspan x="0.169" y="36">Blocks with parklets</tspan>
+                        <tspan x="48.931" y="52">Citywide</tspan>
                     </text>
                     <text id="Change-from-2011--0.">
                         <tspan x="170" y="9" text-decoration="underline">Change </tspan>
-                        <tspan x="170" y="20" text-decoration="underline">from 2011</tspan>
-                        <tspan x="170" y="33" font-size="11">-0.3%</tspan>
-                        <tspan x="170" y="48" font-size="11">-2.0%</tspan>
+                        <tspan x="170" y="21" text-decoration="underline">from 2011</tspan>
+                        <tspan x="170" y="35" font-family="DMSans-Regular, DM Sans" font-size="11" font-weight="normal">-0.3%</tspan>
+                        <tspan x="170" y="51" font-family="DMSans-Regular, DM Sans" font-size="11" font-weight="normal">-2.0%</tspan>
                     </text>
                 </g>
+                <path d="M208,9.79885598 L208,279.396568" id="Line-4" stroke="#979797" stroke-linecap="square"></path>
+                <g id="Chart" transform="translate(0.000000, 10.000000)">
+                    <path d="M40.4789579,226.663115 L517.521042,226.663115" id="Line-2" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
+                    <path d="M40.5,0 L40.5,226.663115" id="Line" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
+                    <g id="Bottom-axis" transform="translate(41.000000, 235.000000)" fill="#393A44" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                        <text id="2009">
+                            <tspan x="1.0625" y="11">2009</tspan>
+                        </text>
+                        <text id="2010">
+                            <tspan x="55.652" y="11">2010</tspan>
+                        </text>
+                        <text id="2011">
+                            <tspan x="107.1595" y="11">2011</tspan>
+                        </text>
+                        <text id="2012">
+                            <tspan x="153.4165" y="11">2012</tspan>
+                        </text>
+                        <text id="2013">
+                            <tspan x="202.779" y="11">2013</tspan>
+                        </text>
+                        <text id="2014">
+                            <tspan x="251.5315" y="11">2014</tspan>
+                        </text>
+                        <text id="2015">
+                            <tspan x="302.147" y="11">2015</tspan>
+                        </text>
+                        <text id="2016">
+                            <tspan x="351.57" y="11">2016</tspan>
+                        </text>
+                        <text id="2017">
+                            <tspan x="402.12" y="11">2017</tspan>
+                        </text>
+                        <text id="2018">
+                            <tspan x="451.5975" y="11">2018</tspan>
+                        </text>
+                    </g>
+                    <g id="Left-axis" transform="translate(0.000000, 18.000000)" fill="#393A44" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                        <text id="0%">
+                            <tspan x="14.598" y="212">0%</tspan>
+                        </text>
+                        <text id="+5%">
+                            <tspan x="9.021" y="145">+5%</tspan>
+                        </text>
+                        <text id="+10%">
+                            <tspan x="3.236" y="78">+10%</tspan>
+                        </text>
+                        <text id="+15%">
+                            <tspan x="5.226" y="11">+15%</tspan>
+                        </text>
+                    </g>
+                    <text id="Blocks-with-parklets" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#85C9C0">
+                        <tspan x="56" y="15">Blocks with </tspan>
+                        <tspan x="56" y="29">parklets</tspan>
+                    </text>
+                    <text id="Citywide" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#9F82AE">
+                        <tspan x="56" y="137">Citywide</tspan>
+                    </text>
+                </g>
+                <polyline id="Path-20" stroke="#85C9C0" stroke-width="8" stroke-linejoin="round" points="58 58.5444845 107.007355 101.995888 157.007355 171.281999 207.007355 239.863543 257.007355 125.77776 307.007355 169.764469 357.007355 169.764469 408.007355 131.688325 458.007355 119.169123 508.007355 13.1745084"></polyline>
+                <polyline id="Path-21" stroke="#9F82AE" stroke-width="8" stroke-linejoin="round" points="58 91.7418204 107.007355 117.233005 157.007355 168.174197 207.007355 260.321302 257.007355 99.5809895 307.007355 167.134144 357.007355 163.485058 408.007355 141.938725 458.007355 134.454941 508.007355 87.8625315"></polyline>
             </g>
         </g>
     </g>

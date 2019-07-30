@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 <meta property="og:url" content="http://stae.co/parklets" />
 <meta property="og:type" content="website" />
@@ -13,21 +13,43 @@
 <title>Parklets!</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/cubeportfolio.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <link rel="stylesheet" type="text/css" href="css/settings.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-
+<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
 <link rel="icon" href="images/favicon.png">
 
-<!-- Mapbox-->
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.css' rel='stylesheet' />
+<!--Uber Font-->
+<link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
+      
+<!--MapBox css-->
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css" rel="stylesheet">
+
+<!-- Load React/Redux -->
+<script src="https://unpkg.com/react@16.8.4/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/redux@3.7.2/dist/redux.js" crossorigin></script>
+<script src="https://unpkg.com/react-redux@5.1.1/dist/react-redux.min.js" crossorigin></script>
+<script src="https://unpkg.com/styled-components@4.1.3/dist/styled-components.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-virtualized@9.21.0/dist/umd/react-virtualized.js" crossorigin></script>
+
+<!-- Load Kepler.gl -->
+<!--<script src="https://unpkg.com/kepler.gl@1.1.1/umd/keplergl.min.js" crossorigin></script>-->
+
+<!--MapBox token-->
+<!--<script>
+   const MAPBOX_TOKEN = 'pk.eyJ1IjoiY3J5c3RhbHBlbmFsb3NhIiwiYSI6ImNqcmt4ZnpobzAweWM0OW1sdGJ3cjYweDQifQ.2jfSIUMSAx0ikaI4FXl6XA';
+   const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
+   </script>-->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
-<body data-wow-delay="1000ms" class="fadeIn wow animated" data-spy="scroll">
+<body data-wow-delay="2000ms" class="fadeIn wow" data-spy="scroll">
 <!--<a href="javascript:void(0)" class="scrollToTop"><i class="fa fa-angle-up"></i></a>-->
 
 <!--Loader-->
@@ -50,14 +72,14 @@
 <!--Loader ends-->
 
 <!-- Progress Bar -->
-<div class="header">
+<div class="header wow fadeInLeft">
    <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
    </div> 
 </div>
 <!-- header -->
-<header class="site-header fixedmenu">
-   <nav class="navbar navbar-expand-lg transparent-bg fixedmenu">
+<header class="wow animate site-header fixedmenu">
+   <nav class="navbar fixedmenu">
       <div class="container full">
          <!--side menu open button-->
          <a href="javascript:void(0)" class="d-none d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
@@ -72,15 +94,36 @@
             <span> </span>
             <span> </span>
          </button>
-         <div class="collapse navbar-collapse" id="wenav">
-            <!--<ul class="navbar-nav ml-auto">
+         <div class="collapse navbar-collapse hidden" id="wenav">
+            <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                  <a class="nav-link pagescroll" href="#home">Home</a>
+                  <a class="nav-link pagescroll" href="#section1">What is a Parklet?</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link pagescroll" href="about.html">About</a>
+                  <a class="nav-link pagescroll" href="#section2">Hyper-local Benefits</a>
                </li>
-            </ul>-->
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section3">The Ripple Effect</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section4">For and From the People</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section5">Behind Every Parklet is a Person</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section6">It All Started With Feeding a Meter</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section7">Keeping the Soul, Creating a System</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section8">What's Next?</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section9">Become a Sponsor</a>
+               </li>
+            </ul>
          </div>
 
          <div class="nav-social">
@@ -124,13 +167,13 @@
                   <a class="nav-link pagescroll" href="#section7">Keeping the Soul, Creating a System</a>
                </li>
                <li class="nav-item">
-                     <a class="nav-link pagescroll" href="#section8">What's Next?</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link pagescroll" href="#section9">Become a Sponsor</a>
-                  </li>
+                  <a class="nav-link pagescroll" href="#section8">What's Next?</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#section9">Become a Sponsor</a>
+               </li>
             </ol>
-            <ul data-wow-delay="1000ms" class="nav-footer fadeIn wow">
+            <ul data-wow-delay="1000ms"" class="nav-footer fadeIn wow">
                <li class="nav-item"><a class="nav-link pagescroll" href="">Stae</a></li>
                <li class="nav-item"><a class="nav-link pagescroll" href="">Openbox</a></li>
                <li class="nav-item"><a class="nav-link pagescroll" href="">Approach</a></li>
@@ -156,292 +199,1480 @@
       <div class="row">
          <div class="col-md-10">
             <div class="home-title darkcolor text-left">
-               <img data-wow-delay="800ms" src="images/person.png" class="parklet-person wow fadeIn" />
+               <img data-wow-delay="1500ms" src="images/person.png" class="parklet-person wow fadeIn" />
                <h1 class="wow fadeInUp" data-wow-delay="300ms">
                   A Look at the Human Impact of Parklets<br/>
                   <span data-wow-delay="500ms" class="subhead top25 bottom25 wow fadeInUp">and the People Who Make Them</span>
                </h1>
-               <p data-wow-delay="1000ms" class="wow fadeInUp">
+               <p data-wow-delay="1000ms"" class="wow fadeInUp">
                   <img data-wow-delay="2000ms" src="images/logos.svg" alt="wow fadeInUp logo" class="logos">
                </p>
-               <p data-wow-delay="2200ms" class="wow fadeInUp"></p>
-                  <button data-wow-delay="2200ms" class="home-button wow fadeIn">
-                     <a class="pagescroll" href="#intro">Start reading...</a>
-                  </button>
-               </p>
             </div>
          </div>
       </div>
    </div>
+   <!-- SCROLL ARROW -->
+   <p data-wow-delay="2200ms" class="wow fadeInUp arrow">
+      <a data-wow-delay="2200ms" class="scroll-arrow wow slower heartBeat pagescroll" href="#intro">
+         <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+      </a>
+   </p>
 </section>
-<section class="single-items item-two  full-screen" id="intro">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-6 col-sm-4">
-            <div class="item-titles darkcolor number-counters">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  <a data-fancybox="group-two" href="images/parklets-bg.png">What’s a parklet?</a>
-               </h2>
-               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
-                  Tiny green spaces—only 10 feet by 20 feet—pepper some San Francisco neighborhoods. These mini-parks are parklets, they replace one to three parking spots with plant-filled seating areas that are open to the public. Each one is sponsored by a member of the public who works with their neighbors and the city to fund, plan, build, and maintain the small structure and the plants within. </p>
-               <h2 class="wow counters-item fadeIn animated" data-wow-delay="3000ms" data-to="999">999</h2>
-               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">Tiny green spaces—only 10 feet by 20 feet—pepper some San Francisco neighborhoods. These mini-parks are parklets, they replace one to three parking spots with plant-filled seating areas that are open to the public. Each one is sponsored by a member of the public who works with their neighbors and the city to fund, plan, build, and maintain the small structure and the plants within. </p>
+<!--Main Slider-->
+<section id="intro">
+   <div id="revo_main_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export">
+      <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+      <div id="rev_arrows" class="rev_slider fullwidthabanner"  data-version="5.4.1">
+         <ul>
+            <!-- SLIDE  -->
+            <li data-index="rs-first" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500">
+               <!-- MAIN IMAGE -->
+               <img src="images/gallery1.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+               <!-- LAYER NR. 3 -->
+               <div class="wow fadeIn parklet-caption">
+                  <h4 class="wow fadeIn whitecolor text-left">Four Barrel Coffee Parklet</h4>
+               </div>
+            </li>
+
+            <!-- SLIDE  -->
+            <li data-index="rs-second" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500">
+            <!-- MAIN IMAGE -->
+            <img src="images/gallery2.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+            <!-- LAYER NR. 3 -->
+            <div class="wow fadeIn parklet-caption">
+               <h4 class="wow fadeIn whitecolor text-left">Mercury Cafe Parklet</h4>
             </div>
-         </div>
-      </div>
-   </div>   
-</section>
-<section class="single-items center-block item-three parallaxie full-screen" id="section1">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="item-titles darkcolor text-center">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  <a data-fancybox="group-three" href="images/gallery-flat1.jpg">The positive impacts of parklets are felt by</span></a>
-               </h2>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-three" href="images/gallery-flat1.jpg">People</a>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-three" href="images/gallery-flat1.jpg">Neighborhoods</a>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-three" href="images/gallery-flat1.jpg">Businesses</a>
+            </li>
+
+            <!-- SLIDE  -->
+            <li data-index="rs-third" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500">
+            <!-- MAIN IMAGE -->
+            <img src="images/gallery3.jpg" alt="" data-bgposition="center center" data-ease="Linear.easeNone" data-rotatestart="0"  class="rev-slidebg" data-no-retina>
+
+            <!-- LAYER NR. 3 -->
+            <div class="wow fadeIn parklet-caption">
+               <h4 class="wow fadeIn whitecolor text-left">de-Appropriation Art Wall Parklet</h4>
             </div>
-         </div>
+            </li>
+
+            <!-- SLIDE  -->
+            <li data-index="rs-fourth" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500">
+            <!-- MAIN IMAGE -->
+            <img src="images/gallery4.jpg" alt="" data-bgposition="center center" data-ease="Linear.easeNone" data-rotatestart="0"  class="rev-slidebg" data-no-retina>
+
+            <!-- LAYER NR. 3 -->
+            <div class="wow fadeIn parklet-caption">
+               <h4 class="wow fadeIn whitecolor text-left">Rolling Out Cafe Parklet</h4>
+            </div>
+            </li>
+         </ul>
       </div>
    </div>
 </section>
-<section class="single-items center-block item-three parallaxie full-screen" id="section2">
+<!--Main Slider ends -->
+<section class="" id="section1">
    <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="item-titles darkcolor text-center">
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-three" href="images/gallery-flat1.jpg">People</a>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-three" href="images/gallery-flat1.jpg">Neighborhoods</a>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-three" href="images/gallery-flat1.jpg">Businesses</a>
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px; text-align: center;">
+         <h3 class="wow fadeInUp" data-wow-delay="300ms">What people are</h3>
+         <div class="tab">
+            <button id="defaultOpen" class="tablinks saying" onclick="infographicTab(event, 'tab-saying')"><h3>saying</h3></button>
+            <button class="tablinks doing" onclick="infographicTab(event, 'tab-doing')"><h3>doing</h3></button>
+         </div>
+         <div id="tab-saying" class="tabcontent wow fadeIn">
+            <p class="top25"><strong>How do people feel about parklets?</strong> We asked <a href="#">people on the streets of San Francisco</a> what three words they associate with parklets. The percentages below show the prevalence of each sentiment based on the number of people we spoke to.</p>
+            <div class="interactive">
+               <div id="saying-tooltip1-text" class="hidden tooltips tooltip1 green-text"><h4>2%</h4><p>"colorful"</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip2-text" class="hidden tooltips tooltip2 green-text"><h4>3%</h4><p>"beautiful"</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip3-text" class="hidden tooltips tooltip3 green-text"><h4>2%</h4><p>"basic"</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip4-text" class="hidden tooltips tooltip4 green-text"><h4>6%</h4><p>"affordable"</p><a href="#" class="source"><p>see data source</a></p></div>
+               <svg width="441px" height="588px" viewBox="0 0 441 588" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Section-01-03" transform="translate(-520.000000, -355.000000)" fill-rule="nonzero">
+                        <g id="saying" transform="translate(520.000000, 355.000000)">
+                              <polygon id="" fill="#B5E1D6" points="401 332.370189 401 362.666587 283 365 283 331"></polygon>
+                              <polygon id="" fill="#B5E1D6" transform="translate(330.000000, 109.500000) rotate(-180.000000) translate(-330.000000, -109.500000) " points="441 35 441 172.439793 219 184 219 35"></polygon>
+                              <polygon id="saying-tooltip1" fill="#1C8E7F" transform="translate(86.500000, 15.000000) rotate(-270.000000) translate(-86.500000, -15.000000) " points="73 -3 100 -2.69653949 100 33 73 33"></polygon>
+                              <polygon id="" fill="#1C8E7F" transform="translate(38.000000, 222.500000) rotate(-270.000000) translate(-38.000000, -222.500000) " points="10 213 66 213.16016 66 232 10 232"></polygon>
+                              <polygon id="Path-2-Copy-9" fill="#1C8E7F" transform="translate(148.000000, 221.000000) rotate(-270.000000) translate(-148.000000, -221.000000) " points="120 203 176 203.303461 176 239 120 239"></polygon>
+                              <polygon id="Path-2-Copy-14" fill="#1C8E7F" transform="translate(276.500000, 373.500000) rotate(-270.000000) translate(-276.500000, -373.500000) " points="234 369 319 369.075865 319 378 234 378"></polygon>
+                              <polygon id="Path-2-Copy-10" fill="#4D7174" transform="translate(117.500000, 220.000000) rotate(-270.000000) translate(-117.500000, -220.000000) " points="92 213.615327 143 213 143 226.507969 92 227"></polygon>
+                              <polygon id="Path-2-Copy-13" fill="#4D7174" transform="translate(8.000000, 292.000000) rotate(-270.000000) translate(-8.000000, -292.000000) " points="-25 284.70323 41 284 41 299.437678 -25 300"></polygon>
+                              <polygon id="Path-2-Copy-6" fill="#4D7174" transform="translate(224.500000, 222.000000) rotate(-270.000000) translate(-224.500000, -222.000000) " points="197 205.582268 252 204 252 238.734776 197 240"></polygon>
+                              <polygon id="Path-2-Copy-11" fill="#4D7174" transform="translate(422.500000, 14.000000) rotate(-270.000000) translate(-422.500000, -14.000000) " points="410 -2.41773151 435 -4 435 30.7347762 410 32"></polygon>
+                              <polygon id="saying-tooltip4" fill="#1C8E7F" transform="translate(318.500000, 14.500000) rotate(-360.000000) translate(-318.500000, -14.500000) " points="398.859375 0 400 29 237 23.7766301 237 0"></polygon>
+                              <polygon id="Path-4-Copy-7" fill="#1C8E7F" transform="translate(225.500000, 291.000000) rotate(-180.000000) translate(-225.500000, -291.000000) " points="413.333877 259 416 323 35 311.472563 35 259"></polygon>
+                              <polygon id="Path-4-Copy-14" fill="#1C8E7F" transform="translate(359.000000, 477.500000) rotate(-180.000000) translate(-359.000000, -477.500000) " points="433 403 429.527077 552 285 552 286.095847 403"></polygon>
+                              <polygon id="saying-tooltip2" fill="#85C9C0" transform="translate(149.500000, 15.000000) rotate(-270.000000) translate(-149.500000, -15.000000) " points="163 -26 163 56 136 51.9377975 136 -26"></polygon>
+                              <polygon id="Path-4-Copy-5" fill="#85C9C0" transform="translate(77.500000, 220.000000) rotate(-270.000000) translate(-77.500000, -220.000000) " points="103 192 103 248 52 245.225813 52 192"></polygon>
+                              <polygon id="Path-4-Copy-11" fill="#85C9C0" transform="translate(254.000000, 220.500000) rotate(-270.000000) translate(-254.000000, -220.500000) " points="282 211 282 230 226 229.058758 226 211"></polygon>
+                              <polygon id="Path-4-Copy-12" fill="#85C9C0" transform="translate(427.000000, 292.500000) rotate(-270.000000) translate(-427.000000, -292.500000) " points="460 287 460 298 394 297.45507 394 287"></polygon>
+                              <polygon id="Path-4-Copy-13" fill="#85C9C0" transform="translate(26.000000, 292.500000) rotate(-270.000000) translate(-26.000000, -292.500000) " points="59 287 59 298 -7 297.45507 -7 287"></polygon>
+                              <polygon id="Path-5-Copy-7" fill="#4D7174" transform="translate(165.000000, 381.500000) rotate(-180.000000) translate(-165.000000, -381.500000) " points="268 338.969328 268 432 63.6230388 432 62 331"></polygon>
+                              <polygon id="saying-tooltip3" fill="#85C9C0" transform="translate(212.000000, 14.500000) rotate(-270.000000) translate(-212.000000, -14.500000) " points="226 -2 226 31 198.220607 31 198 -0.628270082"></polygon>
+                              <polygon id="Path-5-Copy-6" fill="#85C9C0" transform="translate(184.500000, 219.500000) rotate(-270.000000) translate(-184.500000, -219.500000) " points="211 203 211 236 158.417578 236 158 204.37173"></polygon>
+                              <polygon id="Path-5-Copy-10" fill="#85C9C0" transform="translate(325.500000, 219.000000) rotate(-270.000000) translate(-325.500000, -219.000000) " points="352 161 352 277 299.417578 277 299 165.821838"></polygon>
+                              <polygon id="Path-5-Copy-12" fill="#85C9C0" transform="translate(140.500000, 513.500000) rotate(-270.000000) translate(-140.500000, -513.500000) " points="215 377 215 650 67.1739455 650 66 388.347948"></polygon>
+                              <polygon id="Path-5-Copy-11" fill="#85C9C0" transform="translate(348.500000, 380.000000) rotate(-270.000000) translate(-348.500000, -380.000000) " points="362 315 362 445 335.212728 445 335 320.403785"></polygon>
+                              <polygon id="Path-5-Copy-8" fill="#4D7174" transform="translate(394.500000, 219.500000) rotate(-270.000000) translate(-394.500000, -219.500000) " points="367 227.500819 367 210 421.566664 210 422 229"></polygon>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
             </div>
-            <h2 class="wow darkcolor fadeInUp" data-wow-delay="300ms">
-               <a data-fancybox="group-three" href="images/gallery-flat1.jpg">A parklet is something different for
-                  everyone who passes by.</a>
+         </div>
+         <div id="tab-doing" class="tabcontent wow fadeIn">
+            <p class="top25"><strong>How are people using parklets?</strong> We analyzed data from a <a href="#">Public Life Study</a> to understand what activities people are doing in parklets.</p>
+            <div class="interactive">
+               <!--<div id="button2" class="data2" href="#">
+                  <div class="hidden tooltips tooltip2 peach-text"><h4>0.5%</h4><p>commercial activities</p><p><a href="#" class="source">see data source</a></p></div>
+               </div>-->
+               <!-- Tooltip Info -->
+               <div id="doing-tooltip1-text" class="hidden tooltips tooltip1 peach-text"><h4>26%</h4><p>Eating / Drinking</p><a href="#" class="source"><p>“Consuming” in the data source</a></p></div>
+               <div id="doing-tooltip2-text" class="hidden tooltips tooltip2 peach-text"><h4>1%</h4><p>Culturual</p><a href="#" class="source"><p>“Culturally Engaged” in the data source</a></p></div>
+               <div id="doing-tooltip3-text" class="hidden tooltips tooltip3 peach-text"><h4>0.85%</h4><p>Commercial</p><a href="#" class="source"><p>“Commercial Activity” in the data source</a></p></div>
+               <div id="doing-tooltip4-text" class="hidden tooltips tooltip4 peach-text"><h4>29%</h4><p>Social</p><a href="#" class="source"><p>combining “Conversing” and “Informal Playing” from datasource</a></p></div>
+               
+               <svg width="434px" height="578px" viewBox="0 0 434 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Pages2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                     <g id="Section-01-05" transform="translate(-545.000000, -377.000000)" fill-rule="nonzero">
+                        <g id="doing" transform="translate(544.135135, 377.000000)">
+                              <polygon id="doing-tooltip1" fill="#ED6E4D" transform="translate(169.864865, 69.000000) scale(1, -1) translate(-169.864865, -69.000000) " points="336.499643 0 338.864865 138 0.864864865 113.143964 0.864864865 0"></polygon>
+                              <polygon id="doing-tooltip2" fill="#EE9070" transform="translate(350.864865, 71.500000) scale(1, -1) rotate(-270.000000) translate(-350.864865, -71.500000) " points="282.864865 76.1320534 282.864865 66 417.793344 66 418.864865 77"></polygon>
+                              <polygon id="doing-tooltip3" fill="#EE9070" transform="translate(369.364865, 70.000000) scale(1, -1) rotate(-270.000000) translate(-369.364865, -70.000000) " points="301.864865 75.0531491 301.864865 64 435.801223 64 436.864865 76"></polygon>
+                              <polygon id="doing-tooltip4" fill="#F2C6AF" transform="translate(145.864865, 232.500000) rotate(-180.000000) translate(-145.864865, -232.500000) " points="269.864865 146.157487 269.676863 321 21.8648649 320.889056 21.8648649 144"></polygon>
+                              <polygon id="Path-4-Copy-24" fill="#F2C6AF" transform="translate(228.364865, 502.000000) rotate(-180.000000) translate(-228.364865, -502.000000) " points="412.864865 433.932758 412.585137 578 43.8648649 577.904726 43.8648649 426"></polygon>
+                              <polygon id="Path-4-Copy-22" fill="#ED6E4D" transform="translate(184.864865, 391.000000) rotate(90.000000) translate(-184.864865, -391.000000) " points="213.864865 207 212.160582 575 155.864865 574.768557 155.864865 207.929269"></polygon>
+                              <polygon id="Path-4-Copy-23" fill="#EE9070" transform="translate(250.364865, 341.000000) rotate(90.000000) translate(-250.364865, -341.000000) " points="265.864865 161.485624 264.953955 525 234.864865 524.769336 234.864865 157"></polygon>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-6 col-sm-4" style="padding-right: 70px;">
+         <div class="item-titles darkcolor number-counters">
+            <h2 class="wow fadeIn" data-wow-delay="300ms">
+               What's a parklet?
             </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               In 2010, tiny 10 x 20 foot green spaces started popping up in San Francisco neighborhoods.
+               These mini-parks, otherwise known as <a href="https://groundplaysf.org/parklets/
+               " target="_blank">parklets</a>, replace parking spots with a seating area that is open to the public. Every parklet has an original design: some are simple while others are artistic, but all are ADA compliant and constructed from eco-friendly materials.</p>
+            <h3 class="wow fadeIn" data-wow-delay="300ms">What makes them unique?</h3>
+            <p class="top15 bottom25 wow fadeIn" data-wow-delay="350ms">Parklets are unique kind of public space, not only because of their size but because they are developed by people who come from the community itself. Each parklet is sponsored by <a href="#section5
+               " target="_self">a member of the public</a> who works with their neighbors and the city to fund, plan, build, and maintain the parklet. Adding public open space to any city has <a href="https://blogs.worldbank.org/endpovertyinsouthasia/public-spaces-not-nice-have-basic-need-cities
+               " target="_blank">measurable positive impacts</a> on residents' quality of life, health, and interconnectedness. </p>
+            <h3 class="wow fadeIn" data-wow-delay="300ms">Understanding their impact</h3>
+            <p class="top15 bottom25 wow fadeIn" data-wow-delay="350ms">San Francisco takes an evidence-based approach to understand the unique benefits that parklets can offer. This includes city databases, publicly available data, <a href="https://sfplanning.org/project/public-space-and-public-life-studies
+               " target="_blank">Public Life Studies</a> and accompanying Public Life Data. This article draws data sets together with interviews with parklet users, sponsors, passers-by, businesses on the block, and city staff to look at the human impact of parklets and the people who make them happen.</p>
+           
          </div>
-      </div>
+      </div>          
    </div>
 </section>
-<section class="single-items item-four parallaxie full-screen" id="test">
-   <div class="container padding">
-      <div class="row">
-         <div class="col-md-12">
-            <div class="item-titles darkcolor text-center">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  Who Lives Near A Parklet?
-               </h2>
-               <p>Hello, world!</p>
-            </div>
-         </div>
+<section class="single-items center-block full-screen" id="section2">
+   <div id="section2_anchor" class="container">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="paragraph darkcolor">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               Hyper-local benefits
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+            Parklets tend to be located on comNw picking up the kids from school. Residents rarely go out of their way to visit a parklet. They are a neighborhood amenity, but not a destination. Parklets are concentrated in some San Francisco neighborhoods more than others, so people living in those areas of the city get to experience the hyper-local benefits they bring.</p>
+         </div> 
       </div>
-   </div>  
-   <div class="container padding">
-      <div class="row">
-         <div class="col-md-5 col-sm-8">
-            <div class="item-titles darkcolor text-left">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  1 in 6 are over 65 years old
-               </h2>
-               <blockquote class="blockquote" data-wow-delay="300ms">
-                  Without the parklet I never would have stopped here. I would have had to walk on... I would have had to go elsewhere to rest.
-            </blockquote>
-            <p class="top25 bottom25 wow fadeInUp quotesource" data-wow-delay="350ms">— Marsh, Retiree and bi-weekly parklet user</p>
-            </div>
-         </div>
-      </div>
-   </div>  
+      <!--<div class="section-bg">
+         <img src="images/section2.svg" />
+      </div>-->
+   </div>
+   <!-- SCROLL ARROW -->
+   <p class="wow fadeInUp arrow">
+      <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section2_1">
+         <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+      </a>
+   </p>
 </section>
-<section class="single-items item-four parallaxie full-screen" id="test">  
-   <div class="container padding">
-      <div class="row">
-         <div class="col-md-5 col-sm-8">
-            <div class="item-titles darkcolor text-left">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  1 in 5 are families with young kids
-               </h2>
-               <blockquote class="blockquote" data-wow-delay="300ms">
-                  The first time we ever came to this parklet is one of our first memories of an outing with Libby.
-            </blockquote>
-            <p class="top25 bottom25 wow fadeInUp quotesource" data-wow-delay="350ms">— Suzanne, Mother of 2 y/o Libby and weekly parklet user</p>
-            </div>
-         </div>
-      </div>
-   </div>  
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_1">
+   <div class="left-column">
+      <div class="sticky">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms">Who lives near<sup>*</sup> a parklet?</h3>
+         <p class="caption"><sup>*</sup>within ⅛ of a mile</p>
+         <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">Parklets are concentrated in some San Francisco neighborhoods more than others, so people living in those areas of the city get to experience the hyper-local benefits they bring.</p>
+         <p class=" top15 bottom25 wow fadeInUp" data-wow-delay="350ms">Learn more about our approach <a class="underline" href="#" title="Our methodology">here</a>.</p>
+      </div> 
+   </div>
+   <!--<iframe id="map1" class="map-embed" type="text/html" src="maps/1-1_Current Parklets.html" width="100vw" height="100vh">
+   </iframe>-->
 </section>
-<section class="single-items center-block item-four parallaxie full-screen" id="section3">
+
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_2">
+   <div class="left-column">
+      <div class="sticky">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms">There are 59 parklets in San Francisco</h3>
+      </div>
+   </div><!--
+   <iframe id="map2" class="map-embed" type="text/html" src="maps/1-2_Total Parklet Population.html" width="100vw" height="100vh">
+   </iframe>-->
+   
+</section>
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_3">
+   <div class="left-column">
+      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="peach-text">24%</span> of San Francisco residents <span class="peach-text">live near a parklet</span></h3>
+      <div class="legend-container">
+         <img src="images/section2_3_legend.svg" alt="" title="">
+         <a href="#" class="source">See data source</a>
+      </div>
+      <div class="small-quote">
+         <img src="images/section2_3_profile.png" alt="Josh" title="Josh">
+         <h2>“Parklets are place for pedestrians to hang out, occupy the public space, encourage interactions with strangers, and encourage people to slow down.”</h2>
+         <p class="quote-source">&mdash; Josh, Monthly parklet user</p>
+      </div>
+   </div>
+   <div id="map" class="map-embed3"></div>
+      <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiY3J5c3RhbHBlbmFsb3NhIiwiYSI6ImNqcmt4ZnpobzAweWM0OW1sdGJ3cjYweDQifQ.2jfSIUMSAx0ikaI4FXl6XA';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/crystalpenalosa/cjxxohvz503b91cmhz34iex9b'
+      });
+
+      map.scrollZoom.disable();
+      
+      map.on('load', function () {
+      map.addLayer({
+                  "id": "san-francisco-parklet-census-tra",
+                  "type": "fill",
+                  "source": {
+                  type: "geojson",
+                  data: "https://gist.githubusercontent.com/cpenalosa/042f43d85a0a87772fbcd68d5a8ef266/raw/d30753a7bf4d65adb2475353c4cb9b1468d534fe/census-tracts-serialized.geojson"
+                  },
+                  "layout": {},
+                  "paint": {
+      //               Create a chloropleth based on the data's field you're trying to visualize.  
+                  "fill-color": [
+                        "step",
+                        ["get", "totalPopulation"],
+                        "#f2c6af",
+                        2962,
+                        "#f1b498",
+                        4200,
+                        "#f0a283",
+                        5500,
+                        "#ee9070",
+                        6600,
+                        "#ed7f5f",
+                        7800,
+                        "#ec6e4e"
+                     ],
+                     "fill-outline-color": "hsl(0, 0%, 100%)"
+                  }
+      });
+         map.addLayer({
+                  "id": "parklets",
+                  "type": "circle",
+                  "source": {
+                  type: "geojson",
+                  data: "https://gist.githubusercontent.com/cpenalosa/50ca108821d4e4e8913507ab35ead128/raw/8788e471ff2627d64582e3ef4b016914ac87f776/current%2520parklets.geojson"
+                  },
+                  "layout": {},
+                  "paint": {"circle-color": "hsl(313, 86%, 81%)", "circle-radius": 4}
+      });
+         });
+      // Create a popup, but don't add it to the map yet.
+      var popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+      });
+      
+      map.on('mouseenter', 'san-francisco-parklet-census-tra', function(e) {
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = 'pointer';
+      
+      var coordinates = e.features[0].geometry.coordinates.slice();
+      var description = ("Neighborhood Name: "+ e.features[0].properties.neighborhoodName + "<br>" 
+                     + " Census Tract #: " + e.features[0].properties.censusTract +  "<br>" 
+                     + " Total Population: " + e.features[0].properties.totalPopulation);
+      
+      // Ensure that if the map is zoomed out such that multiple
+      // copies of the feature are visible, the popup appears
+      // over the copy being pointed to.
+      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+      
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup.setLngLat(e.lngLat)
+      .setHTML(description)
+      .addTo(map);
+      });
+      
+      map.on('mouseleave', 'san-francisco-parklet-census-tra', function() {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+      });
+      
+      </script>
+   <!--
+   <iframe id="map3" class="map-embed" type="text/html" src="maps/1-3_Apartment Units.html" width="100vw" height="100vh">
+   </iframe>-->
+</section>
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_4">
+   <div class="left-column">
+      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="purple-text"></span>82%</span> of homes near a parklet are apartments</h3>
+      <div class="legend-container">
+         <img src="images/section2_4_legend.svg" alt="" title="">
+         <a href="#" class="source">See data source</a>
+      </div>
+      <div class="small-quote">
+         <img src="images/section2_4_profile.png" alt="Gwenn" title="Gwenn">
+         <h2>“The parklet gets me to come out. It’s my Cheers.”</h2>
+         <p class="quote-source">&mdash; Gwenn, weekly parklet user</p>
+      </div>
+   </div><!--
+   <iframe id="map4" class="map-embed" type="text/html" src="maps/1-4_Foreign-born.html" width="100vw" height="100vh">
+   </iframe>-->
+</section>
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_5">
+   <div class="left-column">
+      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="yellow-text">21% foreign born</span> residents live near a parklet</h3>
+      <div class="legend-container">
+         <img src="images/section2_5_legend.svg" alt="" title="">
+         <a href="#" class="source">See data source</a>
+      </div>
+      <div class="small-quote">
+         <img src="images/section2_5_profile.png" alt="Gwenn" title="Gwenn">
+         <h2>“The neighborhood is reflected in the diversity of people who show up. Parklets are a safe space to meet your neighbors.”</h2>
+         <p class="quote-source">&mdash; Dariush, monthly parklet user</p>
+      </div>
+   </div><!--
+   <iframe id="map5" class="map-embed" type="text/html" src="maps/1-5_Older Adults.html" width="100vw" height="100vh"></iframe>-->
+</section>
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_6">
+   <div class="left-column">
+      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="green-text">21% older adults</span> live near a parklet </h3>
+      <div class="legend-container">
+         <img src="images/section2_6_legend.svg" alt="" title="">
+         <a href="#" class="source">See data source</a>
+      </div>
+      <div class="small-quote">
+         <img src="images/section2_6_profile.png" alt="Gwenn" title="Gwenn">
+         <h2>“Without the parklet I never would have stopped here... I would have had to go elsewhere to rest.”</h2>
+         <p class="quote-source">&mdash; Marsh, Retiree and bi-weekly parklet user</p>
+      </div>
+   </div><!--
+   <iframe id="map6" class="map-embed" type="text/html" src="maps/1-6_Children Under 18.html" width="100vw" height="100vh"></iframe>-->
+</section>
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_7">
+   <div class="left-column">
+      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="green-text-light">20%</span> of kids <span class="green-text-light">under 18</span> live near a parklet</h3>
+      <div class="legend-container">
+         <img src="images/section2_7_legend.svg" alt="" title="">
+         <a href="#" class="source">See data source</a>
+      </div>
+      <div class="small-quote">
+         <img src="images/section2_7_profile.png" alt="Suzanne" title="Suazanne">
+         <h2>“The first time we ever came to this parklet is one of our first memories of an outing with Libby.”</h2>
+         <p class="quote-source">&mdash; Suzanne, mother of 2 y.o. Libby and weekly parklet user</p>
+      </div>
+   </div><!--
+      <iframe id="map7" class="map-embed" type="text/html" src="maps/1-7_affordable-housing.html" width="100vw" height="100vh"></iframe>-->
+   </div>
+</section>
+<section data-aos="fade-up"
+data-aos-easing="ease-in-back"
+data-aos-delay="300"
+data-aos-offset="0" class="full-screen" id="section2_8">
+   <div class="left-column">
+      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="purple-text">14%</span> of <span class="purple-text">affordable housing units</span> are near a parklet</h3>
+      <div class="legend-container">
+         <img src="images/section2_8_legend.svg" alt="" title="">
+         <a href="#" class="source">See data source</a>
+      </div>
+      <div class="small-quote">
+         <img src="images/section2_8_profile.png" alt="Suzanne" title="Suazanne">
+         <h2>“For our tenants, the outdoor space is a nice addition. Parklets add to social behavior.”</h2>
+         <p class="quote-source">&mdash; Patrick, Staff at Apollo Hotel Low Income Housing and Monthly Parklet User</p>
+      </div>
+   </div><!--
+      <iframe id="map8" class="map-embed" type="text/html" src="maps/1-8_homelessness.html" width="100vw" height="100vh"></iframe>
+   </div>-->
+</section>
+
+<section class="single-items center-block item-three parallaxie full-screen" id="section3">
    <div class="container">
-      <div class="row">
-         <div class="col-md-5 col-sm-8">
-            <div class="item-titles darkcolor">
-               <blockquote class="blockquote" data-wow-delay="300ms">
-                     There are some really basic things that are super important and should not ignore them; safety, cleanliness, maintainability, the way the piece represents and feels to the neighborhood. And so as an example, our first design...we there’s probably records on the internet of the first design. That design had tons of problems. There were like nooks that people could sort of hide in. The way that it was designed was sort of hard to maintain.
-               </blockquote>
-               <p class="top25 bottom25 wow fadeInUp quotesource" data-wow-delay="350ms">— Eric, Exploratorium Parklet Sponsor</p>
-               <a class="btn_common btn_primary wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-four" href="images/gallery-flat1.jpg">View More</a>
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="item-titles darkcolor number-counters">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               The Ripple Effect
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               Parklets are both a capital investment and a contribution to civic life. Sponsors decide to take on the responsibility, not just for the benefit of their own business but also for the neighborhood as a whole. In most cases, the benefits are felt by many businesses up and down the block. </p>
+         </div> 
+      </div>
+      <div class="section-bg">
+         <img src="images/section3.svg" />
+      </div>
+   </div>
+   <!-- SCROLL ARROW -->
+   <p class="wow fadeInUp arrow">
+      <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section3_1">
+         <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+      </a>
+   </p>
+</section>
+<section class="single-items center-block full-screen" id="section3_1">
+   <div class="container">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <h3 class="wow fadeInUp chart-label" data-wow-delay="300ms">Change in land value <!--<span style="background-color:#CAC2BD; color: #FCF5E9; padding: 3px 10px; margin: 0 5px;">New business licenses</span>--></h3>
+         <div class="interactive">
+            <div class="land-chart-hover">
+               <div id="Hotspot_2008" class="chart-hover">
+                  <div id="2008_Hotspot" class="hidden tooltips 2008_Hotspot_display darkgrey-text">
+                     <h4>Hello, world!</h4>
+                     <p>Data goes here.</p>
+                     <a href="#" class="source"><p>see data source</a></p>
+                  </div>
+               </div>
+               <div id="Hotspot_2009" class="chart-hover">
+                  <div id="2009_Hotspot" class="hidden tooltips 2009_Hotspot_display darkgrey-text">
+                     <img src="images/Hotspot_2009.svg">
+                  </div>
+               </div>
+               <div id="Hotspot_2010" class="chart-hover">
+               
+               </div>
+               <div id="Hotspot_2011"></div>
+               <div id="Hotspot_2012"></div>
+               <div id="Hotspot_2013"></div>
+               <div id="Hotspot_2014"></div>
+               <div id="Hotspot_2015"></div>
+               <div id="Hotspot_2016"></div>
+               <div id="Hotspot_2017"></div>
             </div>
+            <svg id="land-chart" width="517px" height="256px" viewBox="0 0 517 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Land-Value-Line-Graph" transform="translate(-446.000000, -250.000000)">
+                     <g id="Chart" transform="translate(443.000000, 253.000000)">
+                           <path d="M40.4789579,226.663115 L517.521042,226.663115" id="Line-2" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
+                           <path d="M40.5,0 L40.5,226.663115" id="Line" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
+                           <g id="Bottom-axis" transform="translate(48.000000, 235.000000)" fill="#393A44" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                              <text id="2008">
+                                 <tspan x="1.09" y="11">2008</tspan>
+                              </text>
+                              <text id="2009">
+                                 <tspan x="50.0625" y="11">2009</tspan>
+                              </text>
+                              <text id="2010">
+                                 <tspan x="100.152" y="11">2010</tspan>
+                              </text>
+                              <text id="2011">
+                                 <tspan x="149.6595" y="11">2011</tspan>
+                              </text>
+                              <text id="2012">
+                                 <tspan x="194.9165" y="11">2012</tspan>
+                              </text>
+                              <text id="2013">
+                                 <tspan x="242.779" y="11">2013</tspan>
+                              </text>
+                              <text id="2014">
+                                 <tspan x="291.0315" y="11">2014</tspan>
+                              </text>
+                              <text id="2015">
+                                 <tspan x="339.647" y="11">2015</tspan>
+                              </text>
+                              <text id="2016">
+                                 <tspan x="387.57" y="11">2016</tspan>
+                              </text>
+                              <text id="2017">
+                                 <tspan x="436.12" y="11">2017</tspan>
+                              </text>
+                           </g>
+                           <g id="Left-axis" transform="translate(0.000000, 18.000000)" fill="#393A44" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                              <text id="0%">
+                                 <tspan x="14.598" y="212">0%</tspan>
+                              </text>
+                              <text id="+5%">
+                                 <tspan x="9.021" y="145">+5%</tspan>
+                              </text>
+                              <text id="+10%">
+                                 <tspan x="3.236" y="78">+10%</tspan>
+                              </text>
+                              <text id="+15%">
+                                 <tspan x="5.226" y="11">+15%</tspan>
+                              </text>
+                           </g>
+                           <text id="Blocks-with-parklets" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#85C9C0">
+                              <tspan x="56" y="15">Blocks with </tspan>
+                              <tspan x="56" y="29">parklets</tspan>
+                           </text>
+                           <text id="Citywide" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#9F82AE">
+                              <tspan x="56" y="137">Citywide</tspan>
+                           </text>
+                           <polyline id="Path-20" stroke="#85C9C0" stroke-width="8" stroke-linecap="square" stroke-linejoin="bevel" points="56 48.5444845 107.007355 91.995888 157.007355 161.281999 207.007355 229.863543 257.007355 115.77776 307.007355 159.764469 357.007355 159.764469 408.007355 121.688325 458.007355 109.169123 508.007355 3.17450836"></polyline>
+                           <polyline id="Path-21" stroke="#9F82AE" stroke-width="8" stroke-linecap="square" stroke-linejoin="bevel" points="56 81.7418204 107.007355 107.233005 157.007355 158.174197 207.007355 250.321302 257.007355 89.5809895 307.007355 157.134144 357.007355 153.485058 408.007355 131.938725 458.007355 124.454941 508.007355 77.8625315"></polyline>
+                     </g>
+                  </g>
+               </g>
+            </svg>
          </div>
       </div>
+      <div class="col-md-6 col-sm-4">
+         <div class="item-titles darkcolor number-counters">
+            <h3 class="wow fadeInUp" data-wow-delay="300ms">
+               Economic trends in neighborhoods with parklets
+            </h3>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+                  Parklets often correspond with other public realm improvements that support the overall health and vitality of a neighborhood. Areas with growing commercial districts are often also investing in public spaces and amenities that improve resident’s quality of life. In economic downturns, these areas can be more resilient.
+            <p>Learn more about our approach <a href="#">here</a>.</p>
+         </div>
+      </div>      
    </div>   
 </section>
-<section class="full-screen" id="section4">
-   <div class="col-md-4 col-sm-4" style="padding: 0 40px;">
-      <div class="item-titles darkcolor">
-         <blockquote class="blockquote" data-wow-delay="300ms">
-               There are some really basic things that are super important and should not ignore them; safety, cleanliness, maintainability, the way the piece represents and feels to the neighborhood. And so as an example, our first design...we there’s probably records on the internet of the first design. That design had tons of problems. There were like nooks that people could sort of hide in. The way that it was designed was sort of hard to maintain.
-         </blockquote>
-         <p class="top25 bottom25 wow fadeInUp quotesource" data-wow-delay="350ms">— Eric, Exploratorium Parklet Sponsor</p>
-         <a class="btn_common btn_primary wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-four" href="images/gallery-flat1.jpg">View More</a>
+<section class="full-screen" id="section3_2">  
+   <div class="taraval-left">
+      <h4>Spotlight on Taraval Street</h4>
+      <h3 class="wow fadeInUp" data-wow-delay="200ms">Going in together</h3>
+      <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">The Rolling Out Cafe parklet on Taraval Street was built as a collaboration with the local Merchants Association, the People of Parkside Sunset. The parklet supports the district’s long-term goal of revitalizing the Taraval business corridor. </p>
+   </div>
+   <div class="taraval-interactive">
+      
+      <img src="taraval_1.png" usemap="#image_map">
+      <map name="image_map">
+      <area alt="Rolling Out" title="Rolling Out" href="[popup of div]" coords="1702,529 1755,1110 1755,1455 2099,1416 2133,1096 2027,519 2027,519 1852,529 " shape="polygon">
+      <area alt="Versus Games" title="Versus Games" href="[popup of div]" coords="2376,1387 2657,1353 2706,1076 2492,504 2289,509 2419,1076 " shape="polygon">
+      <area alt="Eagle Pizza" title="Eagle Pizza" href="[popup of div]" coords="3123,1319 3210,1013 2856,281 2453,291 2434,504 2483,509 2706,1081 2657,1358 " shape="polygon">
+      </map>
+   </div>
+</section>
+<!--
+<section class="single-items center-block parallaxie full-screen" id="section3_3">  
+   
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section3_4">  
+   
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section3_5">  
+   
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section3_6">  
+   
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4">
+-->
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4_1">
+   
+</section>  
+<section class="single-items center-block parallaxie full-screen" id="section4_2">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4_3">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4_4">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4_5">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4_6">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section4_7">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section5">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section5_1">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section5_2">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section6">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section6_1">
+
+</section>
+<section id="section6_2" class="square-viz">
+   <div class="left-column left-column1 sticky">
+      <div data-aos="fade-up" data-aos-anchor="#section6_2" data-aos-mirror="true" class="sticky vh">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms">Over the past 9 years sponsors have built 75 parklets</h3>
+         <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">Parklets take 13 months to build on average and last for anywhere from 20 to 97 months.</p>
+         <p class="top15 bottom25 wow fadeInUp" data-wow-delay="350ms"><a class="underline" href="#" title="Learn more about the data">Learn more about the data</a>.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="4000" data-aos-anchor="#squares-11" class="sticky vh">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms">All the parklets together have turned 109 parking spaces green, adding 19,620 square feet of open space to the city.</h3></p>
       </div>
    </div>
-</section>
-<section class="full-screen" id="section4">
-   <div class="col-md-4 col-sm-4" style="padding: 0 40px;">
-      <div class="item-titles darkcolor">
-         <blockquote class="blockquote" data-wow-delay="300ms">
-               There are some really basic things that are super important and should not ignore them; safety, cleanliness, maintainability, the way the piece represents and feels to the neighborhood. And so as an example, our first design...we there’s probably records on the internet of the first design. That design had tons of problems. There were like nooks that people could sort of hide in. The way that it was designed was sort of hard to maintain.
-         </blockquote>
-         <p class="top25 bottom25 wow fadeInUp quotesource" data-wow-delay="350ms">— Eric, Exploratorium Parklet Sponsor</p>
-         <a class="btn_common btn_primary wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-four" href="images/gallery-flat1.jpg">View More</a>
+   <div id="squares-start" class="right-column">
+      <div data-wow-delay="500ms" class="parklet-squares wow fadeIn">
+         <div id="squares-1" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="50" data-aos-offset="50" data-aos-anchor="#squares-start" class="parklet-year">2009</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="50" data-aos-offset="50" data-aos-anchor="#squares-start">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-2" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-anchor="#squares-2" class="parklet-year">2010</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-anchor="#squares-2">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300" data-aos-anchor="#squares-2">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="600" data-aos-offset="300" data-aos-anchor="#squares-2">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="800" data-aos-offset="300" data-aos-anchor="#squares-2">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1000" data-aos-offset="300" data-aos-anchor="#squares-2">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-3" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-3" class="parklet-year">2011</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-3">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-3">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-3">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-3">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-3">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-3">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-4" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-4" class="parklet-year">2012</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-4">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-4">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-4">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-4">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-4">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-4">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-5" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-5" class="parklet-year">2013</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-5">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-5">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-5">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-5">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-5">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-5">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-6" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-6" class="parklet-year">2014</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-6">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-6">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-6">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-6">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-6">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-6">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-7" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-7" class="parklet-year">2015</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-7">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-7">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-7">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-7">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-7">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-7">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-8" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-8" class="parklet-year">2016</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-8">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-8">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-8">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-8">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-8">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-8">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-9" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-9" class="parklet-year">2017</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-9">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-9">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-9">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-9">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-9">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-9">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-10" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-10" class="parklet-year">2018</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-10">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-10">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1600" data-aos-offset="300" data-aos-anchor="#squares-10">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1800" data-aos-offset="300" data-aos-anchor="#squares-10">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="300" data-aos-offset="300" data-aos-anchor="#squares-10">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="2200" data-aos-offset="300" data-aos-anchor="#squares-10">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="squares-11" class="parklet-squares-row">
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-11" class="parklet-year">2019</h4>
+            <div class="squares-container">
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-11">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+               <!-- Parklet Square-->
+               <div class="square" data-aos="fade-right" data-aos-delay="1400" data-aos-offset="300" data-aos-anchor="#squares-11">
+                  <div class="tooltiptext">
+                     <h4>Parklet Name</h4>
+                     <p>1234 Streetname St.</p>
+                     <p>2010 – Present</p>
+                     <p>Time to build: 2 months</p>
+                     <p>800 Square feet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-   </div>
-   <!--<iframe src="https://api.mapbox.com/styles/v1/markmalazarte/cjy4wnicj05vs1iobfuethhg3.html?fresh=true&title=true&access_token=pk.eyJ1IjoibWFya21hbGF6YXJ0ZSIsImEiOiJjankwYmY0cDQwMWU2M2JwZHlhN2dxeGN6In0.cSpukw-R_-MCPEI4fySWXg#13.6/37.784020/-122.403944/0" class="map-embed"></iframe>-->
-</section>
-<section class="single-items center-block item-six parallaxie full-screen" id="section5">
-   <div class="map-embed2" id="map"></div>
-   <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoiY3J5c3RhbHBlbmFsb3NhIiwiYSI6ImNqcmt4ZnpobzAweWM0OW1sdGJ3cjYweDQifQ.2jfSIUMSAx0ikaI4FXl6XA' ;
-      let map = new mapboxgl.Map({
-         container: 'map', // container id
-         center: [-122.44417190551758, 37.77085043122794],
-         zoom: 12,
-         style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
-         scrollZoom: false
-      });
-      map.on('load', function () {
-         map.addLayer({
-         "id": "points",
-         "type": "fill",
-         "source": {
-         "type": "geojson",
-         "data": 'https://municipal.systems/v1/sources/644b4ef4-f7bc-430a-9202-831580265475/export?format=geojson&key=af2239d6-5375-4038-a676-d56af6ba041e&download=true'
-         },
-         'paint': {
-         'fill-color': 'rgba(200, 100, 240, .5)',
-         'fill-outline-color': 'rgba(200, 100, 240, 1)'
-         }
-         });
-      });
-   </script>
-   <div class="card">
-      <h3>Headline 1</h3>
-      <p>Hello, world!</p>
-   </div>
-</section>
-<section class="transparent single-items float-left parallaxie full-screen">
-   <div class="card">
-      <h3>Headline 2</h3>
-      <p>Hello, world!</p>
-   </div>
-</section>
-<section class="transparent single-items float-left parallaxie full-screen">
-   <div class="card">
-      <h3>Headline 2</h3>
-      <p>Hello, world!</p>
-   </div>
-</section>
-<section class="transparent single-items float-right parallaxie full-screen">
-   <div class="card">
-      <h3>Headline 3</h3>
-      <p>Hello, world!</p>
-   </div>
-</section>
-<section class="transparent single-items center-block parallaxie full-screen">
-   <div class="card">
-      <h3>Headline 4</h3>
-      <p>Hello, world!</p>
    </div>
 </section>
 <section class="single-items center-block parallaxie full-screen" id="section7">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-5">
-            <div class="item-titles darkcolor">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  <a data-fancybox="group-seven" href="images/gallery-flat1.jpg">Section 7</a>
-               </h2>
-               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">The integration of web fonts has always been one of the largest contributing factors to diversity in the overall look and feel of websites today vs, yesterday. Fonts, just like images.  </p>
-            </div>
-         </div>
-      </div>
-   </div>  
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section8">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12 col-sm-12">
-            <div class="item-titles darkcolor text-center">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  <a data-fancybox="group-seven" href="images/gallery-flat1.jpg">Section 8</a>
-               </h2>
-               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">The integration of web fonts has always been one of the largest contributing factors to diversity in the overall look and feel of websites today vs, yesterday. Fonts, just like images.  </p>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="400ms" data-fancybox="group-six" href="images/gallery-flat1.jpg">Submit an Application</a>
-            </div>
-         </div>
-      </div>
-   </div>  
-</section>
-<!--<section class="single-items center-block item-eight parallaxie full-screen">
-   <div class="container"> 
-      <div class="row">
-         <div class="col-md-5 col-sm-8">
-            <div class="item-titles">
-               <h2 class="wow fadeInUp darkcolor" data-wow-delay="300ms">
-                  <a data-fancybox="group-eight" href="images/gallery-flat1.jpg" class="darkcolor">Best <span>Solutions</span></a>
-               </h2>
-               <p class="top25 bottom25"></p>
-               <a class="btn_common btn_secondry wow fadeInUp" data-wow-delay="350ms" data-fancybox="group-eight" href="images/gallery-flat1.jpg">View More</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-<section class="single-items center-block item-nine parallaxie full-screen">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-5 offset-md-7 col-sm-8 offset-sm-4">
-            <div class="item-titles darkcolor text-right">
-               <h2 class="wow fadeInUp" data-wow-delay="300ms">
-                  <a data-fancybox="group-nine" href="images/gallery-flat1.jpg">Small <span>Businesses</span></a>
-               </h2>
-               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">The integration of web fonts has always been one of the largest contributing factors to diversity in the overall look and feel of websites today vs, yesterday. Fonts, just like images.  </p>
-               <p class="wow fadeInUp" data-wow-delay="400ms">fruits,vegetables</p>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
--->
 
-<!--FOOTER-->
-<div class="copyright">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12 text-center">
-           <ul class="social_icon black noborder bottom20 wow fadeInUp" data-wow-delay="350ms">
-               <li><a href="javascript:void(0)" class="facebook"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="javascript:void(0)" class="twitter"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="javascript:void(0)" class="dribble"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="javascript:void(0)" class="insta"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="javascript:void(0)" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
-            </ul>
-            <p class="wow fadeInUp" data-wow-delay="400ms">Copyright &copy; 2018 <a href="javascript:void(0)">Webox</a>. all rights reserved.</p>
-         </div>
-      </div>
-   </div>
-</div>
-<!--FOOTER ends-->
+</section>
+
+<section class="single-items center-block parallaxie full-screen" id="section7_1">
+   
+</section>  
+<section class="single-items center-block parallaxie full-screen" id="section7_2">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section7_3">
+
+</section>
+<section class="single-items full-screen" id="section8">
+      
+
+</section>
+
+<section class="single-items center-block parallaxie full-screen" id="section8_1">
+   
+</section>  
+<section class="single-items center-block parallaxie full-screen" id="section8_2">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section8_3">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section8_4">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section8_5">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section8_6">
+
+</section>
+<section class="single-items center-block parallaxie full-screen" id="section9">
+
+</section>
+
+<!-- Mapbox -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.min.css"></script>
+
+<!--Bootstrap Core-->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--to view items on reach-->
+<script src="js/jquery.appear.js"></script>
+
+<!-- Scroll Magic -->
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/debug.addIndicators.min.js"></script>
+<script src="js/animation.gsap.min.js"></script>
+
+<!--Equal-Heights-->
+<script src="js/jquery.matchHeight-min.js"></script>
+
+<!--Owl Slider-->
+<script src="js/owl.carousel.min.js"></script>
+
+<!--number counters-->
+<script src="js/jquery-countTo.js"></script>
+
+<!--Parallax Background-->
+<script src="js/parallaxie.js"></script>
+
+<!--Cubefolio Gallery-->
+<script src="js/jquery.cubeportfolio.min.js"></script>
+
+<!--FancyBox popup-->
+<script src="js/jquery.fancybox.min.js"></script>
+   
+<!--WOw animations-->
+<script src="js/wow.min.js"></script>
+
+<!--Revolution SLider-->
+<script src="js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+
+
+<script src="js/functions.js"></script>
+
+<script src="js/fullpage.js"></script>
+<script src="js/fullpage.extensions.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+   AOS.init({
+      duration: 1200,
+      easing: 'ease-in-out-back'
+   });
+</script>
+
+<script>
+   function infographicTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+   }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+</script>
+
+<!-- Time Series Tooltips -->
+
+<script>
+   document.getElementById('Hotspot_2008').addEventListener('click', function() {
+      document.getElementById('Hotspot_2008').classList.toggle('selected');
+      document.getElementById('2008_Hotspot_display').classList.toggle('show');
+   })
+   document.getElementById('Hotspot_2009').addEventListener('click', function() {
+      document.getElementById('Hotspot_2009').classList.toggle('selected');
+      document.getElementById('2009_Hotspot_display').classList.toggle('show');
+   });
+
+</script>
+
+<!-- What People Are Saying/Doing Tooltips -->
+
+<script>
+   document.getElementById('doing-tooltip1').addEventListener('click', function() {
+      document.getElementById('doing-tooltip1').classList.add('selected');
+      document.getElementById('doing').classList.add('selected');
+      document.getElementById('doing-tooltip1-text').classList.add('show');
+   })
+   document.getElementById('doing-tooltip1').addEventListener('mouseout', function() {
+      document.getElementById('doing-tooltip1').classList.remove('selected');
+      document.getElementById('doing').classList.remove('selected');
+      document.getElementById('doing-tooltip1-text').classList.remove('show');
+   })
+   document.getElementById('doing-tooltip2').addEventListener('click', function() {
+      document.getElementById('doing-tooltip2').classList.add('selected');
+      document.getElementById('doing').classList.add('selected');
+      document.getElementById('doing-tooltip2-text').classList.add('show');
+   })
+   document.getElementById('doing-tooltip2').addEventListener('mouseout', function() {
+      document.getElementById('doing-tooltip2').classList.remove('selected');
+      document.getElementById('doing').classList.remove('selected');
+      document.getElementById('doing-tooltip2-text').classList.remove('show');
+   })
+   document.getElementById('doing-tooltip3').addEventListener('click', function() {
+      document.getElementById('doing-tooltip3').classList.add('selected');
+      document.getElementById('doing').classList.add('selected');
+      document.getElementById('doing-tooltip3-text').classList.add('show');
+   })
+   document.getElementById('doing-tooltip3').addEventListener('mouseout', function() {
+      document.getElementById('doing-tooltip3').classList.remove('selected');
+      document.getElementById('doing').classList.remove('selected');
+      document.getElementById('doing-tooltip3-text').classList.remove('show');
+   })
+   document.getElementById('doing-tooltip4').addEventListener('click', function() {
+      document.getElementById('doing-tooltip4').classList.add('selected');
+      document.getElementById('doing').classList.add('selected');
+      document.getElementById('doing-tooltip4-text').classList.add('show');
+   })
+   document.getElementById('doing-tooltip4').addEventListener('mouseout', function() {
+      document.getElementById('doing-tooltip4').classList.remove('selected');
+      document.getElementById('doing').classList.remove('selected');
+      document.getElementById('doing-tooltip4-text').classList.remove('show');
+   })
+   document.getElementById('saying-tooltip1').addEventListener('click', function() {
+      document.getElementById('saying-tooltip1').classList.add('selected');
+      document.getElementById('saying').classList.add('selected');
+      document.getElementById('saying-tooltip1-text').classList.add('show');
+   })
+   document.getElementById('saying-tooltip1').addEventListener('mouseout', function() {
+      document.getElementById('saying-tooltip1').classList.remove('selected');
+      document.getElementById('saying').classList.remove('selected');
+      document.getElementById('saying-tooltip1-text').classList.remove('show');
+   })
+   document.getElementById('saying-tooltip2').addEventListener('click', function() {
+      document.getElementById('saying-tooltip2').classList.add('selected');
+      document.getElementById('saying').classList.add('selected');
+      document.getElementById('saying-tooltip2-text').classList.add('show');
+   })
+   document.getElementById('saying-tooltip2').addEventListener('mouseout', function() {
+      document.getElementById('saying-tooltip2').classList.remove('selected');
+      document.getElementById('saying').classList.remove('selected');
+      document.getElementById('saying-tooltip2-text').classList.remove('show');
+   })
+   document.getElementById('saying-tooltip3').addEventListener('click', function() {
+      document.getElementById('saying-tooltip3').classList.add('selected');
+      document.getElementById('saying').classList.add('selected');
+      document.getElementById('saying-tooltip3-text').classList.add('show');
+   })
+   document.getElementById('saying-tooltip3').addEventListener('mouseout', function() {
+      document.getElementById('saying-tooltip3').classList.remove('selected');
+      document.getElementById('saying').classList.remove('selected');
+      document.getElementById('saying-tooltip3-text').classList.remove('show');
+   })
+   document.getElementById('saying-tooltip4').addEventListener('click', function() {
+      document.getElementById('saying-tooltip4').classList.add('selected');
+      document.getElementById('saying').classList.add('selected');
+      document.getElementById('saying-tooltip4-text').classList.add('show');
+   })
+   document.getElementById('saying-tooltip4').addEventListener('mouseout', function() {
+      document.getElementById('saying-tooltip4').classList.remove('selected');
+      document.getElementById('saying').classList.remove('selected');
+      document.getElementById('saying-tooltip4-text').classList.remove('show');
+   });
+</script>
 
 <script>
    // When the user scrolls the page, execute myFunction 
@@ -454,59 +1685,34 @@
       document.getElementById("myBar").style.width = scrolled + "%";
    }
 </script>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-<!--Bootstrap Core-->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- Map Fade -->
+<script>
+   $(document).ready(function() {
+    console.log("ready");
 
-<!--to view items on reach-->
-<script src="js/jquery.appear.js"></script>
+    $('#fullpage').fullpage({
 
-<!--Equal-Heights-->
-<script src="js/jquery.matchHeight-min.js"></script>
+        scrollingSpeed: 500,
+        
+        afterRender: function() {
+            $('#fullpage .section:not(:first)').fadeOut(0);
+        },
+        
+        onLeave: function(index, nextIndex, didivion) {
+            console.log("onSlideLeave");
+            if(didivion=="down") {
+                $('#fullpage .section').eq(index-1).delay(2000).fadeOut(0);
+                $('#fullpage .section').eq(nextIndex-1).fadeIn(3000);
+            } else {
+                $('#fullpage .section').eq(index-1).fadeOut(2000);
+                $('#fullpage .section').eq(nextIndex-1).fadeIn(0);
+            }
+        },
+    });
+});
+</script>
 
-<!--Owl Slider-->
-<script src="js/owl.carousel.min.js"></script>
-
-<!--number counters-->
-<script src="js/jquery-countTo.js"></script>
- 
-<!--Parallax Background-->
-<script src="js/parallaxie.js"></script>
-  
-<!--Cubefolio Gallery-->
-<script src="js/jquery.cubeportfolio.min.js"></script>
-
-<!--FancyBox popup-->
-<script src="js/jquery.fancybox.min.js"></script>                
-
-<!--Morphing Text-->
-<script src="js/morphext.min.js"></script>                  
-              
-<!--Particles-->
-<script src="js/particles.min.js"></script>
-      
-<!--WOw animations-->
-<script src="js/wow.min.js"></script>
-            
-<!--Revolution SLider-->
-<script src="js/revolution/jquery.themepunch.tools.min.js"></script>
-<script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
-<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.carousel.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="js/revolution/extensions/revolution.extension.video.min.js"></script>
-
-<script src="js/functions.js"></script>
 
 </body>
-</html>   
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="14px" viewBox="0 0 80 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Legend</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#724490" offset="0%"></stop>
+            <stop stop-color="#724490" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Section-02-04" transform="translate(-62.000000, -193.000000)">
+            <g id="Legend" transform="translate(62.000000, 193.000000)">
+                <text id="186" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
+                    <tspan x="0" y="13">186</tspan>
+                </text>
+                <text id="3329" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
+                    <tspan x="63.221" y="13">3329</tspan>
+                </text>
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="80" height="5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
