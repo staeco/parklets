@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="80px" height="14px" viewBox="0 0 80 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
     <title>Legend</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -12,11 +12,11 @@
     <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Section-02-06" transform="translate(-62.000000, -198.000000)">
             <g id="Legend" transform="translate(62.000000, 198.000000)">
-                <text id="0" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
-                    <tspan x="0" y="13">0</tspan>
+                <text id="4%" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
+                    <tspan x="0" y="13">4%</tspan>
                 </text>
-                <text id="1000" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
-                    <tspan x="62.675" y="13">1000</tspan>
+                <text id="24%" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
+                    <tspan x="65.412" y="13">24%</tspan>
                 </text>
                 <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="80" height="5"></rect>
             </g>

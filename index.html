@@ -6,11 +6,11 @@
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 <meta property="og:url" content="http://stae.co/parklets" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Parklets!" />
-<meta property="og:description" content="A Look at the Human Impact of Parklets and the People Who Make Them" />
+<meta property="og:title" content="A Look at the Human Impact of Parklets" />
+<meta property="og:description" content="and the People Who Make Them" />
 <meta property="og:image" content="http://markmalazarte.com/parklets/images/parklets-title.png" />
 
-<title>Parklets!</title>
+<title>A Look at the Human Impact of Parklets and the People Who Make Them</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -22,34 +22,12 @@
 <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
 <link rel="icon" href="images/favicon.png">
 
-<!--Uber Font-->
-<link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
-      
-<!--MapBox css-->
-<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css" rel="stylesheet">
-
-<!-- Load React/Redux -->
-<script src="https://unpkg.com/react@16.8.4/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16.8.4/umd/react-dom.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/redux@3.7.2/dist/redux.js" crossorigin></script>
-<script src="https://unpkg.com/react-redux@5.1.1/dist/react-redux.min.js" crossorigin></script>
-<script src="https://unpkg.com/styled-components@4.1.3/dist/styled-components.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-virtualized@9.21.0/dist/umd/react-virtualized.js" crossorigin></script>
-
-<!-- Load Kepler.gl -->
-<!--<script src="https://unpkg.com/kepler.gl@1.1.1/umd/keplergl.min.js" crossorigin></script>-->
-
-<!--MapBox token-->
-<!--<script>
-   const MAPBOX_TOKEN = 'pk.eyJ1IjoiY3J5c3RhbHBlbmFsb3NhIiwiYSI6ImNqcmt4ZnpobzAweWM0OW1sdGJ3cjYweDQifQ.2jfSIUMSAx0ikaI4FXl6XA';
-   const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
-   </script>-->
-
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
-<body data-wow-delay="2000ms" class="fadeIn wow" data-spy="scroll">
+<body data-wow-delay="2000ms" class="fadeIn wow">
+
 <!--<a href="javascript:void(0)" class="scrollToTop"><i class="fa fa-angle-up"></i></a>-->
 
 <!--Loader-->
@@ -127,9 +105,11 @@
          </div>
 
          <div class="nav-social">
+            <a class="pagescroll" href="#section9">
             <button class="sponsor-button">
-               <span>Sponsor a Parklet!</span>
+               <span>Become a Sponsor</span>
             </button>
+            </a>
             <!--<ul class="social_icon noborder">
                <li><a class="facebook" href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
                <li><a class="twitter" href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
@@ -174,9 +154,9 @@
                </li>
             </ol>
             <ul data-wow-delay="1000ms"" class="nav-footer fadeIn wow">
-               <li class="nav-item"><a class="nav-link pagescroll" href="">Stae</a></li>
-               <li class="nav-item"><a class="nav-link pagescroll" href="">Openbox</a></li>
-               <li class="nav-item"><a class="nav-link pagescroll" href="">Approach</a></li>
+               <li class="nav-item"><a class="nav-link" href="http://stae.co/" target="_blank">Stae</a></li>
+               <li class="nav-item"><a class="nav-link" href="http://opnbx.com/" target="_blank">Openbox</a></li>
+               <li class="nav-item"><a class="nav-link" href="approach.html">Approach</a></li>
             </ul>
             <p>Copyright &copy; 2019 San Francisco Department of Planning. All rights reserved.</p>
          </nav>
@@ -192,7 +172,9 @@
    <a id="close_side_menu" href="javascript:void(0);"></a>
 </header>
 <!-- header -->
-
+<!--
+<div id="well" class="fullpage-container">
+-->
 <!--Single portfolio items-->
 <section class="single-items center-block full-screen" id="home">
    <div class="container">
@@ -282,10 +264,10 @@
          <div id="tab-saying" class="tabcontent wow fadeIn">
             <p class="top25"><strong>How do people feel about parklets?</strong> We asked <a href="#">people on the streets of San Francisco</a> what three words they associate with parklets. The percentages below show the prevalence of each sentiment based on the number of people we spoke to.</p>
             <div class="interactive">
-               <div id="saying-tooltip1-text" class="hidden tooltips tooltip1 green-text"><h4>2%</h4><p>"colorful"</p><a href="#" class="source"><p>see data source</a></p></div>
-               <div id="saying-tooltip2-text" class="hidden tooltips tooltip2 green-text"><h4>3%</h4><p>"beautiful"</p><a href="#" class="source"><p>see data source</a></p></div>
-               <div id="saying-tooltip3-text" class="hidden tooltips tooltip3 green-text"><h4>2%</h4><p>"basic"</p><a href="#" class="source"><p>see data source</a></p></div>
-               <div id="saying-tooltip4-text" class="hidden tooltips tooltip4 green-text"><h4>6%</h4><p>"affordable"</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip1-text" class="hidden tooltips tooltip1 green-text"><h4>2%</h4><p>Colorful</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip2-text" class="hidden tooltips tooltip2 green-text"><h4>3%</h4><p>Beautiful</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip3-text" class="hidden tooltips tooltip3 green-text"><h4>2%</h4><p>Basic</p><a href="#" class="source"><p>see data source</a></p></div>
+               <div id="saying-tooltip4-text" class="hidden tooltips tooltip4 green-text"><h4>6%</h4><p>Affordable</p><a href="#" class="source"><p>see data source</a></p></div>
                <svg width="441px" height="588px" viewBox="0 0 441 588" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                      <g id="Section-01-03" transform="translate(-520.000000, -355.000000)" fill-rule="nonzero">
@@ -380,12 +362,9 @@
                Hyper-local benefits
             </h2>
             <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
-            Parklets tend to be located on comNw picking up the kids from school. Residents rarely go out of their way to visit a parklet. They are a neighborhood amenity, but not a destination. Parklets are concentrated in some San Francisco neighborhoods more than others, so people living in those areas of the city get to experience the hyper-local benefits they bring.</p>
+            Parklets tend to be located on commercial and residential blocks, making them a part of daily routines like waiting for the bus, grabbing a morning coffee, or picking up the kids from school. Residents rarely go out of their way to visit a parklet. They are a neighborhood amenity, but not a destination.  </p>
          </div> 
       </div>
-      <!--<div class="section-bg">
-         <img src="images/section2.svg" />
-      </div>-->
    </div>
    <!-- SCROLL ARROW -->
    <p class="wow fadeInUp arrow">
@@ -394,235 +373,129 @@
       </a>
    </p>
 </section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_1">
+<section data-wow-delay="200ms" class="full-screen wow fadeOut" id="section2_1">
+   <a class="map-link" href="maps/1-1_parklet_locations.html" target="_blank"></a>
    <div class="left-column">
       <div class="sticky">
          <h3 class="wow fadeInUp" data-wow-delay="200ms">Who lives near<sup>*</sup> a parklet?</h3>
-         <p class="caption"><sup>*</sup>within ⅛ of a mile</p>
-         <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">Parklets are concentrated in some San Francisco neighborhoods more than others, so people living in those areas of the city get to experience the hyper-local benefits they bring.</p>
-         <p class=" top15 bottom25 wow fadeInUp" data-wow-delay="350ms">Learn more about our approach <a class="underline" href="#" title="Our methodology">here</a>.</p>
+         <p class="caption"><sup>*</sup>census tract is within <strong>⅛</strong> of a mile of a parklet</p>
+         <p class="top15 wow fadeInUp" data-wow-delay="250ms">People living in neighborhoods with a parklet get to experience the hyper-local benefits they bring.</p>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <!--<p class=" top15 bottom25 wow fadeInUp" data-wow-delay="350ms">Learn more about our approach <a class="underline" href="approach.html#about2" title="Our methodology">here</a>.</p>-->
       </div> 
    </div>
-   <!--<iframe id="map1" class="map-embed" type="text/html" src="maps/1-1_Current Parklets.html" width="100vw" height="100vh">
-   </iframe>-->
 </section>
-
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_2">
-   <div class="left-column">
-      <div class="sticky">
-         <h3 class="wow fadeInUp" data-wow-delay="200ms">There are 59 parklets in San Francisco</h3>
+<!-- MAPS SECTION-->
+   <section data-wow-delay="200ms" class="full-screen wow fadeOut" id="section2_2">
+      <a class="map-link" href="maps/1-2_removed_parklets.html" target="_blank"></a>
+      <div class="left-column">
+         <div class="sticky">
+            <h3 class="wow fadeInUp" data-wow-delay="200ms">There currently are 59 parklets in San Francisco</h3>
+            <div class="legend-container">
+               <img style="width: 200px; margin-top: 2px;" src="images/section2_2_legend.svg" alt="" title="">
+               <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+            </div>
+            <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         </div>
       </div>
-   </div><!--
-   <iframe id="map2" class="map-embed" type="text/html" src="maps/1-2_Total Parklet Population.html" width="100vw" height="100vh">
-   </iframe>-->
-   
-</section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_3">
-   <div class="left-column">
-      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="peach-text">24%</span> of San Francisco residents <span class="peach-text">live near a parklet</span></h3>
-      <div class="legend-container">
-         <img src="images/section2_3_legend.svg" alt="" title="">
-         <a href="#" class="source">See data source</a>
+   </section>
+   <section data-wow-delay="200ms" class="full-screen wow fadeOut" id="section2_3">
+      <a class="map-link" href="maps/1-3_total_population.html" target="_blank"></a>
+      <div class="left-column">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="peach-text">26%</span> of San Francisco residents live within a <span class="peach-text">5 minute walk of a parklet</span></h3>
+         <div class="legend-container">
+            <img src="images/section2_3_legend.svg" alt="" title="">
+            <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+         </div>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <div class="small-quote">
+            <img src="images/section2_3_profile.png" alt="Josh" title="Josh">
+            <h2>“Parklets are a place for pedestrians to hang out, occupy the public space, encourage interactions with strangers, and encourage people to slow down.”</h2>
+            <p class="quote-source">Josh, Monthly parklet user</p>
+         </div>
       </div>
-      <div class="small-quote">
-         <img src="images/section2_3_profile.png" alt="Josh" title="Josh">
-         <h2>“Parklets are place for pedestrians to hang out, occupy the public space, encourage interactions with strangers, and encourage people to slow down.”</h2>
-         <p class="quote-source">&mdash; Josh, Monthly parklet user</p>
+   </section>
+   <section class="full-screen" id="section2_4">
+      <a class="map-link" href="maps/1-4_total_apartments.html" target="_blank"></a>
+      <div class="left-column">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="purple-text">82%</span> of homes near a parklet are <span class="purple-text">apartments</span></h3>
+         <div class="legend-container">
+            <img src="images/section2_4_legend.svg" alt="" title="">
+            <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+         </div>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <div class="small-quote">
+            <img src="images/section2_4_profile.png" alt="Gwenn" title="Gwenn">
+            <h2>“The parklet gets me to come out. It’s my <em>Cheers</em>.”</h2>
+            <p class="quote-source">Gwenn, weekly parklet user</p>
+         </div>
       </div>
-   </div>
-   <div id="map" class="map-embed3"></div>
-      <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoiY3J5c3RhbHBlbmFsb3NhIiwiYSI6ImNqcmt4ZnpobzAweWM0OW1sdGJ3cjYweDQifQ.2jfSIUMSAx0ikaI4FXl6XA';
-      var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/crystalpenalosa/cjxxohvz503b91cmhz34iex9b'
-      });
-
-      map.scrollZoom.disable();
-      
-      map.on('load', function () {
-      map.addLayer({
-                  "id": "san-francisco-parklet-census-tra",
-                  "type": "fill",
-                  "source": {
-                  type: "geojson",
-                  data: "https://gist.githubusercontent.com/cpenalosa/042f43d85a0a87772fbcd68d5a8ef266/raw/d30753a7bf4d65adb2475353c4cb9b1468d534fe/census-tracts-serialized.geojson"
-                  },
-                  "layout": {},
-                  "paint": {
-      //               Create a chloropleth based on the data's field you're trying to visualize.  
-                  "fill-color": [
-                        "step",
-                        ["get", "totalPopulation"],
-                        "#f2c6af",
-                        2962,
-                        "#f1b498",
-                        4200,
-                        "#f0a283",
-                        5500,
-                        "#ee9070",
-                        6600,
-                        "#ed7f5f",
-                        7800,
-                        "#ec6e4e"
-                     ],
-                     "fill-outline-color": "hsl(0, 0%, 100%)"
-                  }
-      });
-         map.addLayer({
-                  "id": "parklets",
-                  "type": "circle",
-                  "source": {
-                  type: "geojson",
-                  data: "https://gist.githubusercontent.com/cpenalosa/50ca108821d4e4e8913507ab35ead128/raw/8788e471ff2627d64582e3ef4b016914ac87f776/current%2520parklets.geojson"
-                  },
-                  "layout": {},
-                  "paint": {"circle-color": "hsl(313, 86%, 81%)", "circle-radius": 4}
-      });
-         });
-      // Create a popup, but don't add it to the map yet.
-      var popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-      });
-      
-      map.on('mouseenter', 'san-francisco-parklet-census-tra', function(e) {
-      // Change the cursor style as a UI indicator.
-      map.getCanvas().style.cursor = 'pointer';
-      
-      var coordinates = e.features[0].geometry.coordinates.slice();
-      var description = ("Neighborhood Name: "+ e.features[0].properties.neighborhoodName + "<br>" 
-                     + " Census Tract #: " + e.features[0].properties.censusTract +  "<br>" 
-                     + " Total Population: " + e.features[0].properties.totalPopulation);
-      
-      // Ensure that if the map is zoomed out such that multiple
-      // copies of the feature are visible, the popup appears
-      // over the copy being pointed to.
-      while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-      coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-      }
-      
-      // Populate the popup and set its coordinates
-      // based on the feature found.
-      popup.setLngLat(e.lngLat)
-      .setHTML(description)
-      .addTo(map);
-      });
-      
-      map.on('mouseleave', 'san-francisco-parklet-census-tra', function() {
-      map.getCanvas().style.cursor = '';
-      popup.remove();
-      });
-      
-      </script>
-   <!--
-   <iframe id="map3" class="map-embed" type="text/html" src="maps/1-3_Apartment Units.html" width="100vw" height="100vh">
-   </iframe>-->
-</section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_4">
-   <div class="left-column">
-      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="purple-text"></span>82%</span> of homes near a parklet are apartments</h3>
-      <div class="legend-container">
-         <img src="images/section2_4_legend.svg" alt="" title="">
-         <a href="#" class="source">See data source</a>
+   </section>
+   <section class="full-screen" id="section2_5">
+      <a class="map-link" href="maps/1-5_foreign_born.html" target="_blank"></a>
+      <div class="left-column">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="yellow-text">22%</span> of San Francisco’s <span class="yellow-text">foreign born residents</span> live near a parklet</h3>
+         <div class="legend-container">
+            <img src="images/section2_5_legend.svg" alt="" title="">
+            <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+         </div>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <div class="small-quote">
+            <img src="images/section2_5_profile.png" alt="Dariush" title="Dariush">
+            <h2>“The neighborhood is reflected in the diversity of people who show up. Parklets are a safe space to meet your neighbors.”</h2>
+            <p class="quote-source">Dariush, monthly parklet user</p>
+         </div>
       </div>
-      <div class="small-quote">
-         <img src="images/section2_4_profile.png" alt="Gwenn" title="Gwenn">
-         <h2>“The parklet gets me to come out. It’s my Cheers.”</h2>
-         <p class="quote-source">&mdash; Gwenn, weekly parklet user</p>
+   </section>
+   <section class="full-screen" id="section2_6">
+      <a class="map-link" href="maps/1-6_older_adults.html" target="_blank"></a>
+      <div class="left-column">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="green-text">24%</span> of San Francisco’s <span class="green-text">older adults</span> live near a parklet</h3>
+         <div class="legend-container">
+            <img src="images/section2_6_legend.svg" alt="" title="">
+            <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+         </div>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <div class="small-quote">
+            <img src="images/section2_6_profile.png" alt="Marsh" title="Marsh">
+            <h2>“Without the parklet I never would have stopped here... I would have had to go elsewhere to rest.”</h2>
+            <p class="quote-source">Marsh, Retiree and bi-weekly parklet user</p>
+         </div>
       </div>
-   </div><!--
-   <iframe id="map4" class="map-embed" type="text/html" src="maps/1-4_Foreign-born.html" width="100vw" height="100vh">
-   </iframe>-->
-</section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_5">
-   <div class="left-column">
-      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="yellow-text">21% foreign born</span> residents live near a parklet</h3>
-      <div class="legend-container">
-         <img src="images/section2_5_legend.svg" alt="" title="">
-         <a href="#" class="source">See data source</a>
+   </section>
+   <section class="full-screen" id="section2_7">
+      <a class="map-link" href="maps/1-7_under_18.html" target="_blank"></a>
+      <div class="left-column">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="peach-text">22%</span> of kids <span class="peach-text">under 18</span> live near a parklet</h3>
+         <div class="legend-container">
+            <img src="images/section2_7_legend.svg" alt="" title="">
+            <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+         </div>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <div class="small-quote">
+            <img src="images/section2_7_profile.png" alt="Suzanne" title="Suazanne">
+            <h2>“The first time we ever came to this parklet is one of our first memories of an outing with Libby.”</h2>
+            <p class="quote-source">Suzanne, mother of 2 y.o. Libby and weekly parklet user</p>
+         </div>
       </div>
-      <div class="small-quote">
-         <img src="images/section2_5_profile.png" alt="Gwenn" title="Gwenn">
-         <h2>“The neighborhood is reflected in the diversity of people who show up. Parklets are a safe space to meet your neighbors.”</h2>
-         <p class="quote-source">&mdash; Dariush, monthly parklet user</p>
+   </section>
+   <section class="full-screen" id="section2_8">
+      <a class="map-link" href="maps/1-8_affordable_housing.html" target="_blank"></a>
+      <div class="left-column">
+         <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="purple-text">70%</span> of parklets are within easy walk of <span class="purple-text">affordable housing</span></h3>
+         <div class="legend-container">
+            <img src="images/section2_8_legend.svg" alt="" title="">
+            <a href="approach.html#about2" target="_blank" class="source">See data source</a>
+         </div>
+         <p class="wow fadeInUp top25" data-wow-delay="200ms">For more information about each census tract or parklet, click on the map.</p>
+         <div class="small-quote">
+            <img src="images/section2_8_profile.png" alt="Suzanne" title="Suazanne">
+            <h2>“For our tenants, the outdoor space is a nice addition. Parklets add to social behavior.”</h2>
+            <p class="quote-source">Patrick, Staff at Apollo Hotel Low Income Housing and Monthly Parklet User</p>
+         </div>
       </div>
-   </div><!--
-   <iframe id="map5" class="map-embed" type="text/html" src="maps/1-5_Older Adults.html" width="100vw" height="100vh"></iframe>-->
-</section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_6">
-   <div class="left-column">
-      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="green-text">21% older adults</span> live near a parklet </h3>
-      <div class="legend-container">
-         <img src="images/section2_6_legend.svg" alt="" title="">
-         <a href="#" class="source">See data source</a>
-      </div>
-      <div class="small-quote">
-         <img src="images/section2_6_profile.png" alt="Gwenn" title="Gwenn">
-         <h2>“Without the parklet I never would have stopped here... I would have had to go elsewhere to rest.”</h2>
-         <p class="quote-source">&mdash; Marsh, Retiree and bi-weekly parklet user</p>
-      </div>
-   </div><!--
-   <iframe id="map6" class="map-embed" type="text/html" src="maps/1-6_Children Under 18.html" width="100vw" height="100vh"></iframe>-->
-</section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_7">
-   <div class="left-column">
-      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="green-text-light">20%</span> of kids <span class="green-text-light">under 18</span> live near a parklet</h3>
-      <div class="legend-container">
-         <img src="images/section2_7_legend.svg" alt="" title="">
-         <a href="#" class="source">See data source</a>
-      </div>
-      <div class="small-quote">
-         <img src="images/section2_7_profile.png" alt="Suzanne" title="Suazanne">
-         <h2>“The first time we ever came to this parklet is one of our first memories of an outing with Libby.”</h2>
-         <p class="quote-source">&mdash; Suzanne, mother of 2 y.o. Libby and weekly parklet user</p>
-      </div>
-   </div><!--
-      <iframe id="map7" class="map-embed" type="text/html" src="maps/1-7_affordable-housing.html" width="100vw" height="100vh"></iframe>-->
-   </div>
-</section>
-<section data-aos="fade-up"
-data-aos-easing="ease-in-back"
-data-aos-delay="300"
-data-aos-offset="0" class="full-screen" id="section2_8">
-   <div class="left-column">
-      <h3 class="wow fadeInUp" data-wow-delay="200ms"><span class="purple-text">14%</span> of <span class="purple-text">affordable housing units</span> are near a parklet</h3>
-      <div class="legend-container">
-         <img src="images/section2_8_legend.svg" alt="" title="">
-         <a href="#" class="source">See data source</a>
-      </div>
-      <div class="small-quote">
-         <img src="images/section2_8_profile.png" alt="Suzanne" title="Suazanne">
-         <h2>“For our tenants, the outdoor space is a nice addition. Parklets add to social behavior.”</h2>
-         <p class="quote-source">&mdash; Patrick, Staff at Apollo Hotel Low Income Housing and Monthly Parklet User</p>
-      </div>
-   </div><!--
-      <iframe id="map8" class="map-embed" type="text/html" src="maps/1-8_homelessness.html" width="100vw" height="100vh"></iframe>
-   </div>-->
-</section>
-
-<section class="single-items center-block item-three parallaxie full-screen" id="section3">
+   </section>
+<section class="single-items full-screen center-block" id="section3">
    <div class="container">
       <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
          <div class="item-titles darkcolor number-counters">
@@ -632,9 +505,6 @@ data-aos-offset="0" class="full-screen" id="section2_8">
             <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
                Parklets are both a capital investment and a contribution to civic life. Sponsors decide to take on the responsibility, not just for the benefit of their own business but also for the neighborhood as a whole. In most cases, the benefits are felt by many businesses up and down the block. </p>
          </div> 
-      </div>
-      <div class="section-bg">
-         <img src="images/section3.svg" />
       </div>
    </div>
    <!-- SCROLL ARROW -->
@@ -647,19 +517,17 @@ data-aos-offset="0" class="full-screen" id="section2_8">
 <section class="single-items center-block full-screen" id="section3_1">
    <div class="container">
       <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
-         <h3 class="wow fadeInUp chart-label" data-wow-delay="300ms">Change in land value <!--<span style="background-color:#CAC2BD; color: #FCF5E9; padding: 3px 10px; margin: 0 5px;">New business licenses</span>--></h3>
+         <h3 class="wow fadeInUp chart-label" data-wow-delay="300ms">Change in land value</h3>
          <div class="interactive">
             <div class="land-chart-hover">
                <div id="Hotspot_2008" class="chart-hover">
                   <div id="2008_Hotspot" class="hidden tooltips 2008_Hotspot_display darkgrey-text">
-                     <h4>Hello, world!</h4>
-                     <p>Data goes here.</p>
-                     <a href="#" class="source"><p>see data source</a></p>
+                     <img src="images/land_2008.svg">
                   </div>
                </div>
                <div id="Hotspot_2009" class="chart-hover">
                   <div id="2009_Hotspot" class="hidden tooltips 2009_Hotspot_display darkgrey-text">
-                     <img src="images/Hotspot_2009.svg">
+                     <img src="images/land_2009.svg">
                   </div>
                </div>
                <div id="Hotspot_2010" class="chart-hover">
@@ -754,80 +622,342 @@ data-aos-offset="0" class="full-screen" id="section2_8">
 </section>
 <section class="full-screen" id="section3_2">  
    <div class="taraval-left">
-      <h4>Spotlight on Taraval Street</h4>
+      <h4 class="purple-text"><strong>Spotlight on Taraval St.</strong></h4>
       <h3 class="wow fadeInUp" data-wow-delay="200ms">Going in together</h3>
       <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">The Rolling Out Cafe parklet on Taraval Street was built as a collaboration with the local Merchants Association, the People of Parkside Sunset. The parklet supports the district’s long-term goal of revitalizing the Taraval business corridor. </p>
+      <p class="purple-text top15 bottom25 wow fadeInUp" data-wow-delay="250ms"><strong>Click each business to learn more.</strong></p>
+   </div>
+   <div class="taraval-instructions full-screen">
+      <h3 class="purple-text">Click each business to learn more.</h3>
    </div>
    <div class="taraval-interactive">
-      
-      <img src="taraval_1.png" usemap="#image_map">
-      <map name="image_map">
-      <area alt="Rolling Out" title="Rolling Out" href="[popup of div]" coords="1702,529 1755,1110 1755,1455 2099,1416 2133,1096 2027,519 2027,519 1852,529 " shape="polygon">
-      <area alt="Versus Games" title="Versus Games" href="[popup of div]" coords="2376,1387 2657,1353 2706,1076 2492,504 2289,509 2419,1076 " shape="polygon">
-      <area alt="Eagle Pizza" title="Eagle Pizza" href="[popup of div]" coords="3123,1319 3210,1013 2856,281 2453,291 2434,504 2483,509 2706,1081 2657,1358 " shape="polygon">
-      </map>
+      <div id="taraval-hotspots-container">
+         <div class="taraval-hotspots" id="taraval-hotspot-1">
+            <div class="taraval-popup hidden">
+               <img class="profile-photo" src="images/taraval-profile-1.png" alt="Bruno" title="Bruno">
+               <div class="large-quote">
+                  <h2>“On a sunny day, you can see families and friends get together outside. Not only to eat the food from [Rolling Out Cafe], but also to eat from other merchants as well.”</h2>
+                  <p class="quote-source">&mdash; Bruno, Parklet sponsor and owner of Rolling Out Cafe</p>
+               </div>
+            </div>
+         </div>
+         <div class="taraval-hotspots" id="taraval-hotspot-2">
+            <div class="taraval-popup hidden">
+               <img class="profile-photo" src="images/taraval-profile-2.png" alt="D" title="D">
+               <div class="large-quote">
+                  <h2>“It’s like a break room for my workers and good for my customers—like an outdoor waiting area when we have events.”</h2>
+                  <p class="quote-source">&mdash; D, Owner of Versus Games</p>
+               </div>
+            </div>
+         </div>
+         <div class="taraval-hotspots" id="taraval-hotspot-3">
+            <div class="taraval-popup hidden">
+               <img class="profile-photo" src="images/taraval-profile-3.png" alt="Ken" title="Ken">
+               <div class="large-quote">
+            <h2>“As a business, I think it’s worth the tradeoff. What’s two parking spaces? It’s a benefit to us.”</h2>
+            <p class="quote-source">&mdash; Ken, Owner of Eagle Pizza</p>
+         </div>
+            </div>
+         </div>
+      </div>
    </div>
 </section>
-<!--
-<section class="single-items center-block parallaxie full-screen" id="section3_3">  
-   
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section3_4">  
-   
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section3_5">  
-   
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section3_6">  
-   
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section4">
--->
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section4_1">
-   
-</section>  
-<section class="single-items center-block parallaxie full-screen" id="section4_2">
 
+<section class="single-items center-block full-screen" id="section3_6">
+   <div class="container">
+      <div class="col-md-8" style="float: right;">
+         <div class="parklet-icons">
+            <ul>
+               <li>
+               <img src="images/perk-1.svg">
+               <p class="purple-text">More eye catching</p>
+               </li>
+               <li>
+               <img src="images/perk-2.svg">
+               <p class="purple-text">Increases foot traffic</p>
+               </li>
+               <li>
+               <img src="images/perk-3.svg">
+               <p class="purple-text">Customers can linger</p>
+               </li>
+               <li>
+               <img src="images/perk-4.svg">
+               <p class="purple-text">Creates an overflow space</p>
+               </li>
+               <li>
+               <img src="images/perk-5.svg">
+               <p class="purple-text">New option for staff breaks</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="item-titles darkcolor">
+            <h3 class="wow fadeInUp" data-wow-delay="300ms">
+               Shared Perks
+            </h3>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               Locals use words like ‘sleepy’ and ‘close-knit’ to describe the Parkside neighborhood. The parklet has helped to perk up the block, the effects of which are felt by businesses and residents alike.</p>
+         </div>
+      </div>      
+   </div>   
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section4_3">
 
+<section class="single-items center-block full-screen" id="section4">
+   <div class="container">
+      <div class="col-md-8" style="float: right; margin: 20% 0 0 75px;">
+         <div class="item-titles darkcolor number-counters">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               For and From the People
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               While public space projects are usually carried out by city staff, parklets are developed by locals. Sponsors live and provide services in the neighborhood where the parklet is built.  Parklets can bring people together and create a sense of shared ownership over public spaces, they have the potential to reflect and belong to communities in ways that other parks cannot. </p>
+         </div> 
+      </div>
+   </div>
+   <!-- SCROLL ARROW -->
+   <p class="wow fadeInUp arrow">
+      <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section4_1">
+         <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+      </a>
+   </p>
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section4_4">
-
+<section class="full-screen" id="section4_1">
+   <div class="taraval-left sticky">
+      <h4 class="yellow-text"><strong>Spotlight on Valencia St.</strong></h4>
+      <h3 class="wow fadeInUp" data-wow-delay="200ms">Bringing STEM to the community</h3>
+      <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">This parklet was a collaboration between the Exploratorium Museum and Buena Vista Horace Mann School. It was co-designed by neighborhood youth, community advisors, and science experts. The goal of the parklet is to provide an informal STEM education resource for the Spanish speaking communities of the Mission District.  </p>
+   </div>
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section4_5">
-
+<section class="full-screen" id="section4_2">
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section4_6">
-
+<section class="full-screen" id="section4_3">  
+   <div class="exploratorium-interactive">
+      <div id="exploratorium-hotspots-container">
+         <div class="exploratorium-hotspots" id="exploratorium-hotspot-1">
+            <div class="exploratorium-popup hidden">
+               <img class="profile-photo" src="images/exploratorium-callout-1.png" alt="Hands-on STEM learning experiences" title="Hands-on STEM learning experiences">
+               <h3>Hands-on STEM learning experiences</h3>
+               <div class="large-quote">
+                  <h2>“There's a gardening club in the school that really wanted to work in it. All the plants along this area are maintained by the school, so we tried to make something that was easy for them to engage with.”</h2>
+                  <p class="quote-source">&mdash; Erik, Parklet sponsor</p>
+               </div>
+            </div>
+         </div>
+         <div class="exploratorium-hotspots" id="exploratorium-hotspot-2">
+            <div class="exploratorium-popup hidden">
+               <img class="profile-photo" src="images/exploratorium-callout-2.png" alt="D" title="D">
+               <h3>Spanish as the dominant language</h3>
+               <div class="large-quote">
+                  <h2>“We privilege the Spanish which is unusual. People don't privilege Spanish over English, but we privilege Spanish. We didn't think it was actually that big of deal but then later on, talking to other people, they were like, to put Spanish on the left was a different thing.”</h2>
+                  <p class="quote-source">&mdash; Erik, Parklet sponsor</p>
+               </div>
+            </div>
+         </div>
+         <div class="exploratorium-hotspots" id="exploratorium-hotspot-3">
+            <div class="exploratorium-popup hidden">
+               <img class="profile-photo" src="images/exploratorium-callout-3.png" alt="Ken" title="Ken">
+               <h3>Lesson-plans as installations </h3>
+               <div class="large-quote">
+                  <h2>“The idea of a rain gauge with tracking the data, collecting the data and then comparing it to the previous years data was an idea that came from the science teachers at this school.”</h2>
+                  <p class="quote-source">&mdash; Erik, Parklet sponsor</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section4_7">
-
+<section class="single-items center-block full-screen" id="section4_5">
+   <div class="container">
+      <div class="col-md-8" style="float: right;">
+         <div class="parklet-icons">
+            <ul>
+               <li>
+               <img src="images/collab-1.svg">
+               <p class="yellow-text">More eye catching</p>
+               </li>
+               <li>
+               <img src="images/collab-2.svg">
+               <p class="yellow-text">Increases foot traffic</p>
+               </li>
+               <li>
+               <img src="images/collab-3.svg">
+               <p class="yellow-text">Customers can linger</p>
+               </li>
+               <li>
+               <img src="images/collab-4.svg">
+               <p class="yellow-text">Creates an overflow space</p>
+               </li>
+               <li>
+               <img src="images/collab-5.svg">
+               <p class="yellow-text">New option for staff breaks</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="item-titles darkcolor">
+            <h3 class="wow fadeInUp" data-wow-delay="300ms">
+               Collaborative approach
+            </h3>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               The Exploratorium put in extra time, effort, and resources to connect with locals, developing a deep understanding of their needs, and getting them involved with the development process. This collaborative approach was a multi-step process, bringing in community stakeholders for each step. The results are tangible in the design and evident in the sense of ownership and pride which the neighbors express. </p>
+         </div>
+      </div>      
+   </div>   
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section5">
 
+<!-- Gallery -->
+<section id="section5">
+   <div class="container gallery-top">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="item-titles darkcolor">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               Behind Every Parklet is a Person
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               Sponsors are a diverse group of makers, entrepreneurs, educators, and green thumbs, and they are volunteering to take on a civic responsibility usually reserved for city employees.  Learn about their experiences, in their own words.</p>
+               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               Click on the photos to learn more about the <a href="images/sponsor-1.png" data-fancybox="gallery">sponsors</a>, their <a href="images/practice-1.png" data-fancybox="gallery">best practices</a>, and <a href="images/challenge-1.png" data-fancybox="gallery">challenges</a>.</p>
+         </div> 
+      </div>
+   </div>
+   <div class="fullwidth">
+      <div id="projects" class="cbp">
+         <div class="cbp-item digital">
+            <a href="images/sponsor-1.png" data-fancybox="gallery">
+               <img src="images/sponsor-1-bg.png" alt="">
+               <div class="overlay center-block text-center whitecolor">
+                  <h4>Museum of Craft and Design parklet</h4>
+                  <p>2569 Third Street</p>
+               </div>
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/challenge-1.png" data-fancybox="gallery">
+               <img src="images/challenge-thumb.png" alt="">
+               
+            </a>
+         </div>
+         <div class="cbp-item digital hidden">
+            <a href="images/challenge-2.png" data-fancybox="gallery">
+               <img src="images/challenge-thumb.png" alt="">
+               
+            </a>
+         </div>
+         <div class="cbp-item digital hidden">
+            <a href="images/challenge-2.png" data-fancybox="gallery">
+               <img src="images/challenge-thumb.png" alt="">
+               
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/sponsor-2.png" data-fancybox="gallery">
+               <img src="images/sponsor-2-bg.png" alt="">
+               <div class="overlay center-block text-center whitecolor">
+                  <h4>Exploratorium parklet</h4>
+                  <p>Valencia Street @ 23rd Street</p>
+               </div>
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/sponsor-5.png" data-fancybox="gallery">
+               <img src="images/sponsor-4-bg.png" alt="">
+               <div class="overlay center-block text-center whitecolor">
+                  <h4>Luna Rienne parklet</h4>
+                  <p>3318 22nd Street</p>
+               </div>
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/practice-1.png" data-fancybox="gallery">
+               <img src="images/practice-thumb.png" alt="">
+               
+            </a>
+         </div>
+         <div class="cbp-item digital hidden">
+            <a href="images/practice-2.png" data-fancybox="gallery">
+               <img src="images/practice-thumb.png" alt="">
+               
+            </a>
+         </div>
+         <div class="cbp-item digital hidden">
+            <a href="images/practice-3.png" data-fancybox="gallery">
+               <img src="images/practice-thumb.png" alt="">
+               
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/sponsor-4.png" data-fancybox="gallery">
+               <img src="images/sponsor-6-bg.png" alt="">
+               <div class="overlay center-block text-center whitecolor">
+                  <h4>¡Venga! Empanadas</h4>
+                  <p>443 Valencia Street</p>
+               </div>
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/sponsor-6.png" data-fancybox="gallery">
+               <img src="images/sponsor-5-bg.png" alt="">
+               <div class="overlay center-block text-center whitecolor">
+                  <h4>Rolling Out Bakery parklet</h4>
+                  <p>1722 Taraval Street</p>
+               </div>
+            </a>
+         </div>
+         <div class="cbp-item digital">
+            <a href="images/sponsor-3.png" data-fancybox="gallery">
+               <img src="images/sponsor-3-bg.png" alt="">
+               <div class="overlay center-block text-center whitecolor">
+                  <h4>O’Connell High School parklet</h4>
+                  <p>2355 Folsom Street</p>
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section5_1">
+<!-- Gallery -->
 
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section5_2">
-
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section6">
-
-</section>
-<section class="single-items center-block parallaxie full-screen" id="section6_1">
-
+<section class="center-block full-screen" id="section6">
+   <!-- SCROLL ARROW -->
+      <p class="wow fadeInUp arrow">
+         <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section6_1">
+            <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+         </a>
+      </p>
+   <div class="container">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="item-titles darkcolor number-counters">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               It All Started with Feeding the Meter
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               The San Francisco Pavement to Parks Program created the city’s first parklets in 2009. One of the key inspirations for parklets was the international holiday, Park(ing) Day, which started in 2005 with a guerilla installation by Rebar Studio. For one afternoon, they bought time on a parking meter downtown and installed a small patch of grass with a bench for public use. Parklets, which can be in place for years instead of hours, are now built all around the world.</p>
+         </div> 
+      </div>
+   </div>
+   <div id="section6_1" class="container">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="item-titles darkcolor">
+            <div class="maria-container">
+               <img src="images/maria.png">
+               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+                  “Parklets are great because they give the public a role in shaping the public realm.”<br>
+                  <strong>Maria, SF Parklet Program</strong></p>
+            </div>
+         </div> 
+      </div>
+   </div>
 </section>
 <section id="section6_2" class="square-viz">
    <div class="left-column left-column1 sticky">
-      <div data-aos="fade-up" data-aos-anchor="#section6_2" data-aos-mirror="true" class="sticky vh">
+      <div data-aos="fade-up" data-aos-anchor="#section6_2" data-aos-anchor-placement="top-center" data-aos-mirror="true" class="sticky vh">
          <h3 class="wow fadeInUp" data-wow-delay="200ms">Over the past 9 years sponsors have built 75 parklets</h3>
          <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">Parklets take 13 months to build on average and last for anywhere from 20 to 97 months.</p>
          <p class="top15 bottom25 wow fadeInUp" data-wow-delay="350ms"><a class="underline" href="#" title="Learn more about the data">Learn more about the data</a>.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="4000" data-aos-anchor="#squares-11" class="sticky vh">
+      <div data-aos="fade-up" data-aos-delay="4000" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-11" class="sticky vh">
          <h3 class="wow fadeInUp" data-wow-delay="200ms">All the parklets together have turned 109 parking spaces green, adding 19,620 square feet of open space to the city.</h3></p>
       </div>
    </div>
@@ -837,19 +967,15 @@ data-aos-offset="0" class="full-screen" id="section2_8">
             <h4 data-aos="fade-right" data-aos-delay="50" data-aos-offset="50" data-aos-anchor="#squares-start" class="parklet-year">2009</h4>
             <div class="squares-container">
                <!-- Parklet Square-->
-               <div class="square" data-aos="fade-right" data-aos-delay="50" data-aos-offset="50" data-aos-anchor="#squares-start">
+               <div class="square" data-aos="fade-right" data-aos-delay="50" data-aos-offset="50" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-start">
                   <div class="tooltiptext">
-                     <h4>Parklet Name</h4>
-                     <p>1234 Streetname St.</p>
-                     <p>2010 – Present</p>
-                     <p>Time to build: 2 months</p>
-                     <p>800 Square feet</p>
+                     <p><span class='tooltip-label'>Parklet Name</span> Revolution Cafe </p> <p><span class='tooltip-label'>Address</span> 3230 22nd St </p> <p><span class='tooltip-label'>Year Installed</span> 2010 </p> <p><span class='tooltip-label'>Year Removed</span> 2013 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
                   </div>
                </div>
             </div>
          </div>
          <div id="squares-2" class="parklet-squares-row">
-            <h4 data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-anchor="#squares-2" class="parklet-year">2010</h4>
+            <h4 data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-2" class="parklet-year">2010</h4>
             <div class="squares-container">
                <!-- Parklet Square-->
                <div class="square" data-aos="fade-right" data-aos-delay="200" data-aos-offset="300" data-aos-anchor="#squares-2">
@@ -862,7 +988,7 @@ data-aos-offset="0" class="full-screen" id="section2_8">
                   </div>
                </div>
                <!-- Parklet Square-->
-               <div class="square" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300" data-aos-anchor="#squares-2">
+               <div class="square" data-aos="fade-right" data-aos-delay="400" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-2">
                   <div class="tooltiptext">
                      <h4>Parklet Name</h4>
                      <p>1234 Streetname St.</p>
@@ -872,7 +998,7 @@ data-aos-offset="0" class="full-screen" id="section2_8">
                   </div>
                </div>
                <!-- Parklet Square-->
-               <div class="square" data-aos="fade-right" data-aos-delay="600" data-aos-offset="300" data-aos-anchor="#squares-2">
+               <div class="square" data-aos="fade-right" data-aos-delay="600" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-2">
                   <div class="tooltiptext">
                      <h4>Parklet Name</h4>
                      <p>1234 Streetname St.</p>
@@ -882,7 +1008,7 @@ data-aos-offset="0" class="full-screen" id="section2_8">
                   </div>
                </div>
                <!-- Parklet Square-->
-               <div class="square" data-aos="fade-right" data-aos-delay="800" data-aos-offset="300" data-aos-anchor="#squares-2">
+               <div class="square" data-aos="fade-right" data-aos-delay="800" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-2">
                   <div class="tooltiptext">
                      <h4>Parklet Name</h4>
                      <p>1234 Streetname St.</p>
@@ -892,7 +1018,7 @@ data-aos-offset="0" class="full-screen" id="section2_8">
                   </div>
                </div>
                <!-- Parklet Square-->
-               <div class="square" data-aos="fade-right" data-aos-delay="1000" data-aos-offset="300" data-aos-anchor="#squares-2">
+               <div class="square" data-aos="fade-right" data-aos-delay="1000" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-2">
                   <div class="tooltiptext">
                      <h4>Parklet Name</h4>
                      <p>1234 Streetname St.</p>
@@ -904,7 +1030,7 @@ data-aos-offset="0" class="full-screen" id="section2_8">
             </div>
          </div>
          <div id="squares-3" class="parklet-squares-row">
-            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-3" class="parklet-year">2011</h4>
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-3" class="parklet-year">2011</h4>
             <div class="squares-container">
                <!-- Parklet Square-->
                <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-3">
@@ -969,7 +1095,7 @@ data-aos-offset="0" class="full-screen" id="section2_8">
             </div>
          </div>
          <div id="squares-4" class="parklet-squares-row">
-            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-4" class="parklet-year">2012</h4>
+            <h4 data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor-placement="top-center" data-aos-anchor="#squares-4" class="parklet-year">2012</h4>
             <div class="squares-container">
                <!-- Parklet Square-->
                <div class="square" data-aos="fade-right" data-aos-delay="1200" data-aos-offset="300" data-aos-anchor="#squares-4">
@@ -1451,49 +1577,198 @@ data-aos-offset="0" class="full-screen" id="section2_8">
       </div>
    </div>
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section7">
-
+<section class="single-items center-block full-screen" id="section7">
+   <div class="container">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="item-titles darkcolor number-counters">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               Keeping the Soul, Creating a System
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               The San Francisco Parklet Program is always a work in progress, learning along with parklet sponsors from successes and challenges. So while the program’s basic structure and permitting authority is codified as part of the government structure, it is flexible and nimble enough to adapt to new needs and challenges on an ongoing basis. The city is always looking for ways to support parklet sponsors’ most creative design ideas while paving the way for greater efficiency.</p>
+         </div> 
+      </div>
+   </div>
+   <!-- SCROLL ARROW -->
+   <p class="wow fadeInUp arrow">
+      <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section7_1">
+         <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+      </a>
+   </p>
 </section>
 
-<section class="single-items center-block parallaxie full-screen" id="section7_1">
+<section class="single-items center-block full-screen" id="section7_1">
+   <div class="accordion-container">
+      <h3 class="accordion-title">The city talks about what it means to add structure to a grassroots movement</h3>
+      <div class="accordion-left">
+         <h3>The Soul</h3>
+         <p>Preserving the citizen-led tactical urbanism origin of the parklets program</p>
+      </div>
+      <div class="accordion">
+         <div class="item item-1">
+            
+         </div>
+         <div class="info item-1">
+            <h3>“You can go hog wild with your design as long as you meet those basic requirements.”</h3>
+            <p><strong>John, SF Parklet Program</strong></p>
+         </div>
+         <div class="item item-2">
+            
+         </div>
+         <div class="info item-2">
+            <h3>“Right. It's kind of rogue, it's guerilla, it's coming from the community.” </h3>
+            <p><strong>Maria, SF Parklet Program</strong></p>
+         </div>
+         <div class="item item-3">
+            
+         </div>
+         <div class="info item-3">
+            <h3>“That's how our Parket Program is run. We don't identify winners and losers. People come to us and say, I wanna do this.”</h3>
+            <p><strong>John, SF Parklet Program</strong></p>
+         </div>
+         <div class="item item-1">
+            
+         </div>
+         <div class="info item-1">
+            <h3>“These projects are about more than aesthetics or physical changes  in the public realm. There are deeper, more important stories about the social capital that a community creates when developing a project. The new community bonds, the increased civic engagement, that’s the real transformational impact.”</h3>
+            <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+         </div>
+         <div class="item item-2">
+            
+         </div>
+         <div class="info item-2">
+            <h3>“Success is if a parklet transforms a place into something better than it was before it got there, and I always say this, but for me, the Parket Program is the means to an end. It's not the final destination, because we want our streets and our neighborhoods to be better places physically for pedestrians and just for activation, them to just be vibrant places.”</h3>
+            <p><strong>John, SF Parklet Program</strong></p>
+         </div>
+         <div class="item item-3">
+            
+         </div>
+         <div class="info item-3">
+            <h3>“In order to actually make this work at scale and have it be a more permanent installation, we would need to have it permitted. You couldn't expect someone to just pay the meter indefinitely, forever.” </h3>
+            <p><strong>Maria, SF Parklet Program</strong></p>
+         </div>
+         <div class="item item-1">
+            
+         </div>
+         <div class="info item-1">
+            <h3>“I think a parklet is a pretty heavy capital investment. Especially considering all the requirements that we have. The ADA requirements, particularly. It's not a cheap thing to do, and I think it does need an uplift from government to help a business that wouldn't be able to do it otherwise.”</h3>
+            <p><strong>John, SF Parklet Program</strong></p>
+         </div>
+         <div class="item item-2">
+            
+         </div>
+         <div class="info item-2">
+            <h3>“Our policy framework and placemaking ordinance - Places for People - reflect the highest order of systemic change for our city and urbanism in general. We’ve synthesized all the lessons learned from years of experimentation in the public realm  into a streamlined system, which itself is a statement of civic values.”</h3>
+            <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+         </div>
+      </div>
+      <div class="accordion-right">
+         <h3>A System</h3>
+         <p>Uplift from the city government ensures the parklets are safe, accessible and inclusive.</p>
+      </div>
+   </div>
+</section>  
+
+<section class="single-items center-block full-screen" id="section8">
+   <div class="container">
+      <div class="col-md-6 col-sm-4" style="float: right; margin-left: 75px;">
+         <div class="item-titles darkcolor number-counters">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               What's Next?
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               Beyond just providing more open public space for San Francisco, the Parklet Program has developed into a global phenomenon inspiring cities around the world to give residents the power to transform underutilized areas into open public spaces—a radically bottom-up approach to urban planning. As the concept goes global, the city is working to ensure people in all neighborhoods across San Francisco have access to the open public space that parklets can provide.</p>
+         </div> 
+      </div>
+   </div>
+   <!-- SCROLL ARROW -->
+   <p class="wow fadeInUp arrow">
+      <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section8_1">
+         <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+      </a>
+   </p>
+</section>
+
+<section class="single-items center-block full-screen" id="section8_1">
    
 </section>  
-<section class="single-items center-block parallaxie full-screen" id="section7_2">
+<section class="single-items center-block full-screen" id="section8_2">
 
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section7_3">
+<section class="single-items center-block full-screen" id="section8_3">
 
 </section>
-<section class="single-items full-screen" id="section8">
-      
+<section class="single-items center-block full-screen" id="section8_4">
 
 </section>
-
-<section class="single-items center-block parallaxie full-screen" id="section8_1">
-   
-</section>  
-<section class="single-items center-block parallaxie full-screen" id="section8_2">
+<section class="single-items center-block full-screen" id="section8_5">
 
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section8_3">
+<section class="single-items center-block full-screen" id="section8_6">
 
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section8_4">
+<section class="single-items center-block full-screen" id="section8_7">
 
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section8_5">
+<section class="single-items center-block full-screen" id="section8_8">
 
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section8_6">
-
+<section class="single-items center-block full-screen" id="section9">
+   <div class="container">
+      <div class="col-md-12">
+         <div class="item-titles darkcolor">
+            <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+               Become a Sponsor
+            </h2>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               The city is actively working to make sure the Parklet Program serves all neighborhoods and sponsor-types equally—from cafes to community centers, and from Bayview to Sea Cliff.</p>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               Submit a proposal to bring a parklet to your neighborhood!</p>
+            <a href="https://groundplaysf.org/parklet-proposal-form/" target="_blank">
+               <button class="sponsor-button">
+                  <span>Submit Parklet Proposal</span>
+               </button>
+            </a>
+            <ul class="sponsor-links">
+               <li><p><a href="https://groundplaysf.org/parklets/#who" target="_blank">Who can build or sponsor a parklet?</a></p></li>
+               <li><p><a href="https://groundplaysf.org/parklets/#howmuch" target="_blank">How much does it cost?</a></p></li>
+               <li><p><a href="https://groundplaysf.org/parklets/#how" target="_blank">How can I apply to build a parklet?</a></p></li>
+            </ul>
+            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+               For more information, visit <a href="http://www.parklets.org" target="_blank">www.parklets.org</a> or feel free to email us at <a href="mailto:info@parklets.org" target="_blank">info@parklets.org</a></p>
+         </div> 
+      </div>
+   </div>
+   <!-- SCROLL ARROW -->
+   <p class="wow fadeInUp arrow">
+      <a class="scroll-arrow wow slower heartBeat pagescroll" href="#home">
+         <img src="images/scroll-top.svg" alt="Scroll Up" title="Scroll Up" />
+      </a>
+   </p>
 </section>
-<section class="single-items center-block parallaxie full-screen" id="section9">
-
-</section>
-
-<!-- Mapbox -->
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>
-
+<footer class="bg_dark">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 center">
+            <p class="whitecolor text-center">
+               <a href="https://stae.co/" target="_blank">Learn more about Stae</a> and how to empower people in your city to build with civic data.
+            </p>
+            <p class="whitecolor text-center">
+               <a href="https://opnbx.com/" target="_blank">Learn more about Openbox</a> and how we design for better urban living.
+            </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12 center">
+            <div class="whitecolor text-center">
+               <p data-wow-delay="1000ms"" class="wow fadeInUp">
+                  <img data-wow-delay="2000ms" src="images/logos_light.svg" alt="wow fadeInUp logo" class="logos">
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery-ui.min.css"></script>
@@ -1542,19 +1817,49 @@ data-aos-offset="0" class="full-screen" id="section2_8">
 <script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
 <script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
 
-
 <script src="js/functions.js"></script>
-
-<script src="js/fullpage.js"></script>
-<script src="js/fullpage.extensions.min.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <script>
    AOS.init({
       duration: 1200,
-      easing: 'ease-in-out-back'
+      easing: 'ease-in-out-back',
    });
+</script>
+
+<script>
+   /* 
+	All Thanks To Osama ElZero 
+*/
+
+$(function () {
+    
+    'use strict';
+    
+    // Give Active Class
+    
+    $('.item').first().addClass('active');
+    
+    // Show First Info
+    
+    $('.info').first().show().animate({width: '40%'});
+    
+    // Show Info On Click
+    
+    $('.item').click(function () {
+        
+        $(this).addClass("active").siblings('.item').removeClass('active');
+        
+        $(this).next().show().animate({width: '40%'}).siblings('.info').animate({width: 0}, function () {
+            
+            $(this).hide();
+            
+        });
+        
+    });
+    
+});
 </script>
 
 <script>
@@ -1576,7 +1881,19 @@ data-aos-offset="0" class="full-screen" id="section2_8">
 </script>
 
 <!-- Time Series Tooltips -->
+<script>
+   var specifiedElement = document.getElementsByClassName('exploratorium-hotspots');
 
+      //I'm using "click" but it works with any event
+      document.addEventListener('click', function(event) {
+      var isClickInside = specifiedElement.contains(event.target);
+
+      if (!isClickInside) {
+         //the click was outside the specifiedElement, do something
+         document.getElementsByClassName('exploratorium-hotspots').classList.toggle('selected');
+      }
+   });
+</script>
 <script>
    document.getElementById('Hotspot_2008').addEventListener('click', function() {
       document.getElementById('Hotspot_2008').classList.toggle('selected');
@@ -1585,92 +1902,75 @@ data-aos-offset="0" class="full-screen" id="section2_8">
    document.getElementById('Hotspot_2009').addEventListener('click', function() {
       document.getElementById('Hotspot_2009').classList.toggle('selected');
       document.getElementById('2009_Hotspot_display').classList.toggle('show');
+   })
+   document.getElementById('taraval-hotspot-1').addEventListener('click', function() {
+      document.getElementById('taraval-hotspot-1').classList.toggle('selected');
+      document.getElementById('taraval-hotspots-container').classList.toggle('taraval-hotspot-1');
+   })
+   document.getElementById('taraval-hotspot-2').addEventListener('click', function() {
+      document.getElementById('taraval-hotspot-2').classList.toggle('selected');
+      document.getElementById('taraval-hotspots-container').classList.toggle('taraval-hotspot-2');
+   })
+   document.getElementById('taraval-hotspot-3').addEventListener('click', function() {
+      document.getElementById('taraval-hotspot-3').classList.toggle('selected');
+      document.getElementById('taraval-hotspots-container').classList.toggle('taraval-hotspot-3');
+   })
+   document.getElementById('exploratorium-hotspot-1').addEventListener('click', function() {
+      document.getElementById('exploratorium-hotspot-1').classList.toggle('selected');
+      document.getElementById('exploratorium-hotspots-container').classList.toggle('exploratorium-hotspot-1');
+   })
+   document.getElementById('exploratorium-hotspot-2').addEventListener('click', function() {
+      document.getElementById('exploratorium-hotspot-2').classList.toggle('selected');
+      document.getElementById('exploratorium-hotspots-container').classList.toggle('exploratorium-hotspot-2');
+   })
+   document.getElementById('exploratorium-hotspot-3').addEventListener('click', function() {
+      document.getElementById('exploratorium-hotspot-3').classList.toggle('selected');
+      document.getElementById('exploratorium-hotspots-container').classList.toggle('exploratorium-hotspot-3');
    });
-
 </script>
 
 <!-- What People Are Saying/Doing Tooltips -->
 
 <script>
    document.getElementById('doing-tooltip1').addEventListener('click', function() {
-      document.getElementById('doing-tooltip1').classList.add('selected');
-      document.getElementById('doing').classList.add('selected');
-      document.getElementById('doing-tooltip1-text').classList.add('show');
-   })
-   document.getElementById('doing-tooltip1').addEventListener('mouseout', function() {
-      document.getElementById('doing-tooltip1').classList.remove('selected');
-      document.getElementById('doing').classList.remove('selected');
-      document.getElementById('doing-tooltip1-text').classList.remove('show');
+      document.getElementById('doing-tooltip1').classList.toggle('selected');
+      document.getElementById('doing').classList.toggle('selected');
+      document.getElementById('doing-tooltip1-text').classList.toggle('show');
    })
    document.getElementById('doing-tooltip2').addEventListener('click', function() {
-      document.getElementById('doing-tooltip2').classList.add('selected');
-      document.getElementById('doing').classList.add('selected');
-      document.getElementById('doing-tooltip2-text').classList.add('show');
-   })
-   document.getElementById('doing-tooltip2').addEventListener('mouseout', function() {
-      document.getElementById('doing-tooltip2').classList.remove('selected');
-      document.getElementById('doing').classList.remove('selected');
-      document.getElementById('doing-tooltip2-text').classList.remove('show');
+      document.getElementById('doing-tooltip2').classList.toggle('selected');
+      document.getElementById('doing').classList.toggle('selected');
+      document.getElementById('doing-tooltip2-text').classList.toggle('show');
    })
    document.getElementById('doing-tooltip3').addEventListener('click', function() {
-      document.getElementById('doing-tooltip3').classList.add('selected');
-      document.getElementById('doing').classList.add('selected');
-      document.getElementById('doing-tooltip3-text').classList.add('show');
-   })
-   document.getElementById('doing-tooltip3').addEventListener('mouseout', function() {
-      document.getElementById('doing-tooltip3').classList.remove('selected');
-      document.getElementById('doing').classList.remove('selected');
-      document.getElementById('doing-tooltip3-text').classList.remove('show');
+      document.getElementById('doing-tooltip3').classList.toggle('selected');
+      document.getElementById('doing').classList.toggle('selected');
+      document.getElementById('doing-tooltip3-text').classList.toggle('show');
    })
    document.getElementById('doing-tooltip4').addEventListener('click', function() {
-      document.getElementById('doing-tooltip4').classList.add('selected');
-      document.getElementById('doing').classList.add('selected');
-      document.getElementById('doing-tooltip4-text').classList.add('show');
-   })
-   document.getElementById('doing-tooltip4').addEventListener('mouseout', function() {
-      document.getElementById('doing-tooltip4').classList.remove('selected');
-      document.getElementById('doing').classList.remove('selected');
-      document.getElementById('doing-tooltip4-text').classList.remove('show');
+      document.getElementById('doing-tooltip4').classList.toggle('selected');
+      document.getElementById('doing').classList.toggle('selected');
+      document.getElementById('doing-tooltip4-text').classList.toggle('show');
    })
    document.getElementById('saying-tooltip1').addEventListener('click', function() {
-      document.getElementById('saying-tooltip1').classList.add('selected');
-      document.getElementById('saying').classList.add('selected');
-      document.getElementById('saying-tooltip1-text').classList.add('show');
-   })
-   document.getElementById('saying-tooltip1').addEventListener('mouseout', function() {
-      document.getElementById('saying-tooltip1').classList.remove('selected');
-      document.getElementById('saying').classList.remove('selected');
-      document.getElementById('saying-tooltip1-text').classList.remove('show');
+      document.getElementById('saying-tooltip1').classList.toggle('selected');
+      document.getElementById('saying').classList.toggle('selected');
+      document.getElementById('saying-tooltip1-text').classList.toggle('show');
    })
    document.getElementById('saying-tooltip2').addEventListener('click', function() {
-      document.getElementById('saying-tooltip2').classList.add('selected');
-      document.getElementById('saying').classList.add('selected');
-      document.getElementById('saying-tooltip2-text').classList.add('show');
-   })
-   document.getElementById('saying-tooltip2').addEventListener('mouseout', function() {
-      document.getElementById('saying-tooltip2').classList.remove('selected');
-      document.getElementById('saying').classList.remove('selected');
-      document.getElementById('saying-tooltip2-text').classList.remove('show');
+      document.getElementById('saying-tooltip2').classList.toggle('selected');
+      document.getElementById('saying').classList.toggle('selected');
+      document.getElementById('saying-tooltip2-text').classList.toggle('show');
    })
    document.getElementById('saying-tooltip3').addEventListener('click', function() {
-      document.getElementById('saying-tooltip3').classList.add('selected');
-      document.getElementById('saying').classList.add('selected');
-      document.getElementById('saying-tooltip3-text').classList.add('show');
-   })
-   document.getElementById('saying-tooltip3').addEventListener('mouseout', function() {
-      document.getElementById('saying-tooltip3').classList.remove('selected');
-      document.getElementById('saying').classList.remove('selected');
-      document.getElementById('saying-tooltip3-text').classList.remove('show');
+      document.getElementById('saying-tooltip3').classList.toggle('selected');
+      document.getElementById('saying').classList.toggle('selected');
+      document.getElementById('saying-tooltip3-text').classList.toggle('show');
    })
    document.getElementById('saying-tooltip4').addEventListener('click', function() {
-      document.getElementById('saying-tooltip4').classList.add('selected');
-      document.getElementById('saying').classList.add('selected');
-      document.getElementById('saying-tooltip4-text').classList.add('show');
-   })
-   document.getElementById('saying-tooltip4').addEventListener('mouseout', function() {
-      document.getElementById('saying-tooltip4').classList.remove('selected');
-      document.getElementById('saying').classList.remove('selected');
-      document.getElementById('saying-tooltip4-text').classList.remove('show');
+      document.getElementById('saying-tooltip4').classList.toggle('selected');
+      document.getElementById('saying').classList.toggle('selected');
+      document.getElementById('saying-tooltip4-text').classList.toggle('show');
    });
 </script>
 

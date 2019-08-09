@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+<meta property="og:url" content="http://stae.co/parklets" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="A Look at the Human Impact of Parklets" />
+<meta property="og:description" content="and the People Who Make Them" />
+<meta property="og:image" content="http://markmalazarte.com/parklets/images/parklets-title.png" />
+
+<title>A Look at the Human Impact of Parklets and the People Who Make Them</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/cubeportfolio.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" type="text/css" href="css/settings.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+<link rel="icon" href="images/favicon.png">
+
+</head>
+
+<body data-wow-delay="2000ms" class="fadeIn wow">
+
+
+<div id="fullpage">
+
+    <section class="single-items center-block full-screen" id="section8_1">
+    
+    </section>  
+    <section class="single-items center-block full-screen" id="section8_2">
+
+    </section>
+    <section class="single-items center-block full-screen" id="section8_3">
+
+    </section>
+    <section class="single-items center-block full-screen" id="section8_4">
+
+    </section>
+    <section class="single-items center-block full-screen" id="section8_5">
+
+    </section>
+    <section class="single-items center-block full-screen" id="section8_6">
+
+    </section>
+    <section class="single-items center-block full-screen" id="section8_7">
+
+    </section>
+    <section class="single-items center-block full-screen" id="section8_8">
+
+    </section>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery-ui.min.css"></script>
+
+<!--Bootstrap Core-->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--to view items on reach-->
+<script src="js/jquery.appear.js"></script>
+
+<!-- Scroll Magic -->
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/debug.addIndicators.min.js"></script>
+<script src="js/animation.gsap.min.js"></script>
+
+
+<!--number counters-->
+<script src="js/jquery-countTo.js"></script>
+
+<!--Parallax Background-->
+<script src="js/parallaxie.js"></script>
+
+<!--FancyBox popup-->
+<script src="js/jquery.fancybox.min.js"></script>
+   
+<!--WOw animations-->
+<script src="js/wow.min.js"></script>
+
+<!--Revolution SLider-->
+<script src="js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+
+<script src="js/functions.js"></script>
+
+<script src="js/fullpage.js"></script>
+<script src="js/fullpage.extensions.min.js"></script>
+
+
+<script>
+   new fullpage({
+    licenseKey: 'E9F12B29-B22148B1-AE8057F7-B530053F'
+});
+</script>
+
+<!-- Map Fade -->
+<script>
+   $(document).ready(function() {
+    console.log("ready");
+
+    $('#fullpage').fullpage({
+
+        scrollingSpeed: 500,
+        
+        afterRender: function() {
+            $('#fullpage .section:not(:first)').fadeOut(0);
+        },
+        
+        onLeave: function(index, nextIndex, didivion) {
+            console.log("onSlideLeave");
+            if(didivion=="down") {
+                $('#fullpage .section').eq(index-1).delay(2000).fadeOut(0);
+                $('#fullpage .section').eq(nextIndex-1).fadeIn(3000);
+            } else {
+                $('#fullpage .section').eq(index-1).fadeOut(2000);
+                $('#fullpage .section').eq(nextIndex-1).fadeIn(0);
+            }
+        },
+    });
+});
+</script>
+
+
+</body>
+</html>

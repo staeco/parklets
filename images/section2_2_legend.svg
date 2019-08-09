@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="7px" viewBox="0 0 116 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Section-02-02" transform="translate(-61.000000, -194.000000)">
+            <g id="Group-3" transform="translate(62.000000, 193.000000)">
+                <g id="Group-2" fill="#393A44">
+                    <text id="Current:-59" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold">
+                        <tspan x="10" y="7">Current: 59</tspan>
+                    </text>
+                    <circle id="Oval" stroke="#393A44" cx="2.5" cy="4.5" r="2.5"></circle>
+                </g>
+                <g id="Group" transform="translate(63.000000, 0.000000)">
+                    <text id="Removed:-17" font-family="DMSans-Bold, DM Sans" font-size="7" font-weight="bold" fill="#393A44">
+                        <tspan x="10" y="7">Removed: 17</tspan>
+                    </text>
+                    <circle id="Oval-Copy" stroke="#393A44" opacity="0.9" cx="2.5" cy="4.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
