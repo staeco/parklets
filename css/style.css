@@ -426,12 +426,11 @@ p.arrow {
 
 .home-title {
    position: relative;
-   margin-top: 15%;
 }
 .parklet-person {
    position: absolute;
    left: -400px;
-   top: -65px;
+   top: -40px;
    width: 211px;
    -webkit-transition: all .5s ease-in-out;
 }
