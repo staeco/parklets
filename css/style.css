@@ -210,8 +210,7 @@ footer {
    padding: 100px 50px 30px 50px;
 }
 footer .logos {
-   width: 250px;
-   margin: 30px auto;
+   
 }
 footer p a {
    font-weight: bold;
@@ -343,10 +342,27 @@ section {
    padding: 100px 0 ;
    max-width: 600px;
 }
-#home .logos {
-   margin-bottom: 50px;
-   clear: both;
-   width: 250px;
+/* Logos */
+.logo-container {
+   width: 100%;
+   display: block;
+}
+.logo-container li {
+   margin: 0 30px 0 0;
+   display: inline-block;
+}
+.logo-container li:last-child {
+   margin: 0;
+}
+.logo-container li:last-child .logos {
+   height: 45px;
+}
+.logo-container .logos {
+   height: 18px;
+}
+.logo-container .logos:hover {
+   opacity: 0.65;
+   -webkit-transition: all .25s ease-in-out;
 }
 #home p {
    margin: 30px 0 0 0;
@@ -415,8 +431,9 @@ p.arrow {
 .parklet-person {
    position: absolute;
    left: -400px;
-   top: 20px;
+   top: -65px;
    width: 211px;
+   -webkit-transition: all .5s ease-in-out;
 }
 #intro {
    background-color: #FCF5E9;
