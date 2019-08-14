@@ -24,7 +24,7 @@
 
 </head>
 
-<body id="approach" data-wow-delay="2000ms" class="fadeIn wow">
+<body id="approach">
 
 <!-- Progress Bar -->
 <div class="header wow fadeInLeft">
@@ -123,10 +123,12 @@
                   Making Our Data Accessible
                </h1>
                <p data-wow-delay="1000ms"" class="wow fadeInUp top25">
-                The goal of this project is to look at the impact and benefits of parklets using a people-centric and data-driven approach. The city of San Francisco has a specific interest in public space as it relates to equity, diversity, and inclusion. We want to understand how public spaces reflect and influence neighborhood diversity, so future decisions regarding mobility and land use can lead to more equitable and inclusive human outcomes. This data story was developed by mixing together quantitative and qualitative research methods to reveal patterns and insights that cannot be captured by one methodology alone.
+                  The goal of this project is to look at the impact and benefits of parklets using a people-centric and data-driven approach. The City of San Francisco has a specific interest in public space as it relates to equity, diversity, and inclusion. We want to understand how public spaces reflect and influence neighborhood diversity, so future decisions regarding mobility and land use can lead to more equitable and inclusive human outcomes. This data story was developed by mixing together quantitative and qualitative research methods to reveal patterns and insights that cannot be captured by one methodology alone.
+
                </p>
                <p data-wow-delay="1000ms"" class="wow fadeInUp top25">
-                Cities use data to make decisions. Residents should have access to those same data sets. San Francisco has been a national <a href="https://www.centreforpublicimpact.org/case-study/open-data-san-francisco-california/" target="_blank">leader in open data</a>, and SF Planning has been an early adopter of data-driven planning, including by operationalizing the collection of Public Life Data, through <a href="https://sfplanning.org/project/public-space-and-public-life-studies" target="_blank">Public Life Studies</a>. This project makes 2014 Public Life Data on Parklets available to the public in a standardized, machine readable format for the first time, and draws on various additional publicly available data, as well as data we collected ourselves. All these sources are shared below.
+                Cities use data to make decisions. Residents should have access to those same data sets. San Francisco has been a national <a href="https://www.centreforpublicimpact.org/case-study/open-data-san-francisco-california/" target="_blank">leader in open data</a>, and SF Planning has been an early adopter of data-driven planning, including by operationalizing the collection of Public Life Data, through <a href="https://sfplanning.org/project/public-space-and-public-life-studies" target="_blank">Public Life Studies</a>. This project makes 2014 Public Life Data on Parklets available to the public in a standardized, machine readable format for the first time, and draws on various additional publicly available data, as well as data we collected ourselves.</p>
+                <p data-wow-delay="1000ms"" class="wow fadeInUp top25">All these <a class="pagescroll" href="#about2">sources are shared below</a>.</p>
                </p>
             </div>
          </div>
@@ -498,6 +500,18 @@
 <script src="js/fullpage.js"></script>
 <script src="js/fullpage.extensions.min.js"></script>
 
+<script>
+   $(document).ready(function () {
+      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+      if (window.location.hash && isChrome) {
+         setTimeout(function () {
+               var hash = window.location.hash;
+               window.location.hash = "";
+               window.location.hash = hash;
+         }, 300);
+      }
+   });
+</script>
 
 <script>
    function infographicTab(evt, tabName) {
