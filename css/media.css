@@ -293,7 +293,7 @@ and (max-device-width : 480px) {
     font-size: .90em !important;
   }
   body#approach h1, h1 {
-    font-size: 3rem !important;
+    font-size: 2.85rem !important;
     line-height: 3rem;
   }
   #home {
@@ -401,6 +401,7 @@ and (max-device-width : 480px) {
   }
   #section1.mobile {
     height: auto !important;
+    padding: 20px 0 !important;
   }
   #section1 .interactive {
     margin: 0 !important;
@@ -431,7 +432,7 @@ and (max-device-width : 480px) {
   #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
     width: 100% !important;
     position: relative !important;
-    height: 100vh !important;
+    height: auto !important;
     background-size: 150% !important;
   }
   .fixedmenu {
@@ -453,6 +454,7 @@ and (max-device-width : 480px) {
   .saying-doing {
     float: left !important;
     margin: 0 !important;
+    padding: 0 !important;
     text-align: center;
     display: block !important;
     width: 100% !important;
@@ -460,12 +462,34 @@ and (max-device-width : 480px) {
   }
   .saying-doing svg {
     width: 100% !important;
-    margin: 0 auto !important;
+    margin: 20px auto !important;
+    height: auto;
   }
  .saying-doing-content {
     padding: 0 !important;
     display: block !important;
     float: left !important;
     clear: both !important;
+  }
+  .interactive .tooltips h4 {
+    line-height: 1.25em !important;
+    font-size: 1.35rem !important;
+  }
+  .interactive .tooltips p {
+    line-height: 1.10em !important;
+    font-size: 1.10rem !important;
+    margin-bottom: 0 !important;
+  }
+  #tab-saying .interactive .tooltips {
+    padding: 0 !important;
+    width: 120px !important;
+    top: 60px !important;
+    left: 15px !important;
+  }
+  #tab-doing .interactive .tooltips {
+    padding: 0 !important;
+    width: 120px !important;
+    top: 130px !important;
+    right: -25px !important;
   }
 }
