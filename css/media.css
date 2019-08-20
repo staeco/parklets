@@ -572,6 +572,7 @@ and (max-device-width : 480px) {
   #section5.mobile .cbp-ready .cbp-item {
     padding: 20px 20px 0px 20px !important;
     margin: 0px !important;
+    width: 100% !important;
     position: static !important;
   }
   #section5.mobile .gallery-top {
