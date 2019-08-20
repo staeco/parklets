@@ -320,9 +320,13 @@ and (max-device-width : 480px) {
     line-height: 2.25rem;
     font-weight: 100;
   }
-  p, h4, .side-menu p, .side-nav .nav-footer .nav-item .nav-link {
+  p, h4, .side-nav .nav-footer .nav-item .nav-link {
     font-size: 1.15rem !important;
     line-height: 1.65rem !important;
+  }
+  .side-menu p {
+    font-size: 0.90rem !important;
+    line-height: 1.05rem !important;
   }
   .side-nav .navbar-nav .nav-link {
     font-size: 1.25rem !important;
@@ -515,7 +519,7 @@ and (max-device-width : 480px) {
     margin: -5px -15px 0 0 !important;
   }
   .sidemenu_btn {
-    margin: 0 !important;
+    margin: 4px 0 0 0 !important;
   }
   .side-menu .side-nav {
     margin: 40px 0 0 0 !important;
