@@ -418,7 +418,7 @@ and (max-device-width : 480px) {
     margin: 0 !important;
   }
   #intro.mobile {
-    height: 40vh !important;
+    height: calc(40vh + 80px) !important;
     padding-top: 80px;
   }
   #intro.mobile .rev_slider li.tp-revslider-slidesli {
