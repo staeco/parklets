@@ -296,6 +296,7 @@ p {
 }
 section {
    height: 100vh;
+   overflow: hidden;
 }
 
 /* Style the header: fixed position (always stay at the top) */
@@ -457,7 +458,6 @@ p.arrow {
    background-size: 40% !important;
    background-repeat: no-repeat;*/
    z-index: 800;
-   position: sticky;
    height: 140vh !important;
    padding: 50px 0 100px !important;
 }
