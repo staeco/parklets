@@ -481,7 +481,19 @@ and (max-device-width : 480px) {
     line-height: 1.65rem !important;
   }
   .fixedmenu {
-    background: rgba(252, 245, 233,0.80) !important;
+    background: rgba(252, 245, 233,0.70) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+  .sponsor-button {
+    transform: skew(1deg) rotate(-1deg) !important;
+    height: 38px !important;
+    margin-top: 13px !important;
+  }
+  .sponsor-button span {
+    top: 0 !important;
+    padding-top: 8px !important;
+    height: 38px !important;
+    transform: skew(-1deg) rotate(1deg) !important;
   }
   .navbar {
     width: 100% !important;
@@ -499,7 +511,7 @@ and (max-device-width : 480px) {
   .saying-doing {
     float: left !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 20px 0 !important;
     text-align: center;
     display: block !important;
     width: 100% !important;
