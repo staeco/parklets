@@ -122,13 +122,13 @@ body#approach section {
    margin: 125px auto 100px auto;
 }
 body#approach #about1 {
-   margin: 0px auto 100px auto;
+   margin: 100px auto 100px auto;
 }
 body#approach .center {
    margin: 0 auto !important;
 }
 body#approach h1 {
-   font-size: 4em !important;
+   font-size: 4em;
 }
 body#approach h2 {
    font-family: 'DM Sans', sans-serif;
@@ -261,10 +261,11 @@ h1 {
    font-family: 'DM Serif Text', serif;
    font-weight: 500;
 }
-h1 .subhead {
+h3.subhead {
    font-size: 2rem;
    font-family: 'DM Sans', sans-serif;
    font-weight: 100;
+   line-height: 2rem;
 }
 h2 {
    font-size: 2.25rem;
@@ -331,8 +332,8 @@ section {
 #home {
    background-color: #FCF5E9;
    background-image: url(../images/parklets-bg.svg);
-   background-position: -10px center !important;
-   background-size: 40% !important;
+   background-position: -10px center;
+   background-size: 40%;
    background-repeat: no-repeat;
    background-attachment: scroll !important;
    z-index: 800;
@@ -598,6 +599,14 @@ p.arrow {
 }
 .interactive-container {
    position: relative;
+}
+.saying-doing {
+   float: right;
+   margin-left: 75px;
+   text-align: center;
+}
+.saying-doing-content {
+   padding-right: 70px;
 }
 #tab-saying .interactive .tooltips {
    position: absolute;
@@ -3012,7 +3021,6 @@ a {
 .side-menu.side-menu-active .side-nav ol.navbar-nav .nav-item {
    color: #FCF5E9;
    font-weight: 600;
-   font-size: 1.15rem;
    margin: 0 0 10px 0;
 }
 

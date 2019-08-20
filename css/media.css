@@ -119,9 +119,6 @@
 }
 
 @media (max-width:1200px) {
-  html {
-     font-size: 15px;
-  }
   h1,
   #parallax-bg h1 {
      font-size: 2.56rem;
@@ -149,9 +146,6 @@
 }
 
 @media (max-width:992px) {
-  html {
-     font-size: 14px;
-  }
   h1,
   #parallax-bg h1 {
      font-size: 2.75rem;
@@ -186,9 +180,7 @@
 }
 
 @media (max-width:768px) {
-  .container {
-     max-width: 98%;
-  }
+  
   h1,
   #parallax-bg h1 {
      font-size: 2.65rem;
@@ -282,4 +274,133 @@
   }
 }
 
+/* Approach Page */
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  body#approach section {
+    padding: 0px 20px !important;
+  }
+  body#approach #about1 {
+    margin-top: 80px !important;
+  }
+  body#approach .photo {
+    width: 95% !important;
+  }
+  body#approach .photo img {
+    min-height: inherit !important;
+  }
+  .photo-caption {
+    font-size: .90em !important;
+  }
+  body#approach h1, h1 {
+    font-size: 3rem !important;
+    line-height: 3rem;
+  }
+  #home {
+    background-size: 65% !important;
+    background-position: -10px -50px !important;
+  }
+  .home-title {
+    padding-top: 70px;
+  }
+  p.arrow {
+    bottom: 30px !important;
+  }
+  h3.subhead {
+    font-size: 1.75rem !important;
+    line-height: 2.25rem;
+    font-weight: 100;
+  }
+  p, h4, .side-menu p {
+    font-size: 1.35rem !important;
+  }
+  ul.source-list p {
+    line-height: 1.5em !important;
+  }
+  ul.qual-list li {
+    margin: 0 !important;
+  }
+  ul.qual-list p {
+    width: 100%;
+    clear: both;
+    display: block !important;
+  }
+  .logo-container li {
+    display: block !important;
+    width: 100%;
+    margin: 0 0 40px 0 !important;
+  }
+  #home .logo-container li {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 30px 0 0 !important;
+  }
+  .logo-container li:first-child {
+    margin-top: 50px !important;
+  }
+  #home .logo-container li:first-child {
+    margin-top: 20px !important;
+  }
+  .logo-container li:last-child .logos {
+    height: 65px !important;
+  }
+  #home .logo-container li:last-child .logos {
+    height: 45px !important;
+  }
+ .logo-container .logos {
+    height: 28px !important;
+  }
+  #home .logo-container .logos {
+    height: 18px !important;
+  }
+  footer {
+    padding: 60px 20px 30px !important;
+  }
+  .side-menu {
+    width: 100% !important;
+  }
+  .side-menu .inner-wrapper {
+    padding: 30px !important;
+  }
+  #home .container {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 40px !important;
+    overflow: hidden;
+  }
+  .side-nav .navbar-nav .nav-link {
+    font-size: 1.65em !important;
+    line-height: 1.95em !important;
+  }
+  .side-nav .nav-footer .nav-item .nav-link {
+    font-size: 1.35em !important;
+  }
+  .fixedmenu {
+    background: rgba(252, 245, 233,0.80) !important;
+  }
+  .saying-doing {
+    float: none !important;
+    margin: 0 !important;
+    text-align: center;
+    display: block !important;
+    width: 100% !important;
+    clear: both !important;
+  }
+  .saying-doing svg {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+ .saying-doing-content {
+    padding: 0 !important;
+    display: block !important;
+    float: none !important;
+    clear: both !important;
+  }
+}
