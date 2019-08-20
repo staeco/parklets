@@ -421,19 +421,37 @@ and (max-device-width : 480px) {
     background-position: -90px 90px !important;
     background-size: 130% !important;
   }
+  #section3.mobile {
+    background-position: center center !important;
+    background-size: 130% !important;
+  }
   svg {
     width: 100%;
   }
-  #section2_1, #section2_2, #section2_3, #section2_4, #section2_5, #section2_6, #section2_7, #section2_8 {
-    height: 300vh !important;
-    background-size: 250% !important;
-    background-position: top right !important;
+  #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
+    height: auto !important;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    padding: 20px 0;
+    background-size: 120vh !important;
+    background-position: -360px -30px !important;
+    background-attachment: scroll !important;
   }
   #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
     width: 100% !important;
     position: relative !important;
     height: auto !important;
+    padding: 62vh 30px 30px 30px !important;
+    background: transparent !important;
     background-size: 150% !important;
+  }
+  .map-link {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 62vh !important;
+  }
+  .small-quote h2 {
+    font-size: 1.15rem !important;
+    line-height: 1.65rem !important;
   }
   .fixedmenu {
     background: rgba(252, 245, 233,0.80) !important;
@@ -491,5 +509,12 @@ and (max-device-width : 480px) {
     width: 120px !important;
     top: 130px !important;
     right: -25px !important;
+  }
+  h2.subhead {
+    position: relative !important;
+    left: auto !important;
+    margin-left: -25px !important;
+    top: auto !important;
+    width: auto !important;
   }
 }

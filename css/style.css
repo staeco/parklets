@@ -1038,13 +1038,13 @@ a.underline:hover {
    background: url(../images/left-column.svg);
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-position: top right;
-   background-size: 100%;
-   width: 33%;
+   background-position: top left;
+   background-size: 35%;
+   width: 35%;
    min-width: 250px;
    padding: 100px 75px;
-   position: sticky;
-   position: -webkit-sticky;
+   height: 200vh;
+   position: relative;
 }
 .kepler-map {
    height: 100vh;
@@ -1552,9 +1552,9 @@ a.source:hover {
 }
 .map-link {
    display: block;
-   margin-left: 30%;
+   margin-left: 35%;
    margin-top: 100px;
-   width: 70%;
+   width: 65%;
    height: 170vh;
    right: 0;
    top: 0;
