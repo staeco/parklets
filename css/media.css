@@ -421,9 +421,13 @@ and (max-device-width : 480px) {
     background-position: -90px 90px !important;
     background-size: 130% !important;
   }
-  #section3.mobile {
+  #section3.mobile,
+  #section3_1.mobile,
+  #section3_2.mobile {
     background-position: center center !important;
     background-size: 130% !important;
+    height: auto !important;
+    padding: 40px 0 !important;
   }
   svg {
     width: 100%;
@@ -443,6 +447,29 @@ and (max-device-width : 480px) {
     padding: 62vh 30px 30px 30px !important;
     background: transparent !important;
     background-size: 150% !important;
+  }
+  #section3_2.mobile .taraval-left {
+    width: 100% !important;
+    min-width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    padding: 40px !important;
+    background-size: 150% !important;
+  }
+  div.mobile {
+    padding: 0 !important;
+  }
+  #section3_6.mobile,
+  #section4_5.mobile {
+    height: auto !important;
+  }
+  #section3_6.mobile .parklet-icons ul,
+  #section4_5.mobile .parklet-icons ul {
+    text-align: center !important;
+  }
+  #section3_6.mobile .parklet-icons li,
+  #section4_5.mobile .parklet-icons li {
+    margin: 0 0 75px 0 !important;
   }
   .map-link {
     margin: 0 !important;
