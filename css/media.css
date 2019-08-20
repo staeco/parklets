@@ -287,7 +287,7 @@ and (max-device-width : 480px) {
     padding: 0px 20px !important;
   }
   body#approach #about1 {
-    margin-top: 80px !important;
+    margin-top: 20px !important;
   }
   body#approach .photo {
     width: 95% !important;
@@ -306,6 +306,9 @@ and (max-device-width : 480px) {
     background-size: 65% !important;
     background-position: -10px -50px !important;
   }
+  #section9 {
+    padding: 30px !important;
+  }
   .home-title {
     padding-top: 70px;
   }
@@ -318,7 +321,8 @@ and (max-device-width : 480px) {
     font-weight: 100;
   }
   p, h4, .side-menu p {
-    font-size: 1.35rem !important;
+    font-size: 1.25rem !important;
+    line-height: 2rem !important;
   }
   ul.source-list p {
     line-height: 1.5em !important;
@@ -375,6 +379,48 @@ and (max-device-width : 480px) {
     padding: 40px !important;
     overflow: hidden;
   }
+  section .container {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px 40px;
+    overflow: hidden;
+  }
+  #section1.mobile {
+    height: auto !important;
+  }
+  #section1 .interactive {
+    margin: 0 !important;
+  }
+  #intro.mobile {
+    height: 40vh !important;
+  }
+  #intro.mobile .rev_slider li.tp-revslider-slidesli {
+    height: 40vh !important;
+  }
+  .parklet-caption h4 {
+    font-size: .90rem !important;
+    bottom: 10px !important;
+    left: 20px !important;
+  }
+  #section2.mobile {
+    background-position: -90px 90px !important;
+    background-size: 130% !important;
+  }
+  svg {
+    width: 100%;
+  }
+  #section2_1, #section2_2, #section2_3, #section2_4, #section2_5, #section2_6, #section2_7, #section2_8 {
+    height: 300vh !important;
+    background-size: 250% !important;
+    background-position: top right !important;
+  }
+  #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
+    width: 100% !important;
+    position: relative !important;
+    height: 100vh !important;
+    background-size: 150% !important;
+  }
   .side-nav .navbar-nav .nav-link {
     font-size: 1.65em !important;
     line-height: 1.95em !important;
@@ -386,7 +432,7 @@ and (max-device-width : 480px) {
     background: rgba(252, 245, 233,0.80) !important;
   }
   .saying-doing {
-    float: none !important;
+    float: left !important;
     margin: 0 !important;
     text-align: center;
     display: block !important;
@@ -394,13 +440,13 @@ and (max-device-width : 480px) {
     clear: both !important;
   }
   .saying-doing svg {
-    width: 90% !important;
+    width: 100% !important;
     margin: 0 auto !important;
   }
  .saying-doing-content {
     padding: 0 !important;
     display: block !important;
-    float: none !important;
+    float: left !important;
     clear: both !important;
   }
 }

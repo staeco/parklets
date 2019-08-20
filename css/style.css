@@ -439,7 +439,7 @@ p.arrow {
    background-color: #FCF5E9;
    z-index: 999;
    position: relative;
-   height: 60vh;
+   height: 60vh !important;
    overflow: hidden !important;
 }
 .container.padding {
@@ -602,11 +602,12 @@ p.arrow {
 }
 .saying-doing {
    float: right;
-   margin-left: 75px;
+   margin: 0;
    text-align: center;
 }
 .saying-doing-content {
-   padding-right: 70px;
+   padding-right: 40px;
+   float: left;
 }
 #tab-saying .interactive .tooltips {
    position: absolute;
