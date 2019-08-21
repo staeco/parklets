@@ -344,6 +344,9 @@ section {
    padding: 100px 0 ;
    max-width: 600px;
 }
+.section-intro {
+   float: right;
+}
 /* Logos */
 .logo-container {
    width: 100%;
@@ -605,9 +608,13 @@ p.arrow {
    margin: 0;
    text-align: center;
 }
-.saying-doing-content {
+.left-content {
    padding-right: 40px;
    float: left;
+}
+.right-content {
+   padding-left: 40px;
+   float: right;
 }
 #tab-saying .interactive .tooltips {
    position: absolute;
@@ -747,17 +754,17 @@ p.arrow {
 .taraval-interactive,
 .exploratorium-interactive {
    width: 100vw;
-   height: 100vh;
-   position: sticky;
+   height: 200vh;
+   position: absolute;
    top: 0;
-
+   left: 0;
 }
 .taraval-interactive .taraval-map {
    width: 100vw;
    height: 100vh;
 }
 #taraval-hotspots-container {
-   position: absolute;
+   position: fixed;
    width: 100%;
    height: 100vh;
    background-size: 100%;
@@ -766,6 +773,8 @@ p.arrow {
    background-image: url('../images/taraval_1.png');
    background-color: #dfd8cf;
    background-attachment: fixed;
+   bottom: 0;
+   left: 0;
 }
 #exploratorium-hotspots-container {
    position: sticky;
