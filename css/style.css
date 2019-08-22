@@ -205,9 +205,17 @@ ul.source-list .source-link {
 body#approach footer {
    margin-top: 50px;
 }
+#section9 .center {
+   margin: 0 auto;
+   text-align: center;
+}
 footer {
    margin: 0;
-   padding: 100px 50px 30px 50px;
+   width: 100vw;
+   height: auto;
+   padding: 50px 50px 35px 50px;
+   display: block;
+   clear: both;
 }
 footer .logos {
    
@@ -391,6 +399,7 @@ p.arrow {
    vertical-align: middle;
    -webkit-transition: .5s ease;
    transition: .5s ease;
+   margin: 0 auto;
 }
 .scroll-arrow:hover {
    opacity: .5;
@@ -763,6 +772,14 @@ p.arrow {
    width: 100vw;
    height: 100vh;
 }
+.taraval-interactive {
+   background-size: 100%;
+   background-position: 0px 0px;
+   background-repeat: no-repeat;
+   background-image: url('../images/taraval_1.png');
+   background-color: #dfd8cf;
+   background-attachment: fixed;
+}
 #taraval-hotspots-container {
    position: fixed;
    width: 100%;
@@ -808,15 +825,15 @@ p.arrow {
    cursor: pointer;
    width: 150px;
    height: 320px;
-   position: absolute;
-   top: 15%;
-   left: 40%;
+   position: relative;
+   top: 23%;
+   left: 42%;
 }
 #exploratorium-hotspot-1 {
    cursor: pointer;
    width: 24%;
    height: 100vh;
-   position: absolute;
+   position: relative;
    bottom: 5%;
    left: 0%;
 }
@@ -824,9 +841,9 @@ p.arrow {
    cursor: pointer;
    width: 50%;
    height: 200px;
-   position: absolute;
-   top: 43%;
-   left: 26%;
+   position: relative;
+   top: 22%;
+   right: 36%;
 }
 #exploratorium-hotspot-3 {
    cursor: pointer;
@@ -947,7 +964,6 @@ a.underline:hover {
    min-width: 450px;
    float: left;
    position: absolute;
-   min-height: 50vh;
    left: 0;
    top: 150px;
    padding: 80px;
@@ -971,7 +987,7 @@ a.underline:hover {
    background-position: -120px -20px !important;
    background-size: 75% !important;
    background-repeat: no-repeat;
-   z-index: 500;
+   z-index: 780;
 }
 .paragraph {
    position: relative;
@@ -1212,36 +1228,47 @@ a.underline:hover {
 #section3_1 {
    height: 100vh;
    background-color: #FCF5E9;
-   z-index: 720;
+   z-index: 750;
    position: relative;
 }
 #section3 {
-   z-index: 600 !important;
+   z-index: 750 !important;
    background-image: url(../images/section3-bg.svg);
    background-size: 50%;
    background-position: 100px center;
    background-repeat: no-repeat;
    //background-attachment: fixed;
 }
-#section3_2 {
-   height: 300vh !important;
-   background-color: #FCF5E9;
+
+#section3_2_container {
+   height: 250vh !important;
    position: relative;
+   z-index: 500;
+   width: 100%;
+}
+#section3_2_container iframe {
+   height: 100vh !important;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #FCF5E9;
+   background-image: url('../images/taraval_1.png');
+   z-index: 100;
+   overflow: hidden;
 }
 .taraval-instructions {
    width: 100%;
-   height: 200px;
    clear: both;
-   margin: 100px 0;
+   margin: 0 auto;
    position: absolute;
-   top: 20%;
+   top: 40px;
    left: 0;
    text-align: center;
    z-index: 400;
-   display: none;
+   display: block;
 }
 #section3_3 {
-   height: 100vh !important;
+   //height: 100vh !important;
    background-color: #FCF5E9;
    z-index: 750;
 }
@@ -1578,7 +1605,7 @@ a.source:hover {
    margin: 0 0 20px 0;
 }
 #section6_2 {
-   height: 800vh !important;
+   height: 300vh !important;
    z-index: 700;
    background-color: #FCF5E9;
 }
@@ -1861,7 +1888,21 @@ h3.accordion-title {
    background-image: url(../images/section7_8.jpg);
    z-index: 750;
 }
-
+#section8_container {
+   height: 3000vh !important;
+   position: relative;
+   z-index: 500;
+}
+#section8_container iframe {
+   height: 100vh !important;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #f3ede0;
+   background-image: url('../images/section8_02.jpg');
+   z-index: 100;
+   overflow: hidden;
+}
 #section8 {
    height: 100vh !important;
    background-color: #f3ede0;
@@ -1869,62 +1910,84 @@ h3.accordion-title {
    z-index: 750;
 }
 #section8_1 {
-   height: 100vh !important;
    background-color: #f3ede0;
    background-image: url('../images/section8_02.jpg');
    z-index: 750;
 }
 #section8_2 {
-   height: 100vh !important;
    background-color: #f3ede0;
    background-image: url('../images/section8_03.jpg');
    z-index: 750;
 }
 #section8_3 {
-   height: 100vh !important;
    background-color: #f3ede0;
    background-image: url('../images/section8_04.jpg');
    z-index: 750;
 }
 #section8_4 {
-   height: 100vh !important;
    background-color: #f3ede0;
    background-image: url('../images/section8_05.jpg');
    z-index: 750;
 }
 #section8_5 {
-   height: 100vh !important;
    background-color: #f3ede0;
    bbackground-image: url('../images/section8_06.jpg');
    z-index: 750;
 }
 #section8_6 {
-   height: 100vh !important;
    background-color: #FCF5E9;
    background-image: url('../images/section8_07.jpg');
    z-index: 750;
 }
 #section8_7 {
-   height: 100vh !important;
    background-color: #FCF5E9;
    background-image: url('../images/section8_08.jpg');
    z-index: 750;
 }
 #section8_8 {
-   height: 100vh !important;
    background-color: #FCF5E9;
    background-image: url('../images/section8_09.jpg');
    z-index: 750;
 }
 #section9 {
-   height: 100vh !important;
+   height: auto !important;
    background-color: #B5E1D6;
    background-image: url('../images/section9_bg.svg');
    text-align: center;
-   background-position: center center;
-   z-index: 750;
+   background-position: center top;
+   z-index: 500;
    background-size: 110%;
-   padding: 350px;
+   background-attachment: scroll;
+}
+#section9 .container {
+   clear: both;
+   padding: 100px;
+   text-align: center;
+   margin: 0 auto;
+}
+#map_arrow {
+   width: 100%;
+   clear: both;
+   display: block;
+   position: absolute !important;
+   margin: 0 auto !important;
+   text-align: center !important;
+   bottom: 60px !important;
+}
+#section9 .arrow {
+   width: 100%;
+   clear: both;
+   display: block;
+   position: relative !important;
+   margin: 25px auto !important;
+   text-align: center !important;
+   bottom: 0 !important;
+}
+#section9 footer .container {
+   clear: none;
+   padding: 0;
+   text-align: center;
+   margin: 0 auto;
 }
 #section9 button.sponsor-button {
    transform: skew(3deg) rotate(-1deg);

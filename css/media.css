@@ -453,7 +453,7 @@ and (max-device-width : 480px) {
     border-top: 1px solid rgba(0,0,0,0.25);
     padding: 20px 0;
     background-size: 120vh !important;
-    background-position: -360px -30px !important;
+    background-position: -95vw -30px !important;
     background-attachment: scroll !important;
   }
   #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
