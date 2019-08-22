@@ -68,6 +68,8 @@ h1.title {
   padding: 10px 20px;
   color: #FCF5E9;
   background-color: #393A44;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .caption {
   font-size: 14px;

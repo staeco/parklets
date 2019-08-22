@@ -271,8 +271,41 @@
   }
 }
 
-/* Approach Page */
-
+/* iPhone 5/SE */
+@media only screen 
+and (min-device-width : 75px) 
+and (max-device-width : 320px) {
+  body {
+    zoom: 0.90 !important;
+  }
+  #home.mobile {
+    background-size: 65% !important;
+    background-position: -80px 10px !important;
+    height: 120vh !important;
+    zoom: .90 !important;
+    padding-top: 15% !important;
+  }
+  #home .container {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 40px !important;
+    overflow: hidden !important;
+    height: 110vh !important;
+  }
+  #home.mobile .home-title {
+    padding: 170px 15px 0 15px !important;
+  }
+  #home.mobile .parklet-person {
+    left: 40px !important;
+    top: 0px !important;
+    width: 100px !important;
+  }
+  p.arrow {
+    bottom: 0px !important;
+    zoom: 0.8;
+  }
+}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
