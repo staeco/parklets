@@ -1,6 +1,20 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i|DM+Serif+Text:400,400i&display=swap');
 
+/* Turn On/Off to Only Display Map (For Screenshots) */
+
+h1.title,
+.map-control {
+  display: block !important;
+}
+
+/* Hide UI */
+.side-panel--container,
+.map-control > div:nth-of-type(1) {
+  display: none !important;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -13,11 +27,6 @@ body {
 }
 * {
   font-family: 'DM Sans', sans-serif;
-}
-/* Hide UI */
-.side-panel--container,
-.map-control > div:nth-of-type(1) {
-  display: none !important;
 }
 
 /* Tooltip */
