@@ -2005,7 +2005,6 @@ h3.accordion-title {
    background-color: #FCF5E9;
    z-index: 760;
    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
-   max-width: 700px;
    min-width: 250px;
    position: relative;
    margin: 0;
