@@ -24,6 +24,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 * {
   font-family: 'DM Sans', sans-serif;
@@ -60,7 +61,7 @@ svg.data-ex-icons-layers {
 }
 
 h1.title {
-  position: fixed;
+  position: absolute;
   font-size: 24px;
   left: 30px;
   top: 15px;
@@ -79,6 +80,11 @@ h1.title {
   padding-bottom: 10px;
   color: #FCF5E9;
   background-color: #393A44;
+}
+.map-popover {
+  background-color: #393A44 !important;
+  color: #FCF5E9 !important;
+  opacity: 0.98 !important;
 }
 
 /* Colors */
@@ -124,19 +130,17 @@ h1.title {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-  body {
-    zoom: 0.40;
-  }
-  .map-control {
-    zoom: 1.5;
-  }
   h1.title {
-    max-width: 420px;
-    top: 20px;
-    left: 20px;
-    font-size: 1.75rem;
+    max-width: 60%;
+    top: 17px;
+    left: 17px;
+    font-size: 1rem;
+    zoom: 0.8;
   }
   span {
-    font-size: 1.75rem;
+    font-size: 1rem;
+  }
+  .map-popover {
+    zoom: 0.5 !important;
   }
 }
