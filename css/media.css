@@ -11,9 +11,6 @@
    .navbar-nav .nav-item {
       margin: 0 0.875rem
    }
-   .nav-social {
-      margin-right: 22px;
-   }
    .side-menu .inner-wrapper {
       padding: 3.2rem 2.75rem;
    }
@@ -520,7 +517,6 @@ and (max-width : 800px) {
   .sponsor-button {
     transform: skew(1deg) rotate(-1deg) !important;
     height: 38px !important;
-    margin-top: 13px !important;
   }
   .sponsor-button span {
     top: 0 !important;
@@ -531,9 +527,6 @@ and (max-width : 800px) {
   .navbar {
     width: 100% !important;
     position: fixed !important;
-  }
-  .nav-social {
-    margin: -5px -15px 0 0 !important;
   }
   .sidemenu_btn {
     margin: 4px 0 0 0 !important;
@@ -704,15 +697,12 @@ and (max-width : 800px) {
 @media only screen 
 and (min-device-width : 75px) 
 and (max-device-width : 320px) {
-  body {
-    zoom: 0.90 !important;
-  }
   #home.mobile {
     background-size: 65% !important;
     background-position: -80px 10px !important;
     height: 120vh !important;
-    zoom: .90 !important;
-    padding-top: 15% !important;
+    zoom: .85 !important;
+    padding-top: 5% !important;
   }
   #home .container {
     width: 100%;
@@ -724,6 +714,16 @@ and (max-device-width : 320px) {
   }
   #home.mobile .home-title {
     padding: 170px 15px 0 15px !important;
+  }
+  #home.mobile .home-title h1 {
+    font-size: 2.15rem !important;
+    line-height: 2.25rem !important;
+  }
+  #home.mobile .home-title h3.subhead {
+    font-size: 1.5rem !important;
+    margin-bottom: 0 !important;
+    line-height: 2rem;
+    font-weight: 100;
   }
   #home.mobile .parklet-person {
     left: 40px !important;
@@ -780,6 +780,9 @@ and (max-device-width : 480px) {
   }
   #home.mobile .home-title {
     padding: 160px 15px 0 15px !important;
+  }
+  #home.mobile p.arrow {
+    bottom: 50px !important;
   }
   p.arrow {
     bottom: 30px !important;
@@ -974,7 +977,6 @@ and (max-device-width : 480px) {
   .sponsor-button {
     transform: skew(1deg) rotate(-1deg) !important;
     height: 38px !important;
-    margin-top: 13px !important;
   }
   .sponsor-button span {
     top: 0 !important;
@@ -985,9 +987,6 @@ and (max-device-width : 480px) {
   .navbar {
     width: 100% !important;
     position: fixed !important;
-  }
-  .nav-social {
-    margin: -5px -15px 0 0 !important;
   }
   .sidemenu_btn {
     margin: 4px 0 0 0 !important;
