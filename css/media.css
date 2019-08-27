@@ -287,9 +287,9 @@ and (max-width : 1280px) {
   #home .container {
     max-width: 550px !important;
   }
-  .container {
+  /*.container {
     max-width: 90% !important;
-  }
+  }*/
   .saying-doing svg {
     width: 100%;
   }
