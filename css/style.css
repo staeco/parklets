@@ -382,7 +382,7 @@ section {
    display: block;
 }
 p.arrow {
-   width: auto;
+   width: 100%;
    margin: 0 auto !important;
    text-align: center;
    bottom: 60px;
@@ -849,10 +849,10 @@ p.arrow {
 #exploratorium-hotspot-2 {
    cursor: pointer;
    width: 50%;
-   height: 200px;
-   position: relative;
-   top: 22%;
-   right: 36%;
+   height: 70vh;
+   position: absolute;
+   top: 10%;
+   left: 26%;
 }
 #exploratorium-hotspot-3 {
    cursor: pointer;
@@ -878,8 +878,8 @@ p.arrow {
    top: 33% !important;
 }
 #exploratorium-hotspot-2 .exploratorium-popup {
-   left: -40% !important;
-    top: -80% !important;
+   left: 20% !important;
+    top: 30% !important;
 }
 #exploratorium-hotspot-3 .exploratorium-popup {
    left: -250% !important;
@@ -974,7 +974,7 @@ a.underline:hover {
    float: left;
    position: absolute;
    left: 0;
-   top: 150px;
+   top: 10%;
    padding: 80px;
    background-image: url(../images/left-column.svg);
    background-position: bottom left;
@@ -1032,7 +1032,13 @@ a.underline:hover {
 #section6 h2.subhead {
    position: absolute;
    left: -470px;
-   top: -50px;
+   top: -80px;
+   width: 260px;
+}
+#section6_1 h2.subhead {
+   position: absolute;
+   left: -470px;
+   top: 3px;
    width: 260px;
 }
 #section6 .arrow {
@@ -1068,7 +1074,7 @@ a.underline:hover {
    z-index: -10;
 }
 .square-viz {
-   padding: 100px 50px;
+   /*padding: 100px 50px;*/
 }
 
 #section2_1 .left-column,
@@ -1086,7 +1092,7 @@ a.underline:hover {
    background-size: contain;
    width: 37%;
    min-width: 250px;
-   padding: 100px 75px;
+   padding: 85px 100px 85px 85px;
    height: 150vh;
    position: relative;
    overflow: scroll;
@@ -1169,7 +1175,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_1.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1179,7 +1185,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_2.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1189,7 +1195,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_3.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1199,7 +1205,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_4.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1209,7 +1215,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_5.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1219,7 +1225,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_6.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1229,7 +1235,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_7.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1239,7 +1245,7 @@ a.underline:hover {
    height: 150vh !important;
    background-image: url(../images/section2_8.jpg);
    background-size: 100%;
-   backround-position: 0px;
+   background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -1267,7 +1273,7 @@ a.underline:hover {
 }
 
 #section3_2_container {
-   height: 250vh !important;
+   height: 300vh !important;
    position: relative;
    z-index: 500;
    width: 100%;
@@ -1315,7 +1321,7 @@ a.underline:hover {
 }
 .tooltip-label {
    font-weight: bold;
-   margin-right: 5px;
+   margin-right: 10px;
 }
 .parklet-icons {
    width: 100%;
@@ -1402,7 +1408,7 @@ a.source:hover {
    z-index: 750;
 }
 #section4_1 {
-   height: 200vh !important;
+   height: 100vh !important;
    background-color: #FCF5E9;
    background-size: 100%;
    background-repeat: no-repeat;
@@ -1411,7 +1417,7 @@ a.source:hover {
    z-index: 700;
 }
 #section4_2 {
-   height: 200vh !important;
+   height: 100vh !important;
    background-color: #FCF5E9;
    background-size: 100%;
    background-repeat: no-repeat;
@@ -1420,7 +1426,7 @@ a.source:hover {
    z-index: 750;
 }
 #section4_3 {
-   height: 200vh !important;
+   height: 100vh !important;
    background-color: #FCF5E9;
    background-size: 100%;
    background-repeat: no-repeat;
@@ -1448,7 +1454,7 @@ a.source:hover {
 }
 #section5,
 #gallery {
-   min-height: 200vh !important;
+   height: 200vh !important;
    background-color: #FCF5E9;
    z-index: 750;
 }
@@ -1493,12 +1499,11 @@ a.source:hover {
    margin-left: 33%;
 }
 .square {
-   width: 16px;
-   height: 16px;
-   margin: 0 10px 10px 0;
+   width: 15px;
+   height: 15px;
+   margin: 0 15px 15px 0;
    float: left;
    background-color: rgb(237, 110, 77);
-   //background-color: rgb(28, 142, 127);
    display: block;
    position: relative;
    cursor: pointer;
@@ -1506,18 +1511,17 @@ a.source:hover {
 }
 .square:hover {
    background-color: rgba(237, 110, 77, 0.25);
-   //background-color: rgba(28, 142, 127,0.25);
    transition: all .5s ease-in-out;
    z-index: 500; 
 }
 .square .tooltiptext {
    display: none;
-   width: 260px;
+   width: 300px;
    background-color: rgba(57, 58, 68, 0.95);
    color: #FCF5E9;
    text-align: left;
-   border-radius: 1px;
-   padding: 10px 15px;
+   border-radius: 4px;
+   padding: 20px 20px 10px 20px;
  
    /* Position the tooltip */
    position: absolute;
@@ -1532,10 +1536,10 @@ a.source:hover {
    font-weight: bold;
 }
 .tooltiptext p {
-   margin: 0 0 7px 0 !important;
+   margin: 0 0 10px 0 !important;
    padding: 0 !important;
-   line-height: 16px;
-   font-size: 14px;
+   line-height: 18px;
+   font-size: 15px;
 }
 .square:hover .tooltiptext {
    display: block;
@@ -1546,21 +1550,22 @@ a.source:hover {
    border-left: 3px solid #393A44;
    padding-left: 20px;
    margin-left: 100px;
-   height: 80vh;
-   top: 100px;
 }
 .parklet-squares-row {
-   display: block;
+   display: inline-block;
    position: relative;
    width: 100%;
-   margin: 0 0 32px 0;
-   height: 16px;
+   margin: 0px 0 16px 0;
+   min-height: 30px;
 }
 .parklet-year {
    text-align: right;
    margin-left: -110px;
    position: absolute;
    width: 70px;
+}
+#section6_3 .parklet-year {
+   display: none;
 }
 .map-embed {
    position: sticky;
@@ -1594,8 +1599,9 @@ a.source:hover {
    right: 0;
    z-index: 0;
 }
-#section6 {
-   height: 200vh !important;
+#section6,
+#section6_1 {
+   height: 100vh !important;
    background-color: #FCF5E9;
    background-image: url(../images/section6-bg.svg);
    background-repeat: no-repeat;
@@ -1613,9 +1619,9 @@ a.source:hover {
    background-position: bottom left;
    z-index: 780;
 }*/
-#section6_1 {
-   
-}
+/*#section6_1 {
+   height: 100vh !important;
+}*/
 .map-link {
    display: block;
    margin-left: 35%;
@@ -1636,22 +1642,25 @@ a.source:hover {
    margin: 0;
 }
 .maria-container {
-   width: 90%;
-   padding-top: 30vh;
+   display: block;
+   float: left;
 }
 .maria-container img {
    width: 200px;
    margin: 0 0 20px 0;
 }
-#section6_2 {
-   height: 300vh !important;
+#section6_2,
+#section6_3 {
+   height: 100vh !important;
    z-index: 700;
    background-color: #FCF5E9;
 }
-#section6_2 .left-column1 {
-   height: 80vh;
+#section6_2 .left-column1,
+#section6_3 .left-column1 {
+   height: 90vh;
    display: block;
    width: 33%;
+   padding: 50px !important;
 }
 #Path-20,
 #Path-21 {
@@ -1663,19 +1672,12 @@ a.source:hover {
    height: 500px;
 }
 #section6_2 .left-column2 {
-   height: 200vh;
+   height: 100vh;
 
-}
-#section6_3 {
-   height: 200vh !important;
-   z-index: 600;
-   background-color: #FCF5E9;
 }
 #section6_2 .right-column,
 #section6_3 .right-column {
-   position: sticky;
-   position: -webkit-sticky;
-   top: 100px;
+   top: 60px;
    height: 80vh;
    z-index: 1;
 }
@@ -1931,6 +1933,43 @@ h3.accordion-title {
    position: relative;
    z-index: 500;
 }
+#section6_container {
+   height: 400vh !important;
+   position: relative;
+   z-index: 600;
+}
+#section6_container iframe {
+   height: 100vh !important;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #FCF5E9;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-image: url(../images/section6-bg.svg);
+   background-attachment:fixed;
+   z-index: 100;
+   overflow: hidden;
+}
+#section4_container {
+   height: 300vh !important;
+   position: relative;
+   z-index: 500;
+   width: 100%;
+}
+#section4_container iframe {
+   height: 100vh !important;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: #FCF5E9;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-image: url(../images/exploratorium-1.jpg);
+   background-attachment:fixed;
+   z-index: 100;
+   overflow: hidden;
+}
 #section8_container iframe {
    height: 100vh !important;
    position: fixed;
@@ -2049,7 +2088,7 @@ h3.accordion-title {
    background-image: url('../images/section9_bg.svg');
    text-align: center;
    background-position: center top;
-   z-index: 500;
+   z-index: 800;
    background-size: 110%;
    background-attachment: scroll;
 }
@@ -3822,7 +3861,7 @@ a {
    margin-top: 50px !important;
 }
 .cbp-item:nth-child(3) {
-   margin-top: 100px !important;
+   margin-top: 60px !important;
 }
 .cbp-item:nth-child(4) {
    margin-top: 100px !important;
@@ -3831,10 +3870,10 @@ a {
    margin-top: 100px !important;
 }
 .cbp-item:nth-child(6) {
-   margin-top: 50px !important;
+   margin-top: 100px !important;
 }
 .cbp-item:nth-child(7) {
-   margin-top: 100px !important;
+   margin-top: 50px !important;
 }
 .cbp-item:nth-child(8) {
    margin-top: 100px !important;
@@ -3846,10 +3885,10 @@ a {
    margin-top: 100px !important;
 }
 .cbp-item:nth-child(11) {
-   margin-top: 50px !important;
+   margin-top: 100px !important;
 }
 .cbp-item:nth-child(12) {
-   margin-top: -10px !important;
+   margin-top: 50px !important;
 }
 .cbp-item:hover .overlay {
    opacity: 1;
