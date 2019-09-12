@@ -303,7 +303,7 @@ p {
    font-family: 'DM Sans', sans-serif;
 }
 section {
-   height: 100vh;
+   /*height: 100vh;*/
    overflow: hidden;
 }
 
@@ -449,7 +449,7 @@ p.arrow {
    -webkit-transition: all .5s ease-in-out;
 }
 #intro {
-    height: 100vh !important;
+   /*height: auto;*/
    background-color: #FCF5E9;
    position: relative;
    top: 0;
@@ -474,7 +474,7 @@ p.arrow {
    background-size: 40% !important;
    background-repeat: no-repeat;*/
    z-index: 800;
-   height: 140vh !important;
+   /*height: 140vh !important;*/
    padding: 50px 0 50px !important;
    margin-bottom: 50px;
 }
@@ -776,7 +776,7 @@ p.arrow {
    height: 100vh;
 }
 .taraval-interactive {
-   background-size: 100%;
+   background-size: cover;
    background-position: 0px 0px;
    background-repeat: no-repeat;
    background-image: url('../images/taraval_1.png');
@@ -787,7 +787,7 @@ p.arrow {
    position: fixed;
    width: 100%;
    height: 100vh;
-   background-size: 100%;
+   background-size: cover;
    background-position: 0px 0px;
    background-repeat: no-repeat;
    background-image: url('../images/taraval_1.png');
@@ -856,26 +856,26 @@ p.arrow {
    bottom: 0%;
    right: 0%;
 }
-#taraval-hotspot-1 .taraval-popup {
+#taraval-hotspot-1 .taraval.popup {
    left: -270% !important;
 }
-#taraval-hotspot-2 .taraval-popup {
+#taraval-hotspot-2 .taraval.popup {
    left: -560% !important;
    top: 55% !important;
 }
-#taraval-hotspot-3 .taraval-popup {
+#taraval-hotspot-3 .taraval.popup {
    left: -320% !important;
    top: 35% !important;
 }
-#exploratorium-hotspot-1 .exploratorium-popup {
+#exploratorium-hotspot-1 .exploratorium.popup {
    left: 120% !important;
    top: 33% !important;
 }
-#exploratorium-hotspot-2 .exploratorium-popup {
+#exploratorium-hotspot-2 .exploratorium.popup {
    left: -40% !important;
     top: -80% !important;
 }
-#exploratorium-hotspot-3 .exploratorium-popup {
+#exploratorium-hotspot-3 .exploratorium.popup {
    left: -250% !important;
    top: 25% !important;
 }
@@ -906,7 +906,7 @@ p.arrow {
 .taraval-hotspots:hover {
    cursor: pointer !important;
 }
-.taraval-popup {
+.taraval.popup {
    position: absolute;
    top: 25%;
    width: 380px;
@@ -919,8 +919,8 @@ p.arrow {
    cursor: pointer !important;
    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
 }
-.taraval-popup .profile-photo,
-.exploratorium-popup .profile-photo {
+.taraval.popup .profile-photo,
+.exploratorium.popup .profile-photo {
    width: 200px;
    height: 200px;
    position: absolute;
@@ -928,7 +928,7 @@ p.arrow {
    left: 85px;
 
 }
-.exploratorium-popup {
+.exploratorium.popup {
    position: absolute;
    cursor: pointer !important;
    top: 200px;
@@ -941,17 +941,17 @@ p.arrow {
    z-index: 760;
    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
 }
-.exploratorium-popup .profile-photo {
+.exploratorium.popup .profile-photo {
    width: 200px;
    height: 200px;
    position: absolute;
    top: -130px;
    left: 105px;
 }
-.exploratorium-popup h3 {
+.exploratorium.popup h3 {
    margin: 0 0 20px 0;
 }
-.exploratorium-popup .large-quote {
+.exploratorium.popup .large-quote {
    margin: 0;
 }
 
@@ -984,7 +984,7 @@ a.underline:hover {
    border: 1px solid #e4405f;
 }
 #section2 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    background-image: url(../images/section2-bg.svg);
    background-position: -120px -20px !important;
@@ -1034,14 +1034,15 @@ a.underline:hover {
    top: 120px;
    width: 340px;
 }
-#section8 h2.subhead,
+
+#section8_containerh2.subhead,
 #section8_1 h2.subhead {
    position: absolute;
    left: -220px;
    top: 15vh;
    width: auto;
 }
-#section8 .container,
+#section8_container.container,
 #section8_1 .container {
    width: 60% !important;
    margin: 0 auto !important;
@@ -1156,87 +1157,87 @@ a.underline:hover {
 }
 
 #section2_1 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_1.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 400;
 }
 #section2_2 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_2.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 450;
 }
 #section2_3 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_3.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 490;
 }
 #section2_4 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_4.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 510;
 }
 #section2_5 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_5.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 530;
 }
 #section2_6 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_6.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 550;
 }
 #section2_7 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_7.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 570;
 }
 #section2_8 {
-   height: 100vh !important;
+   height: auto;
    background-image: url(../images/section2_8.jpg);
-   background-size: 100%;
-   backround-position: 0px;
+   background-size: contain;
+   
    background-color: #f3ebe1;
    background-repeat: no-repeat;
    background-attachment: fixed;
    z-index: 590;
 }
 #section2_9 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 610;
 }
@@ -1263,7 +1264,7 @@ a.underline:hover {
    width: 100%;
 }
 #section3_2_container iframe {
-   height: 100vh !important;
+   height: auto;
    position: fixed;
    top: 0;
    left: 0;
@@ -1284,28 +1285,28 @@ a.underline:hover {
    display: block;
 }
 #section3_3 {
-   //height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 750;
 }
 #section3_4 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 750;
 }
 #section3_5 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 750;
 }
 #section3_6 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 750;
 }
 .tooltip-label {
    font-weight: bold;
-   margin-right: 5px;
+   margin-right: 10px;
 }
 .parklet-icons {
    width: 100%;
@@ -1382,7 +1383,7 @@ a.source:hover {
    text-decoration: none;
 }
 #section4 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    background-size: contain;
    background-repeat: no-repeat;
@@ -1390,41 +1391,41 @@ a.source:hover {
    z-index: 750;
 }
 #section4_1 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
-   background-size: 100%;
+   background-size: cover;
    background-repeat: no-repeat;
    background-image: url(../images/exploratorium-1.jpg);
    background-attachment:fixed;
    z-index: 700;
 }
 #section4_2 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
-   background-size: 100%;
+   background-size: cover;
    background-repeat: no-repeat;
    background-image: url(../images/exploratorium-bw.jpg);
    background-attachment: fixed;
    z-index: 750;
 }
 #section4_3 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
-   background-size: 100%;
+   background-size: cover;
    background-repeat: no-repeat;
    background-image: url(../images/exploratorium-highlight.jpg);
    background-attachment: fixed;
    z-index: 770;
 }
 #section4_4 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 800;
 }
 #section4_5 {
    background-color: #FCF5E9;
    z-index: 750;
-   height: 100vh !important;
+   height: auto;
 }
 #section4_6 {
    
@@ -1435,7 +1436,7 @@ a.source:hover {
    z-index: 750;
 }
 #section5 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 750;
    overflow: scroll;
@@ -1459,14 +1460,14 @@ a.source:hover {
    padding-top: 50px;
 }
 #section5_1 {
-   //height: 420vh !important;
+   /*height: 420vh !important;*/
    background-color: #FCF5E9;
    background-size: cover;
    background-image: url(../images/section5_1.jpg);
    z-index: 750;
 }
 #section5_2 {
-   //height: 420vh !important;
+   /*height: 420vh !important;*/
    background-color: #FCF5E9;
    background-size: cover;
    background-image: url(../images/section5_2.jpg);
@@ -1487,12 +1488,11 @@ a.source:hover {
    margin-left: 33%;
 }
 .square {
-   width: 16px;
-   height: 16px;
-   margin: 0 10px 10px 0;
+   width: 20px;
+   height: 20px;
+   margin: 0 20px 20px 0;
    float: left;
    background-color: rgb(237, 110, 77);
-   //background-color: rgb(28, 142, 127);
    display: block;
    position: relative;
    cursor: pointer;
@@ -1500,13 +1500,12 @@ a.source:hover {
 }
 .square:hover {
    background-color: rgba(237, 110, 77, 0.25);
-   //background-color: rgba(28, 142, 127,0.25);
    transition: all .5s ease-in-out;
    z-index: 500; 
 }
 .square .tooltiptext {
    display: none;
-   width: 260px;
+   min-width: 400px;
    background-color: rgba(57, 58, 68, 0.95);
    color: #FCF5E9;
    text-align: left;
@@ -1521,15 +1520,16 @@ a.source:hover {
    z-index: 800; 
 }
 .tooltiptext h4 {
-   margin: 0 0 10px 0 !important;
-   font-size: 16px;
+   margin: 0 0 2  0px 0 !important;
+   font-size: 18px;
    font-weight: bold;
 }
 .tooltiptext p {
-   margin: 0 0 7px 0 !important;
+   margin: 0 0 30px 0 !important;
    padding: 0 !important;
-   line-height: 16px;
-   font-size: 14px;
+   line-height: 24px;
+   font-size: 16px;
+   display: block;
 }
 .square:hover .tooltiptext {
    display: block;
@@ -1548,7 +1548,7 @@ a.source:hover {
    position: relative;
    width: 100%;
    margin: 0 0 32px 0;
-   height: 16px;
+   height: 20px;
 }
 .parklet-year {
    text-align: right;
@@ -1589,7 +1589,7 @@ a.source:hover {
    z-index: 0;
 }
 #section6 {
-   height: 200vh !important;
+   /*height: 200vh !important;*/
    background-color: #FCF5E9;
    background-image: url(../images/section6-bg.svg);
    background-repeat: no-repeat;
@@ -1599,7 +1599,7 @@ a.source:hover {
    background-attachment: fixed;
 }
 /*#section6_1 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    background-image: url(../images/section6-bg.svg);
    background-repeat: no-repeat;
@@ -1638,8 +1638,8 @@ a.source:hover {
    margin: 0 0 20px 0;
 }
 #section6_2 {
-   height: 300vh !important;
-   z-index: 700;
+   /*height: 300vh !important;
+   z-index: 700;*/
    background-color: #FCF5E9;
 }
 #section6_2 .left-column1 {
@@ -1705,13 +1705,13 @@ a.source:hover {
 }*/
 #section6_7 {
    background-color: #FCF5E9;
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-image: url(../images/section6_7.jpg);
    z-index: 750;
 }
 #section7 {
-   height: 100vh !important;
+   height: auto;
    background-size: 80% !important;
    background-color: #FCF5E9;
    background-image: url(../images/section7-bg.svg);
@@ -1719,7 +1719,7 @@ a.source:hover {
    z-index: 750;
 }
 #section7_1 {
-   height: 100vh !important;
+   height: auto;
    background-color: #FCF5E9;
    z-index: 750;
 }
@@ -1872,49 +1872,49 @@ h3.accordion-title {
    transition: all .5s ease-in-out;
 }
 #section7_2 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_2.jpg);
    z-index: 750;
 }
 #section7_3 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_3.jpg);
    z-index: 750;
 }
 #section7_4 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_4.jpg);
    z-index: 750;
 }
 #section7_5 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_5.jpg);
    z-index: 750;
 }
 #section7_6 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_6.jpg);
    z-index: 750;
 }
 #section7_7 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_7.jpg);
    z-index: 750;
 }
 #section7_8 {
-   height: 100vh !important;
+   height: auto;
    background-size: cover;
    background-color: #FCF5E9;
    background-image: url(../images/section7_8.jpg);
@@ -1926,7 +1926,7 @@ h3.accordion-title {
    z-index: 500;
 }
 #section8_container iframe {
-   height: 100vh !important;
+   height: auto;
    position: fixed;
    top: 0;
    left: 0;
@@ -1935,8 +1935,8 @@ h3.accordion-title {
    z-index: 100;
    overflow: hidden;
 }
-#section8 {
-   height: 100vh !important;
+#section8_container{
+   height: auto;
    background-color: #f3ede0;
    background-size: cover;
    background-attachment: fixed;
@@ -1984,7 +1984,7 @@ h3.accordion-title {
    z-index: 790;
 }
 .fp-section {
-    height: 100vh !important;
+    /*height: auto;*/
     transition: all .65s ease-in-out !important;
     -webkit-transition: all .65s ease-in-out !important;
 }
@@ -3641,7 +3641,7 @@ a {
 .forcefullwidth_wrapper_tp_banner {
    height: 40vh !important;
    overflow: hidden !important;
-   z-index: 600;
+   z-index: 800 !important;
 }
 .rev_slider>ul {
    height: 40vh !important;
