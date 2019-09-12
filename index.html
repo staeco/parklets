@@ -839,108 +839,272 @@
       <section class="single-items center-block mobile" id="section3_1">
          <div class="container">
             <div class="col-md-6 col-sm-4 right-content">
-               <h3 class="wow fadeInUp chart-label" data-wow-delay="300ms">Change in land value</h3>
-               <div class="interactive">
-                  <div class="land-chart-hover">
-                     <div id="Hotspot_2008" class="chart-hover">
-                        <div id="2008_Hotspot" class="hidden tooltips 2008_Hotspot_display darkgrey-text">
+               <div class="tab">
+                  <button id="timeseriesDefault" class="tablinks chart-label active" onclick="timeseriesTab(event, 'tab-land-value')">
+                     <h3>Change in land value</h3>
+                  </button>
+                  <button class="tablinks chart-label" onclick="timeseriesTab(event, 'tab-biz-licenses')">
+                     <h3>New business licenses</h3>
+                  </button>
+                  <p><a href="approach.html#about2" target="_blank" class="source">see data source</a></p>
+               </div>
+               <!-- Land Value Chart-->
+               <div id="tab-land-value" class="tabcontent wow fadeIn">
+                  <div class="interactive">
+                     <div class="land-chart-hover">
+                        <div id="LandValue_2008" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2008-text" class="hidden tooltips darkgrey-text">
                            <img src="images/land_2008.svg">
                         </div>
-                     </div>
-                     <div id="Hotspot_2009" class="chart-hover">
-                        <div id="2009_Hotspot" class="hidden tooltips 2009_Hotspot_display darkgrey-text">
+                        <div id="LandValue_2009" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2009-text" class="hidden tooltips darkgrey-text">
                            <img src="images/land_2009.svg">
                         </div>
+                        <div id="LandValue_2010" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2010-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2010.svg">
+                        </div>
+                        <div id="LandValue_2011" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2011-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2011.svg">
+                        </div>
+                        <div id="LandValue_2012" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2012-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2012.svg">
+                        </div>
+                        <div id="LandValue_2013" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2013-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2013.svg">
+                        </div>
+                        <div id="LandValue_2014" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2014-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2014.svg">
+                        </div>
+                        <div id="LandValue_2015" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2015-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2015.svg">
+                        </div>
+                        <div id="LandValue_2016" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2016-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2016.svg">
+                        </div>
+                        <div id="LandValue_2017" class="chart-hover">
+                        </div>
+                        <div id="LandValue_2017-text" class="hidden tooltips darkgrey-text">
+                           <img src="images/land_2017.svg">
+                        </div>
                      </div>
-                     <div id="Hotspot_2010" class="chart-hover">
-
-                     </div>
-                     <div id="Hotspot_2011"></div>
-                     <div id="Hotspot_2012"></div>
-                     <div id="Hotspot_2013"></div>
-                     <div id="Hotspot_2014"></div>
-                     <div id="Hotspot_2015"></div>
-                     <div id="Hotspot_2016"></div>
-                     <div id="Hotspot_2017"></div>
-                  </div>
-                  <svg id="land-chart" width="517px" height="256px" viewBox="0 0 517 256" version="1.1"
-                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Land-Value-Line-Graph" transform="translate(-446.000000, -250.000000)">
-                           <g id="Chart" transform="translate(443.000000, 253.000000)">
-                              <path d="M40.4789579,226.663115 L517.521042,226.663115" id="Line-2" stroke="#393A44"
-                                 stroke-width="3" stroke-linecap="square"></path>
-                              <path d="M40.5,0 L40.5,226.663115" id="Line" stroke="#393A44" stroke-width="3"
-                                 stroke-linecap="square"></path>
-                              <g id="Bottom-axis" transform="translate(48.000000, 235.000000)" fill="#393A44"
-                                 font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
-                                 <text id="2008">
-                                    <tspan x="1.09" y="11">2008</tspan>
+                     <svg id="land-chart" width="517px" height="256px" viewBox="0 0 517 256" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                           <g id="Land-Value-Line-Graph" transform="translate(-446.000000, -250.000000)">
+                              <g id="Chart" transform="translate(443.000000, 253.000000)">
+                                 <path d="M40.4789579,226.663115 L517.521042,226.663115" id="Line-2" stroke="#393A44"
+                                    stroke-width="3" stroke-linecap="square"></path>
+                                 <path d="M40.5,0 L40.5,226.663115" id="Line" stroke="#393A44" stroke-width="3"
+                                    stroke-linecap="square"></path>
+                                 <g id="Bottom-axis" transform="translate(48.000000, 235.000000)" fill="#393A44"
+                                    font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                                    <text id="2008">
+                                       <tspan x="1.09" y="11">2008</tspan>
+                                    </text>
+                                    <text id="2009">
+                                       <tspan x="50.0625" y="11">2009</tspan>
+                                    </text>
+                                    <text id="2010">
+                                       <tspan x="100.152" y="11">2010</tspan>
+                                    </text>
+                                    <text id="2011">
+                                       <tspan x="149.6595" y="11">2011</tspan>
+                                    </text>
+                                    <text id="2012">
+                                       <tspan x="194.9165" y="11">2012</tspan>
+                                    </text>
+                                    <text id="2013">
+                                       <tspan x="242.779" y="11">2013</tspan>
+                                    </text>
+                                    <text id="2014">
+                                       <tspan x="291.0315" y="11">2014</tspan>
+                                    </text>
+                                    <text id="2015">
+                                       <tspan x="339.647" y="11">2015</tspan>
+                                    </text>
+                                    <text id="2016">
+                                       <tspan x="387.57" y="11">2016</tspan>
+                                    </text>
+                                    <text id="2017">
+                                       <tspan x="436.12" y="11">2017</tspan>
+                                    </text>
+                                 </g>
+                                 <g id="Left-axis" transform="translate(0.000000, 18.000000)" fill="#393A44"
+                                    font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                                    <text id="0%">
+                                       <tspan x="14.598" y="212">0%</tspan>
+                                    </text>
+                                    <text id="+5%">
+                                       <tspan x="9.021" y="145">+5%</tspan>
+                                    </text>
+                                    <text id="+10%">
+                                       <tspan x="3.236" y="78">+10%</tspan>
+                                    </text>
+                                    <text id="+15%">
+                                       <tspan x="5.226" y="11">+15%</tspan>
+                                    </text>
+                                 </g>
+                                 <text id="Blocks-with-parklets" font-family="DMSans-Bold, DM Sans" font-size="11"
+                                    font-weight="bold" fill="#85C9C0">
+                                    <tspan x="56" y="15">Blocks with </tspan>
+                                    <tspan x="56" y="29">parklets</tspan>
                                  </text>
-                                 <text id="2009">
-                                    <tspan x="50.0625" y="11">2009</tspan>
+                                 <text id="Citywide" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold"
+                                    fill="#9F82AE">
+                                    <tspan x="56" y="137">Citywide</tspan>
                                  </text>
-                                 <text id="2010">
-                                    <tspan x="100.152" y="11">2010</tspan>
-                                 </text>
-                                 <text id="2011">
-                                    <tspan x="149.6595" y="11">2011</tspan>
-                                 </text>
-                                 <text id="2012">
-                                    <tspan x="194.9165" y="11">2012</tspan>
-                                 </text>
-                                 <text id="2013">
-                                    <tspan x="242.779" y="11">2013</tspan>
-                                 </text>
-                                 <text id="2014">
-                                    <tspan x="291.0315" y="11">2014</tspan>
-                                 </text>
-                                 <text id="2015">
-                                    <tspan x="339.647" y="11">2015</tspan>
-                                 </text>
-                                 <text id="2016">
-                                    <tspan x="387.57" y="11">2016</tspan>
-                                 </text>
-                                 <text id="2017">
-                                    <tspan x="436.12" y="11">2017</tspan>
-                                 </text>
+                                 <polyline id="Path-20" stroke="#85C9C0" stroke-width="8" stroke-linecap="square"
+                                    stroke-linejoin="bevel"
+                                    points="56 48.5444845 107.007355 91.995888 157.007355 161.281999 207.007355 229.863543 257.007355 115.77776 307.007355 159.764469 357.007355 159.764469 408.007355 121.688325 458.007355 109.169123 508.007355 3.17450836">
+                                 </polyline>
+                                 <polyline id="Path-21" stroke="#9F82AE" stroke-width="8" stroke-linecap="square"
+                                    stroke-linejoin="bevel"
+                                    points="56 81.7418204 107.007355 107.233005 157.007355 158.174197 207.007355 250.321302 257.007355 89.5809895 307.007355 157.134144 357.007355 153.485058 408.007355 131.938725 458.007355 124.454941 508.007355 77.8625315">
+                                 </polyline>
                               </g>
-                              <g id="Left-axis" transform="translate(0.000000, 18.000000)" fill="#393A44"
-                                 font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
-                                 <text id="0%">
-                                    <tspan x="14.598" y="212">0%</tspan>
-                                 </text>
-                                 <text id="+5%">
-                                    <tspan x="9.021" y="145">+5%</tspan>
-                                 </text>
-                                 <text id="+10%">
-                                    <tspan x="3.236" y="78">+10%</tspan>
-                                 </text>
-                                 <text id="+15%">
-                                    <tspan x="5.226" y="11">+15%</tspan>
-                                 </text>
-                              </g>
-                              <text id="Blocks-with-parklets" font-family="DMSans-Bold, DM Sans" font-size="11"
-                                 font-weight="bold" fill="#85C9C0">
-                                 <tspan x="56" y="15">Blocks with </tspan>
-                                 <tspan x="56" y="29">parklets</tspan>
-                              </text>
-                              <text id="Citywide" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold"
-                                 fill="#9F82AE">
-                                 <tspan x="56" y="137">Citywide</tspan>
-                              </text>
-                              <polyline id="Path-20" stroke="#85C9C0" stroke-width="8" stroke-linecap="square"
-                                 stroke-linejoin="bevel"
-                                 points="56 48.5444845 107.007355 91.995888 157.007355 161.281999 207.007355 229.863543 257.007355 115.77776 307.007355 159.764469 357.007355 159.764469 408.007355 121.688325 458.007355 109.169123 508.007355 3.17450836">
-                              </polyline>
-                              <polyline id="Path-21" stroke="#9F82AE" stroke-width="8" stroke-linecap="square"
-                                 stroke-linejoin="bevel"
-                                 points="56 81.7418204 107.007355 107.233005 157.007355 158.174197 207.007355 250.321302 257.007355 89.5809895 307.007355 157.134144 357.007355 153.485058 408.007355 131.938725 458.007355 124.454941 508.007355 77.8625315">
-                              </polyline>
                            </g>
                         </g>
-                     </g>
-                  </svg>
+                     </svg>
+                  </div>
+               </div>
+               <!-- New Business Licenses Chart -->
+               <div id="tab-biz-licenses" class="tabcontent wow fadeIn">
+                  <div class="interactive">
+                     <div class="land-chart-hover">
+                        <div id="NewBiz_2008" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2008-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2008.svg">
+                        </div>
+                        <div id="NewBiz_2009" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2009-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2009.svg">
+                        </div>
+                        <div id="NewBiz_2010" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2010-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2010.svg">
+                        </div>
+                        <div id="NewBiz_2011" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2011-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2011.svg">
+                        </div>
+                        <div id="NewBiz_2012" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2012-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2012.svg">
+                        </div>
+                        <div id="NewBiz_2013" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2013-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2013.svg">
+                        </div>
+                        <div id="NewBiz_2014" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2014-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2014.svg">
+                        </div>
+                        <div id="NewBiz_2015" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2015-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2015.svg">
+                        </div>
+                        <div id="NewBiz_2016" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2016-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2016.svg">
+                        </div>
+                        <div id="NewBiz_2017" class="chart-hover">
+                        </div>
+                        <div id="NewBiz_2017-text" class="hidden tooltips darkgrey-text">
+                              <img src="images/biz_2017.svg">
+                        </div>
+                     </div>
+                     <svg width="520px" height="290px" viewBox="0 0 520 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                           <g id="New-Businesses-Line-Graph" transform="translate(-443.000000, -251.000000)">
+                              <g id="Group" transform="translate(440.000000, 253.000000)">
+                                    <path d="M43.4789579,226.663115 L520.521042,226.663115" id="Line-2" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
+                                    <path d="M43.5,0 L43.5,226.663115" id="Line" stroke="#393A44" stroke-width="3" stroke-linecap="square"></path>
+                                    <text id="2008" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="52.09" y="246">2008</tspan>
+                                    </text>
+                                    <text id="2009" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="101.0625" y="246">2009</tspan>
+                                    </text>
+                                    <text id="2010" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="151.152" y="246">2010</tspan>
+                                    </text>
+                                    <text id="2011" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="200.6595" y="246">2011</tspan>
+                                    </text>
+                                    <text id="2012" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="245.9165" y="246">2012</tspan>
+                                    </text>
+                                    <text id="2013" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="293.779" y="246">2013</tspan>
+                                    </text>
+                                    <text id="2014" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="342.0315" y="246">2014</tspan>
+                                    </text>
+                                    <text id="2017" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="497.12" y="246">2017</tspan>
+                                    </text>
+                                    <text id="2016" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="448.57" y="246">2016</tspan>
+                                    </text>
+                                    <text id="2015" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#393A44">
+                                       <tspan x="393.647" y="246">2015</tspan>
+                                    </text>
+                                    <g id="Left-axis" transform="translate(0.000000, 18.000000)" fill="#393A44" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold">
+                                       <text id="0%">
+                                          <tspan x="17.598" y="212">0%</tspan>
+                                       </text>
+                                       <text id="+10%">
+                                          <tspan x="7.236" y="161">+10%</tspan>
+                                       </text>
+                                       <text id="+30%">
+                                          <tspan x="3.475" y="61">+30%</tspan>
+                                       </text>
+                                       <text id="+20%">
+                                          <tspan x="3.75" y="111">+20%</tspan>
+                                       </text>
+                                       <text id="+40%">
+                                          <tspan x="3.98" y="11">+40%</tspan>
+                                       </text>
+                                    </g>
+                                    <text id="Blocks-with-parklets" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#85C9C0">
+                                       <tspan x="125" y="21">Blocks with </tspan>
+                                       <tspan x="125" y="35">parklets</tspan>
+                                    </text>
+                                    <text id="Citywide" font-family="DMSans-Bold, DM Sans" font-size="11" font-weight="bold" fill="#9F82AE">
+                                       <tspan x="66" y="140">Citywide</tspan>
+                                    </text>
+                                    <polyline id="Path-20" stroke="#85C9C0" stroke-width="8" stroke-linecap="square" stroke-linejoin="bevel" points="86.9798747 277 120.210686 192.602203 164 51.4377046 211.5 72.3223669 258 219 308.76969 117 360.085065 186.146753 405.960907 242 461 242 499 281"></polyline>
+                                    <polyline id="Path-21" stroke="#9F82AE" stroke-width="8" stroke-linecap="square" stroke-linejoin="bevel" points="90.8930736 277.477239 115.5 157.134144 164 125 211.5 77.8625315 260.5 157.134144 310.007355 164.134144 356.5 137 405.960907 242 461 184.439436 490.850295 283"></polyline>
+                              </g>
+                           </g>
+                        </g>
+                     </svg>
+                  </div>
                </div>
             </div>
             <div class="col-md-6 col-sm-4 left-content">
@@ -953,7 +1117,7 @@
                      vitality of a neighborhood. Areas with growing commercial districts are often also investing in
                      public spaces and amenities that improve resident’s quality of life. In economic downturns, these
                      areas can be more resilient.
-                     <p>Learn more about our approach <a href="#">here</a>.</p>
+                     <p>Learn more about our approach <a href="approach.html" target="_blank">here</a>.</p>
                </div>
             </div>
          </div>
@@ -1666,6 +1830,24 @@
          document.getElementById("defaultOpen").click();
       </script>
 
+<script>
+      function timeseriesTab(evt, tabName) {
+         var i, tabcontent, tablinks;
+         tabcontent = document.getElementsByClassName("tabcontent");
+         for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+         tablinks = document.getElementsByClassName("tablinks");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+         document.getElementById(tabName).style.display = "block";
+         evt.currentTarget.className += " active";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("timeseriesDefault").click();
+   </script>
+
       <!-- Time Series Tooltips -->
       <script>
          $(document).ready(function () {
@@ -1689,7 +1871,7 @@
 
          });
       </script>
-      <script>
+      <!--<script>
          document.getElementById('Hotspot_2008').addEventListener('click', function () {
             document.getElementById('Hotspot_2008').classList.toggle('selected');
             document.getElementById('2008_Hotspot_display').classList.toggle('show');
@@ -1698,8 +1880,16 @@
             document.getElementById('Hotspot_2009').classList.toggle('selected');
             document.getElementById('2009_Hotspot_display').classList.toggle('show');
          });
+      </script>-->
+      <!-- What People Are Saying/Doing Tooltips -->
+      <script>
+         document.querySelector('body').addEventListener('mouseover', function (e) {
+            $('.tooltips').hide();
+            if (e.target.id.startsWith('LandValue') || e.target.id.startsWith('NewBiz')){
+               $('#'+e.target.id+'-text').show();
+            }
+         })
       </script>
-
       <!-- What People Are Saying/Doing Tooltips -->
       <script>
          document.querySelector('body').addEventListener('click', function (e) {
@@ -1788,6 +1978,10 @@
             });
          }      
       </script>
+
+   <script>
+      $( "div:contains('Unlicensed fullPage.js Extension')" ).hide;
+   </script>
 
    </body>
 
