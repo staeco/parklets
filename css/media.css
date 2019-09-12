@@ -717,9 +717,6 @@ and (max-width : 768px) {
   .parklet-icons ul {
     margin: -10% 0 0 0 !important;
   }
-  .accordion-container {
-    zoom: 0.75;
-  }
 }
 
 
@@ -779,6 +776,9 @@ and (max-device-width : 320px) {
     bottom: 0px !important;
     display: none !important;
   }
+  #section7_1.vertical {
+    display: block;
+  }
 }
 
 /* iPhone X */
@@ -795,6 +795,9 @@ and (-webkit-device-pixel-ratio : 3) {
   }
   #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
     padding: 50vh 30px 30px 30px !important;
+  }
+  #section7_1.vertical {
+    display: block;
   }
 }
 
@@ -1216,5 +1219,8 @@ and (max-device-width : 480px) {
   }
   .map-card {
     transform: scale(0.75);
+  }
+  #section7_1.vertical {
+    display: block;
   }
 }
