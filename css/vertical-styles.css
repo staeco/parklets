@@ -13,6 +13,7 @@
    width: 90%;
    position: relative;
    overflow: hidden;
+   margin: 0 auto;
 }
 .accordion {
    margin: 20px auto;
@@ -32,6 +33,42 @@
    right: auto;
    bottom: -5px;
    position: relative;
+}
+
+.vertical .accordion > div:nth-child(1),
+.vertical .accordion > div:nth-child(2) {
+   height: initial;
+   margin-top: 7px;
+}
+.vertical .accordion > div:nth-child(3),
+.vertical .accordion > div:nth-child(4) {
+   height: initial;
+   margin-top: 7px;
+}
+.vertical .accordion > div:nth-child(5),
+.vertical .accordion > div:nth-child(6) {
+   height: initial;
+   margin-top: 7px;
+}
+.vertical .accordion > div:nth-child(7),
+.vertical .accordion > div:nth-child(8) {
+   height: initial;
+   margin-top: 7px;
+}
+.vertical .accordion > div:nth-child(11),
+.vertical .accordion > div:nth-child(12) {
+   height: initial;
+   margin-top: 7px;
+}
+.vertical .accordion > div:nth-child(13),
+.vertical .accordion > div:nth-child(14) {
+   height: initial;
+   margin-top: 7px;
+}
+.vertical .accordion > div:nth-child(15),
+.vertical .accordion > div:nth-child(16) {
+   height: initial;
+   margin-top: 7px;
 }
 /*
 .accordion > div:nth-child(1),
@@ -216,7 +253,6 @@ h3.accordion-title {
    display: none;
    text-align: left;
    margin-top: -65px;
-	/*margin-top: calc(-17% - 5px);*/
    margin-bottom: 7px;
 }
 .active .vertical-info {
