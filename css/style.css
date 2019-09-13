@@ -306,7 +306,7 @@ section {
    height: 100vh;
    overflow: hidden;
 }
-svg {
+svg, text, tspan, path, g {
    font-family: 'DM Sans', sans-serif;
 }
 
