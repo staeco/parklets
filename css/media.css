@@ -946,7 +946,7 @@ and (max-device-width : 480px) {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 20px 40px;
+    padding: 20px 25px;
     overflow: hidden;
   }
   #section8 .container,
@@ -1107,7 +1107,7 @@ and (max-device-width : 480px) {
   h2.subhead {
     position: relative !important;
     left: auto !important;
-    margin-left: -25px !important;
+    margin-left: -15px !important;
     top: auto !important;
     width: auto !important;
   }

@@ -508,10 +508,10 @@ p.arrow {
    bottom: 0;
 }*/
 .land-chart-hover {
-   width: 100%;
+   width: calc(100% - 7%);
    height: 100%;
    position: absolute;
-   left: 34px;
+   right: 0;
    bottom: 0;
 }
 #LandValue_2008,
@@ -520,48 +520,50 @@ p.arrow {
 }
 #LandValue_2009,
 #NewBiz_2009 {
-   left: 48px; 
+   left: 10%; 
 }
 #LandValue_2010,
 #NewBiz_2010 {
-   left: 93px; 
+   left: 20%; 
 }
 #LandValue_2011,
 #NewBiz_2011 {
-   left: 139px; 
+   left: 30%; 
 }
 #LandValue_2012,
 #NewBiz_2012 {
-   left: 184px; 
+   left: 40%; 
 }
 #LandValue_2013,
 #NewBiz_2013 {
-   left: 230px; 
+   left: 50%; 
 }
 #LandValue_2014,
 #NewBiz_2014 {
-   left: 277px; 
+   left: 60%; 
 }
 #LandValue_2015,
 #NewBiz_2015 {
-   left: 323px; 
+   left: 70%; 
 }
-#LandValue_2016,
-#NewBiz_2016 {
-   left: 370px; 
+#LandValue_2016{
+   left: 80%; 
 }
 #LandValue_2017 {
-   left: 418px; 
+   left: 90%; 
+}
+#NewBiz_2016 {
+   left: 81.5%; 
 }
 #NewBiz_2017 {
-   left: 428px; 
+   left: 92%; 
 }
 .chart-hover.selected div {
    display: block;
 }
 #section3_1 .tab {
    width: auto;
-   margin: 0 0 20px 0;
+   margin: 0 0 30px 0;
    text-align: left;
 }
 #section3_1 .tab p {
@@ -573,7 +575,7 @@ p.arrow {
    color: #FCF5E9;
    background-color: #CAC2BD;
    padding: 3px 10px;
-   margin: 0 10px 30px 0;
+   margin: 0 10px 5px 0;
    display: inline-block;
 }
 #section3_1 .tab button h3 {
@@ -585,26 +587,29 @@ p.arrow {
 
 .land-chart-hover .data-tooltips {
    position: absolute;
-   top: -20px;
-   right: 65px;
-   width: 250px;
+   top: -5%;
+   right: 10%;
+   width: 50%;
 }
 .land-chart-hover .data-tooltips img {
    width: 100%;
 }
 .chart-hover {
    cursor: pointer;
-   width: 50px;
+   width: 10%;
    position: absolute;
-   bottom: 0;
-   height: 260px;
+   top: 0;
+   height: calc(90% - 3%);
 }
+
 #tab-biz-licenses .land-chart-hover .chart-hover {
-   bottom: 34px;
+   height: calc(90% - 13%);
+}
+#tab-biz-licenses .land-chart-hover {
+   width: calc(100% - 8%) !important;
 }
 #tab-biz-licenses .land-chart-hover .data-tooltips {
-   top: -10px !important;
-   right: 35px !important;
+   right: 5% !important;
 }
 .chart-line,
 .chart-hover:hover {
