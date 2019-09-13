@@ -583,13 +583,13 @@ p.arrow {
    background-color: #393A44;
 }
 
-.land-chart-hover .tooltips {
+.land-chart-hover .data-tooltips {
    position: absolute;
    top: -20px;
    right: 65px;
    width: 250px;
 }
-.land-chart-hover .tooltips img {
+.land-chart-hover .data-tooltips img {
    width: 100%;
 }
 .chart-hover {
@@ -602,7 +602,7 @@ p.arrow {
 #tab-biz-licenses .land-chart-hover .chart-hover {
    bottom: 34px;
 }
-#tab-biz-licenses .land-chart-hover .tooltips {
+#tab-biz-licenses .land-chart-hover .data-tooltips {
    top: -10px !important;
    right: 35px !important;
 }
