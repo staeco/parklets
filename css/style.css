@@ -1112,15 +1112,13 @@ a.underline:hover {
    top: 120px;
    width: 340px;
 }
-#section8 h2.subhead,
-#section8_1 h2.subhead {
+#section8 h2.subhead {
    position: absolute;
    left: -220px;
    top: 15vh;
    width: auto;
 }
-#section8 .container,
-#section8_1 .container {
+#section8 .container {
    width: 60%;
    margin: 0 auto !important;
 }
@@ -1560,8 +1558,8 @@ a.source:hover {
    margin-left: 33%;
 }
 .square {
-   width: 15px;
-   height: 15px;
+   width: 18px;
+   height: 18px;
    margin: 0 15px 15px 0;
    float: left;
    background-color: rgb(237, 110, 77);
@@ -1996,7 +1994,7 @@ h3.accordion-title {
    z-index: 750;
 }
 #section8_container {
-   height: 2000vh !important;
+   height: 1800vh !important;
    position: relative;
    z-index: 500;
 }
@@ -2062,17 +2060,17 @@ h3.accordion-title {
 }
 #section8_2 {
    background-color: #f3ede0;
-   background-image: url('../images/section8_2_bg.jpg');
+   background-image: url('../images/section8_6_bg.jpg');
    z-index: 670;
 }
 #section8_3 {
    background-color: #f3ede0;
-   background-image: url('../images/section8_3_bg.jpg');
+   background-image: url('../images/section8_7_bg.jpg');
    z-index: 690;
 }
 #section8_4 {
    background-color: #f3ede0;
-   background-image: url('../images/section8_4_bg.jpg');
+   background-image: url('../images/section8_8_bg.jpg');
    z-index: 700;
 }
 #section8_5 {
@@ -2128,13 +2126,19 @@ h3.accordion-title {
    left: 60px;
    margin: 0;
 }
+.image-container {
+   width: 100%;
+   text-align: center;
+   height: auto;
+   margin-top: -200px;
+}
 .map-card.large-quote img {
    width: 200px;
    height: 200px;
-   position: absolute;
-   top: -120px;
-   left: 100px;
-   margin: 0;
+   position: relative;
+   top: -15px;
+   left: auto;
+   margin: 0 auto;
 }
 .map-card.large-quote,
 .map-card.small-quote {
