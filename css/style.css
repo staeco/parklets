@@ -1146,10 +1146,9 @@ a.underline:hover {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: top left;
-   background-size: contain;
    width: 37%;
    min-width: 250px;
-   padding: 85px 100px 85px 85px;
+   padding: 85px 110px 85px 65px;
    height: 150vh;
    position: relative;
    overflow-y: auto;
@@ -1201,8 +1200,8 @@ a.underline:hover {
 }
 .left-column .small-quote img,
 .left-column .large-quote img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
 }
 .small-quote h2 {
    font-family: 'DM Sans', sans-serif;
@@ -1230,8 +1229,8 @@ a.underline:hover {
 
 #section2_1 {
    height: 150vh !important;
-   background-image: url(../images/section2_1.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_1.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1240,8 +1239,8 @@ a.underline:hover {
 }
 #section2_2 {
    height: 150vh !important;
-   background-image: url(../images/section2_2.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_2.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1250,8 +1249,8 @@ a.underline:hover {
 }
 #section2_3 {
    height: 150vh !important;
-   background-image: url(../images/section2_3.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_3.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1260,8 +1259,8 @@ a.underline:hover {
 }
 #section2_4 {
    height: 150vh !important;
-   background-image: url(../images/section2_4.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_4.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1270,8 +1269,8 @@ a.underline:hover {
 }
 #section2_5 {
    height: 150vh !important;
-   background-image: url(../images/section2_5.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_5.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1280,8 +1279,8 @@ a.underline:hover {
 }
 #section2_6 {
    height: 150vh !important;
-   background-image: url(../images/section2_6.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_6.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1290,8 +1289,8 @@ a.underline:hover {
 }
 #section2_7 {
    height: 150vh !important;
-   background-image: url(../images/section2_7.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_7.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
@@ -1300,8 +1299,8 @@ a.underline:hover {
 }
 #section2_8 {
    height: 150vh !important;
-   background-image: url(../images/section2_8.jpg);
-   background-size: 100%;
+   background-image: url(../images/map2_8.jpg);
+   background-size: contain;
    background-position: top right;
    background-color: #f3ebe1;
    background-repeat: no-repeat;
