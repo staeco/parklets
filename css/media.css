@@ -1002,7 +1002,7 @@ and (max-device-width : 480px) {
     width: 100% !important;
     position: relative !important;
     height: auto !important;
-    padding: 62vh 30px 30px 30px !important;
+    padding: 52vh 30px 30px 30px !important;
     background: transparent !important;
     background-size: 150% !important;
   }
@@ -1032,7 +1032,7 @@ and (max-device-width : 480px) {
   .map-link {
     margin: 0 !important;
     width: 100% !important;
-    height: 62vh !important;
+    height: 52vh !important;
     z-index: 900;
   }
   .small-quote h2 {
