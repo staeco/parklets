@@ -699,7 +699,7 @@ p.arrow {
    left: 50px;
    transition: all 1s ease-in-out;
    z-index: 500;
-   background-color: #FCF5E9;
+   background-color: transparent;
 }
 #tab-doing .interactive .tooltips {
    position: absolute;

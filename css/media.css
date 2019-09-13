@@ -1095,14 +1095,14 @@ and (max-device-width : 480px) {
   #tab-saying .interactive .tooltips {
     padding: 0 !important;
     width: 120px !important;
-    top: 60px !important;
+    top: 13% !important;
     left: 15px !important;
   }
   #tab-doing .interactive .tooltips {
     padding: 0 !important;
     width: 120px !important;
-    top: 130px !important;
-    right: -25px !important;
+    top: 30% !important;
+    right: -45px !important;
   }
   h2.subhead {
     position: relative !important;
