@@ -336,7 +336,7 @@ and (max-width : 768px) {
     width: 120px;
   }
   #section9 {
-    padding: 30px !important;
+    padding: 0px !important;
   }
   #home.mobile .home-title {
     padding: 180px 15px 0 15px !important;
@@ -836,8 +836,15 @@ and (max-device-width : 480px) {
     top: 0px;
     width: 100px;
   }
-  #section9 {
-    padding: 30px !important;
+  #section9.mobile {
+    padding: 0px !important;
+  }
+  #section9.mobile .container {
+    padding: 60px 20px !important;
+  }
+  #section9.mobile button.sponsor-button {
+    height: 54px !important;
+    width: 94% !important;
   }
   #home.mobile .home-title {
     padding: 160px 15px 0 15px !important;
