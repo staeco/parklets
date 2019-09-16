@@ -475,13 +475,16 @@ and (max-width : 768px) {
   }
   #section3.mobile,
   #section3_1.mobile,
-  #section3_2.mobile,
   #section4_1.mobile {
     background-position: center center !important;
     background-size: 130% !important;
     height: auto !important;
     padding: 40px 0 !important;
   }
+  #section3_2.mobile {
+    padding: 40px 0 !important;
+  }
+
   svg {
     width: 100%;
   }
@@ -507,7 +510,7 @@ and (max-width : 768px) {
     min-width: 100% !important;
     position: relative !important;
     height: auto !important;
-    padding: 40px !important;
+    padding: 40px 20px !important;
     background-size: 150% !important;
   }
   div.mobile {
@@ -990,11 +993,13 @@ and (max-device-width : 480px) {
   }
   #section3.mobile,
   #section3_1.mobile,
-  #section3_2.mobile,
   #section4_1.mobile {
     background-position: center center !important;
     background-size: 130% !important;
     height: auto !important;
+    padding: 40px 0 !important;
+  }
+  #section3_2.mobile {
     padding: 40px 0 !important;
   }
   svg {
@@ -1022,7 +1027,7 @@ and (max-device-width : 480px) {
     min-width: 100% !important;
     position: relative !important;
     height: auto !important;
-    padding: 40px !important;
+    padding: 40px 20px !important;
     background-size: 150% !important;
     margin-top: 50vh !important;
   }
