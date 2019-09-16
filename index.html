@@ -318,14 +318,14 @@
             <div class="col-md-6 col-sm-4 saying-doing">
                <h3 class="wow fadeInUp" data-wow-delay="300ms">What people are</h3>
                <div class="tab">
-                  <button id="defaultOpen" class="tablinks saying active" onclick="infographicTab(event, 'tab-saying')">
+                  <button id="defaultOpen" class="tablinks tablinks1 saying active" onclick="infographicTab(event, 'tab-saying')">
                      <h3>saying</h3>
                   </button>
-                  <button class="tablinks doing" onclick="infographicTab(event, 'tab-doing')">
+                  <button class="tablinks tablinks1 doing" onclick="infographicTab(event, 'tab-doing')">
                      <h3>doing</h3>
                   </button>
                </div>
-               <div id="tab-saying" class="tabcontent wow fadeIn">
+               <div id="tab-saying" class="tabcontent tabcontent1 wow fadeIn">
                   <p class="top25"><strong>How do people feel about parklets?</strong> We asked <a
                         href="approach.html#about4" target="_blank">people on the streets of San Francisco</a> what
                      three words they associate with parklets. The percentages below show the prevalence of each
@@ -841,16 +841,16 @@
          <div class="container">
             <div class="col-md-6 col-sm-4 right-content">
                <div class="tab">
-                  <button id="timeseriesDefault" class="tablinks chart-label active" onclick="timeseriesTab(event, 'tab-land-value')">
+                  <button id="timeseriesDefault" class="tablinks tablinks2 chart-label active" onclick="timeseriesTab(event, 'tab-land-value')">
                      <h3>Change in land value</h3>
                   </button>
-                  <button class="tablinks chart-label" onclick="timeseriesTab(event, 'tab-biz-licenses')">
+                  <button class="tablinks tablinks2 chart-label" onclick="timeseriesTab(event, 'tab-biz-licenses')">
                      <h3>New business licenses</h3>
                   </button>
                   <p><a href="approach.html#about2" target="_blank" class="source">see data source</a></p>
                </div>
                <!-- Land Value Chart-->
-               <div id="tab-land-value" class="tabcontent wow fadeIn">
+               <div id="tab-land-value" class="tabcontent tabcontent2 wow fadeIn">
                   <div class="interactive">
                      <div class="land-chart-hover">
                         <div id="LandValue_2008" class="chart-hover">
@@ -985,7 +985,7 @@
                   </div>
                </div>
                <!-- New Business Licenses Chart -->
-               <div id="tab-biz-licenses" class="tabcontent wow fadeIn">
+               <div id="tab-biz-licenses" class="tabcontent tabcontent2 wow fadeIn">
                   <div class="interactive">
                      <div class="land-chart-hover">
                         <div id="NewBiz_2008" class="chart-hover">
@@ -1123,14 +1123,56 @@
             </div>
          </div>
          <div id="map_arrow" class="wow fadeInUp arrow">
-            <a href="#section3_2_container" class="scroll-arrow wow slower heartBeat">
+            <a href="#section3_2" class="scroll-arrow wow slower heartBeat">
                <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
             </a>
          </div>
       </section>
 
-      <section id="section3_2_container">
-         <iframe src="taraval.html" height="100%" width="100%"></iframe>
+      <section class="mobile section" id="section3_2">
+         <div class="left-column">
+            <h4 class="purple-text"><strong>Spotlight on Taraval St.</strong></h4>
+            <h3 class="wow fadeInUp top15" data-wow-delay="200ms">Going in together</h3>
+            <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">The parklet sponsored by the Rolling Out Cafe on
+               Taraval Street was built as a collaboration with the local merchants association, the People of Parkside
+               Sunset. The parklet supports the district’s long-term goal of revitalizing the Taraval business corridor.
+            </p>
+            <p class="purple-text top15 bottom25 wow fadeInUp" data-wow-delay="250ms"><strong>Click each business to learn more.</strong></p>
+         </div>
+         <div class="taraval-interactive">
+               <div id="taraval-hotspots-container">
+                  <div class="taraval-hotspots" id="taraval-hotspot-1">
+                  <div class="taraval-popup hidden">
+                     <img class="profile-photo" src="images/taraval-profile-1.png" alt="Bruno" title="Bruno">
+                     <div class="large-quote">
+                        <h2>“On a sunny day, you can see families and friends get together outside. Not only to eat the food
+                        from [Rolling Out Cafe], but also to eat from other merchants as well.”</h2>
+                        <p class="quote-source">Bruno, Parklet sponsor and owner of Rolling Out Cafe</p>
+                     </div>
+                  </div>
+                  </div>
+                  <div class="taraval-hotspots" id="taraval-hotspot-2">
+                  <div class="taraval-popup hidden">
+                     <img class="profile-photo" src="images/taraval-profile-2.png" alt="D" title="D">
+                     <div class="large-quote">
+                        <h2>“It’s like a break room for my workers and good for my customers—like an outdoor waiting area when
+                        we have events.”</h2>
+                        <p class="quote-source">D, Owner of Versus Games</p>
+                     </div>
+                  </div>
+                  </div>
+                  <div class="taraval-hotspots" id="taraval-hotspot-3">
+                  <div class="taraval-popup hidden">
+                     <img class="profile-photo" src="images/taraval-profile-3.png" alt="Ken" title="Ken">
+                     <div class="large-quote">
+                        <h2>“As a business, I think it’s worth the tradeoff. What’s two parking spaces? It’s a benefit to us.”
+                        </h2>
+                        <p class="quote-source">Ken, Owner of Eagle Pizza</p>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
       </section>
 
       <section class="single-items center-block mobile" id="section3_6">
@@ -1199,14 +1241,66 @@
          </div>
          <!-- SCROLL ARROW -->
          <p class="wow fadeInUp arrow">
-            <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section4_container">
+            <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section4_1">
                <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
             </a>
          </p>
       </section>
-      <section id="section4_container">
-            <iframe src="exploratorium.html" height="100%" width="100%"></iframe>
-         </section>
+      <section class="section" id="section4_1">
+         <div class="left-column">
+               <h4 class="yellow-text"><strong>Spotlight on Valencia St.</strong></h4>
+               <h3 class="wow fadeInUp top15" data-wow-delay="200ms">Bringing STEM to the community</h3>
+               <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">This parklet was a collaboration between the
+                  <a href="https://www.exploratorium.edu/" target="_blank">Exploratorium Museum</a> and <a
+                     href="http://www.wearebvhm.com/" target="_blank">Buena Vista Horace Mann Middle School</a>. It was
+                  co-designed by neighborhood youth, community advisors, and science experts. The goal of the parklet is to
+                  provide an informal Science, Technology, Engineering, and Math (STEM) education resource for the Spanish
+                  speaking communities of the Mission District.</p>
+               <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms"><strong>Click each feature to learn more.
+                  </strong></p>
+         </div>
+         <div class="exploratorium-interactive">
+               <div id="exploratorium-hotspots-container">
+                   <div class="exploratorium-hotspots" id="exploratorium-hotspot-1">
+                       <div class="exploratorium-popup hidden">
+                           <img class="profile-photo" src="images/exploratorium-callout-1.png"
+                               alt="Hands-on STEM learning experiences" title="Hands-on STEM learning experiences">
+                           <h3>Hands-on STEM learning experiences</h3>
+                           <div class="large-quote">
+                               <h2>“There's a gardening club in the school that really wanted to work in it. All the plants
+                                   along this area are maintained by the school, so we tried to make something that was easy for
+                                   them to engage with.”</h2>
+                               <p class="quote-source">Eric, Parklet sponsor</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="exploratorium-hotspots" id="exploratorium-hotspot-2">
+                       <div class="exploratorium-popup hidden">
+                           <img class="profile-photo" src="images/exploratorium-callout-2.png" alt="D" title="D">
+                           <h3>Spanish as the dominant language</h3>
+                           <div class="large-quote">
+                               <h2>“We privilege the Spanish which is unusual. People don't privilege Spanish over English, but
+                                   we privilege Spanish. We didn't think it was actually that big of a deal but then later on,
+                                   talking to other people, they were like, to put Spanish on the left was a different thing.”
+                               </h2>
+                               <p class="quote-source">Eric, Parklet sponsor</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="exploratorium-hotspots" id="exploratorium-hotspot-3">
+                       <div class="exploratorium-popup hidden">
+                       <img class="profile-photo" src="images/exploratorium-callout-3.png" alt="Ken" title="Ken">
+                       <h3>Lesson-plans as installations </h3>
+                       <div class="large-quote">
+                           <h2>“The idea of a rain gauge tracking the data, collecting the data and then comparing it to
+                               the previous years data was an idea that came from the science teachers at this school.”</h2>
+                           <p class="quote-source">Eric, Parklet sponsor</p>
+                       </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </section>
       <section class="single-items center-block mobile" id="section4_5">
          <div class="container">
             <div class="col-md-4 mobile left-content">
@@ -1377,16 +1471,471 @@
          </div>
          <!-- SCROLL ARROW -->
          <p class="wow fadeInUp arrow">
-            <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section6_container">
+            <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section6">
                <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
             </a>
          </p>
       </section>
       <!-- Gallery -->
       
-      <section id="section6_container">
-         <iframe src="section6.html" height="100%" width="100%"></iframe>
-      </section>
+      <section class="section center-block mobile" id="section6">
+            <!-- SCROLL ARROW -->
+            <p class="wow fadeInUp arrow">
+                <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section6_1">
+                    <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+                </a>
+            </p>
+            <div class="container">
+                <div class="col-md-6 col-sm-4 right-content">
+                    <div class="item-titles darkcolor">
+                        <h2 class="subhead wow fadeInUp" data-wow-delay="300ms">
+                        It All Started With Feeding The Meter
+                        </h2>
+                        <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+                        The San Francisco Pavement to Parks Program created the city’s first parklets in 2009. One of the
+                        key inspirations for parklets was the international holiday, Park(ing) Day, which started in 2005
+                        with a guerilla installation by Rebar Studio. For one afternoon, they bought time on a parking
+                        meter downtown and installed a small patch of grass with a bench for public use. Parklets, which
+                        can be in place for years instead of hours, are now built all around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section center-block mobile" id="section6_1">
+            <!-- SCROLL ARROW -->
+            <p class="wow fadeInUp arrow">
+                    <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section6_2">
+                        <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+                    </a>
+                </p>
+            <div class="container">
+                <div class="col-md-6 col-sm-4 right-content">
+                    <div class="item-titles darkcolor">
+                        <div class="maria-container top25 bottom25 wow fadeInUp">
+                            <img src="images/maria.png">
+                            <p class="top25 bottom25 wow fadeInUp" data-wow-delay="350ms">
+                                “Parklets are great because they give the public a role in shaping the public realm.”<br>
+                                <strong>María, SF Parklets Team</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section6_2" class="section square-viz mobile">
+            <div class="left-column left-column1">
+               <h3 class="wow fadeInUp" data-wow-delay="200ms">Over the past 9 years sponsors have built <span class="orange-text">76 parklets</span>
+               </h3>
+               <p class="top25 bottom25 wow fadeInUp" data-wow-delay="250ms">Parklets take 13 months to build on average
+                  and last for anywhere from 20 to 97 months.</p>
+                  <p class="top15 bottom25 wow fadeInUp" data-wow-delay="250ms">All the parklets together have turned 109 parking spaces
+                        green, adding <strong>19,620 square feet of open space</strong> to the city.</p>
+               <p class="top15 bottom25 wow fadeInUp" data-wow-delay="350ms"><a class="underline"
+                  href="approach.html#about2" target="_blank" title="Learn more about the data">Learn more about the
+                  data</a>.</p>
+            </div>
+            <div id="squares-start" class="right-column">
+               <div class="parklet-squares">
+                  <div id="squares-1" class="parklet-squares-row">
+                     <h4 class="parklet-year">2009</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-2" class="parklet-squares-row">
+                     <h4 class="parklet-year">2010</h4>
+                     <div class="squares-container">
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class="tooltip-label">Parklet Name</span> Revolution Cafe </p>
+                              <p><span class="tooltip-label">Address</span> 3230 22nd St </p>
+                              <p><span class="tooltip-label">Year Installed</span> 2010 </p>
+                              <p><span class="tooltip-label">Year Removed</span> 2013 </p>
+                              <p><span class="tooltip-label">Active</span> No </p>
+                              <p><span class="tooltip-label">Time to build</span> N/A </p>
+                              <p><span class="tooltip-label">Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class="tooltip-label">Parklet Name</span> Just For Fun </p> <p><span class="tooltip-label">Address</span> 3982 24TH ST </p> <p><span class="tooltip-label">Year Installed</span> 2010 </p> <p><span class="tooltip-label">Year Removed</span> N/A </p> <p><span class="tooltip-label">Active</span> Yes </p> <p><span class="tooltip-label">Time to build</span> N/A </p> <p><span class="tooltip-label">Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class="tooltip-label">Parklet Name</span> Crepe House and Zaytoon Wraps </p> <p><span class="tooltip-label">Address</span> 1136 Valencia St </p> <p><span class="tooltip-label">Year Installed</span> 2010 </p> <p><span class="tooltip-label">Year Removed</span> N/A </p> <p><span class="tooltip-label">Active</span> Yes </p> <p><span class="tooltip-label">Time to build</span> N/A </p> <p><span class="tooltip-label">Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class="tooltip-label">Parklet Name</span> Just for You Cafe, Inc. </p> <p><span class="tooltip-label">Address</span> 732 22ND ST </p> <p><span class="tooltip-label">Year Installed</span> 2010 </p> <p><span class="tooltip-label">Year Removed</span> N/A </p> <p><span class="tooltip-label">Active</span> Yes </p> <p><span class="tooltip-label">Time to build</span> 7 </p> <p><span class="tooltip-label">Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="squares-3" class="parklet-squares-row">
+                     <h4 class="parklet-year">2011</h4>
+                     <div class="squares-container">
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Tsunami Panhandle </p> <p><span class='tooltip-label'>Address</span> 1300 FULTON ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> THE CREPE HOUSE </p> <p><span class='tooltip-label'>Address</span> 1755 POLK ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Smitten Ice Cream </p> <p><span class='tooltip-label'>Address</span> 904 VALENCIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 1 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> SQUAT & GOBBLE CAFÉ - 3600 16th St </p> <p><span class='tooltip-label'>Address</span> 3600 16TH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 1 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> FARLEY'S </p> <p><span class='tooltip-label'>Address</span> 1315 18TH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 2 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Mercury Cafe </p> <p><span class='tooltip-label'>Address</span> 201 OCTAVIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Quetzal Cafe </p> <p><span class='tooltip-label'>Address</span> 1230 Polk St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2013 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Cafe Seventy 8 </p> <p><span class='tooltip-label'>Address</span> 70 29th St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 2 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Four Barrel Coffee LLC </p> <p><span class='tooltip-label'>Address</span> 375 VALENCIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 4 </p> <p><span class='tooltip-label'>Square feet</span> 360 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Amandeep Jawa </p> <p><span class='tooltip-label'>Address</span> 937 VALENCIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 3 </p> <p><span class='tooltip-label'>Square feet</span> 360 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Martha Brothers </p> <p><span class='tooltip-label'>Address</span> 3868 24TH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 7 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Tonys Pizza Napoletana </p> <p><span class='tooltip-label'>Address</span> 1570 STOCKTON ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 4 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Union Square BID </p> <p><span class='tooltip-label'>Address</span> 197 O'Farrell St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Trouble Coffee </p> <p><span class='tooltip-label'>Address</span> 4033 JUDAH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 7 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Luna Rienne Gallery </p> <p><span class='tooltip-label'>Address</span> 3318 22ND ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 5 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Arlequin Cafe </p> <p><span class='tooltip-label'>Address</span> 384 HAYES ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 1 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Arizmendi Bakery - 9th St </p> <p><span class='tooltip-label'>Address</span> 1331 9th Ave </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2018 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> CAFE' GRECO </p> <p><span class='tooltip-label'>Address</span> 423 COLUMBUS AVE </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 12 </p> <p><span class='tooltip-label'>Square feet</span> 480 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Devil's Teeth Baking Company </p> <p><span class='tooltip-label'>Address</span> 3876 NORIEGA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Cafe Roma </p> <p><span class='tooltip-label'>Address</span> 526 Columbus Ave </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 7 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> O'Connell High School </p> <p><span class='tooltip-label'>Address</span> 2389 Folsom St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Martin Mack's </p> <p><span class='tooltip-label'>Address</span> 1568 Haight St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2013 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Ritual Coffee Roasters </p> <p><span class='tooltip-label'>Address</span> 1026 VALENCIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 5 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Dante's Table </p> <p><span class='tooltip-label'>Address</span> 544 Castro St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2014 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Fool's Errand </p> <p><span class='tooltip-label'>Address</span> 639 Divisadero St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 23 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Nile Cafe </p> <p><span class='tooltip-label'>Address</span> 544 Jones St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2013 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> The Mama Cafe </p> <p><span class='tooltip-label'>Address</span> 4754 Mission St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2017 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Farm: Table </p> <p><span class='tooltip-label'>Address</span> 754 POST ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 16 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Pizzeria Delfina </p> <p><span class='tooltip-label'>Address</span> 2410 CALIFORNIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 13 </p> <p><span class='tooltip-label'>Square feet</span> 360 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Jebena Cafe </p> <p><span class='tooltip-label'>Address</span> 990 Polk St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> 2013 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Outerlands Cafe </p> <p><span class='tooltip-label'>Address</span> 4001 JUDAH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 5 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Karachi Classics </p> <p><span class='tooltip-label'>Address</span> 533 Jones St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 3 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Darwin Cafe </p> <p><span class='tooltip-label'>Address</span> 212 RITCH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> The Dancing Pig </p> <p><span class='tooltip-label'>Address</span> 544 Castro St </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Senor Sisig </p> <p><span class='tooltip-label'>Address</span> 988 VALENCIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2011 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 8 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="squares-4" class="parklet-squares-row">
+                     <h4 class="parklet-year">2012</h4>
+                     <div class="squares-container">
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> SIMPLE PLEASURES CAFÉ </p> <p><span class='tooltip-label'>Address</span> 3434 BALBOA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 14 </p> <p><span class='tooltip-label'>Square feet</span> 360 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Cafe Okawari </p> <p><span class='tooltip-label'>Address</span> 236 TOWNSEND ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 360 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Rapha Racing, LLC </p> <p><span class='tooltip-label'>Address</span> 2198 FILBERT ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> EHS Pilates </p> <p><span class='tooltip-label'>Address</span> 1452 Valencia St </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> 2013 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> DFPF Corporation dba Fine Line Construction </p> <p><span class='tooltip-label'>Address</span> 1122 FOLSOM ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 13 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Nute's </p> <p><span class='tooltip-label'>Address</span> 903 CORTLAND AVE </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 4 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Foglifter Cafe </p> <p><span class='tooltip-label'>Address</span> 1901 Ocean Avenue </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> 2017 </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Other Avenues Food Store </p> <p><span class='tooltip-label'>Address</span> 3930 JUDAH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 12 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Butter </p> <p><span class='tooltip-label'>Address</span> 354 11TH ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 9 </p> <p><span class='tooltip-label'>Square feet</span> 360 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Cumaica Coffee Co. </p> <p><span class='tooltip-label'>Address</span> 200 CLEMENT ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 11 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square inactive">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Magnolia </p> <p><span class='tooltip-label'>Address</span> 1398 Haight St </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> No </p> <p><span class='tooltip-label'>Time to build</span> 17 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Greaser Coffee </p> <p><span class='tooltip-label'>Address</span> 1730 Yosemite Ave </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 1 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Dandelion Chocolate </p> <p><span class='tooltip-label'>Address</span> 740 VALENCIA ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 8 </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> HAIGHT STREET MARKET </p> <p><span class='tooltip-label'>Address</span> 1530 HAIGHT ST </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 19 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Reveille Coffee Company </p> <p><span class='tooltip-label'>Address</span> 200 COLUMBUS AVE </p> <p><span class='tooltip-label'>Year Installed</span> 2012 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> 29 </p> <p><span class='tooltip-label'>Square feet</span> 240 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="squares-5" class="parklet-squares-row">
+                     <h4 class="parklet-year">2013</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-6" class="parklet-squares-row">
+                     <h4 class="parklet-year">2014</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-7" class="parklet-squares-row">
+                     <h4 class="parklet-year">2015</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-8" class="parklet-squares-row">
+                     <h4 class="parklet-year">2016</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-9" class="parklet-squares-row">
+                     <h4 class="parklet-year">2017</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-10" class="parklet-squares-row">
+                     <h4 class="parklet-year">2018</h4>
+                     <div class="squares-container">
+                     
+                     </div>
+                  </div>
+                  <div id="squares-11" class="parklet-squares-row">
+                     <h4 class="parklet-year">2019</h4>
+                     <div class="squares-container">
+                        <!-- Parklet Square-->
+                        <div class="square">
+                           <div class="tooltiptext">
+                              <p><span class='tooltip-label'>Parklet Name</span> Meraki Market </p> <p><span class='tooltip-label'>Address</span> 927 POST ST </p> <p><span class='tooltip-label'>Year Installed</span> 2019 </p> <p><span class='tooltip-label'>Year Removed</span> N/A </p> <p><span class='tooltip-label'>Active</span> Yes </p> <p><span class='tooltip-label'>Time to build</span> N/A </p> <p><span class='tooltip-label'>Square feet</span> 120 </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </section>
 
       <section class="single-items center-block " id="section7">
          <div class="container">
@@ -1413,98 +1962,182 @@
          </p>
       </section>
 
-      <section class="single-items center-block " id="section7_1">
-         <div class="accordion-container">
-            <h3 class="accordion-title">City staff talks about what it means to add structure to a grassroots movement
-            </h3>
-            <div class="accordion-left">
-               <h3>The Soul</h3>
-               <p>Preserving the resident-led tactical urbanism origin of the Parklet Program.</p>
+      <section class="single-items center-block horizontal " id="section7_1">
+            <div class="accordion-container">
+               <h3 class="accordion-title">City staff talks about what it means to add structure to a grassroots movement
+               </h3>
+               <div class="accordion-left">
+                  <h3>The Soul</h3>
+                  <p>Preserving the resident-led tactical urbanism origin of the Parklet Program</p>
+               </div>
+               <div class="accordion">
+                  <div class="item item-1">
+   
+                  </div>
+                  <div class="info item-1">
+                     <h3>“You can go hog wild with your design as long as you meet the basic requirements.” </h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="item item-1">
+   
+                  </div>
+                  <div class="info item-1">
+                     <h3>“Right. It's kind of rogue, it's guerilla, it's coming from the community.” </h3>
+                     <p><strong>María, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="item item-1">
+   
+                  </div>
+                  <div class="info item-1">
+                     <h3>“That's how our Parket Program is run. We don't identify winners and losers. People come to us and
+                        say, I wanna do this.”</h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="item item-3">
+   
+                  </div>
+                  <div class="info item-3">
+                     <h3>“These projects are about more than aesthetics or physical changes in the public realm. There are
+                        deeper, more important stories about the social capital that a community creates when developing a
+                        project. The new community bonds, the increased civic engagement, that’s the real transformational
+                        impact.”</h3>
+                     <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+                  </div>
+                  <div class="item item-3">
+   
+                  </div>
+                  <div class="info item-3">
+                     <h3>“Success is if a parklet transforms a place into something better than it was before it got there,
+                        and I always say this, but for me, the Parket Program is the means to an end. It's not the final
+                        destination, because we want our streets and our neighborhoods to be better places physically for
+                        pedestrians and for activation, for them to be vibrant places.”</h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="item item-2">
+   
+                  </div>
+                  <div class="info item-2">
+                     <h3>“In order to actually make this work at scale and have it be a more permanent installation, we
+                        need to have it permitted. You couldn't expect someone to just pay the meter indefinitely,
+                        forever.”</h3>
+                     <p><strong>María, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="item item-2">
+   
+                  </div>
+                  <div class="info item-2">
+                     <h3>“A parklet is a pretty heavy capital investment. Especially considering all the requirements that
+                        we have. The ADA requirements, particularly. It's not a cheap thing to do, and I think it does need
+                        an uplift from government to help a business that wouldn't be able to do it otherwise.”</h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="item item-2">
+   
+                  </div>
+                  <div class="info item-2">
+                     <h3>“Our policy framework and placemaking ordinance - Places for People - reflect the highest order of
+                        systemic change for our city and urbanism in general. We’ve synthesized all the lessons learned
+                        from years of experimentation in the public realm into a streamlined system, which itself is a
+                        statement of civic values.”</h3>
+                     <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+                  </div>
+               </div>
+               <div class="accordion-right">
+                  <h3>A System</h3>
+                  <p>Uplift from the city government ensures the parklets are safe, accessible and inclusive.</p>
+               </div>
             </div>
-            <div class="accordion">
-               <div class="item item-1">
-
+            <!-- SCROLL ARROW -->
+            <p class="wow fadeInUp arrow">
+               <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section8_container">
+                  <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+               </a>
+            </p>
+         </section>
+         <section class="vertical single-items center-block " id="section7_1">
+            <div class="accordion-container">
+               <h3 class="accordion-title">City staff talks about what it means to add structure to a grassroots movement
+               </h3>
+               <div class="accordion-left">
+                  <h3>The Soul</h3>
+                  <p>Preserving the resident-led tactical urbanism origin of the Parklet Program.</p>
                </div>
-               <div class="info item-1">
-                  <h3>“You can go hog wild with your design as long as you meet the basic requirements.” </h3>
-                  <p><strong>John, SF Parklet Program</strong></p>
+               <div class="accordion">
+                  <div class="vertical-item item-1">
+                  </div>
+                  <div class="vertical-info item-1">
+                     <h3>“You can go hog wild with your design as long as you meet the basic requirements.” </h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="vertical-item item-1">
+                  </div>
+                  <div class="vertical-info item-1">
+                     <h3>“Right. It's kind of rogue, it's guerilla, it's coming from the community.” </h3>
+                     <p><strong>María, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="vertical-item item-1">
+                  </div>
+                  <div class="vertical-info item-1">
+                     <h3>“That's how our Parket Program is run. We don't identify winners and losers. People come to us and
+                        say, I wanna do this.”</h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="vertical-item item-3">
+                  </div>
+                  <div class="vertical-info item-3">
+                     <h3>“These projects are about more than aesthetics or physical changes in the public realm. There are
+                        deeper, more important stories about the social capital that a community creates when developing a
+                        project. The new community bonds, the increased civic engagement, that’s the real transformational
+                        impact.”</h3>
+                     <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+                  </div>
+                  <div class="vertical-item item-3">
+                  </div>
+                  <div class="vertical-info item-3">
+                     <h3>“Success is if a parklet transforms a place into something better than it was before it got there,
+                        and I always say this, but for me, the Parket Program is the means to an end. It's not the final
+                        destination, because we want our streets and our neighborhoods to be better places physically for
+                        pedestrians and for activation, for them to be vibrant places.”</h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="vertical-item item-2">
+                  </div>
+                  <div class="vertical-info item-2">
+                     <h3>“In order to actually make this work at scale and have it be a more permanent installation, we
+                        need to have it permitted. You couldn't expect someone to just pay the meter indefinitely,
+                        forever.”</h3>
+                     <p><strong>María, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="vertical-item item-2">
+                  </div>
+                  <div class="vertical-info item-2">
+                     <h3>“A parklet is a pretty heavy capital investment. Especially considering all the requirements that
+                        we have. The ADA requirements, particularly. It's not a cheap thing to do, and I think it does need
+                        an uplift from government to help a business that wouldn't be able to do it otherwise.”</h3>
+                     <p><strong>John, SF Parklet Program</strong></p>
+                  </div>
+                  <div class="vertical-item item-2">
+                  </div>
+                  <div class="vertical-info item-2">
+                     <h3>“Our policy framework and placemaking ordinance - Places for People - reflect the highest order of
+                        systemic change for our city and urbanism in general. We’ve synthesized all the lessons learned
+                        from years of experimentation in the public realm into a streamlined system, which itself is a
+                        statement of civic values.”</h3>
+                     <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+                  </div>
                </div>
-               <div class="item item-1">
-
-               </div>
-               <div class="info item-1">
-                  <h3>“Right. It's kind of rogue, it's guerilla, it's coming from the community.” </h3>
-                  <p><strong>María, SF Parklet Program</strong></p>
-               </div>
-               <div class="item item-1">
-
-               </div>
-               <div class="info item-1">
-                  <h3>“That's how our Parket Program is run. We don't identify winners and losers. People come to us and
-                     say, I wanna do this.”</h3>
-                  <p><strong>John, SF Parklet Program</strong></p>
-               </div>
-               <div class="item item-3">
-
-               </div>
-               <div class="info item-3">
-                  <h3>“These projects are about more than aesthetics or physical changes in the public realm. There are
-                     deeper, more important stories about the social capital that a community creates when developing a
-                     project. The new community bonds, the increased civic engagement, that’s the real transformational
-                     impact.”</h3>
-                  <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
-               </div>
-               <div class="item item-3">
-
-               </div>
-               <div class="info item-3">
-                  <h3>“Success is if a parklet transforms a place into something better than it was before it got there,
-                     and I always say this, but for me, the Parket Program is the means to an end. It's not the final
-                     destination, because we want our streets and our neighborhoods to be better places physically for
-                     pedestrians and for activation, for them to be vibrant places.”</h3>
-                  <p><strong>John, SF Parklet Program</strong></p>
-               </div>
-               <div class="item item-2">
-
-               </div>
-               <div class="info item-2">
-                  <h3>“In order to actually make this work at scale and have it be a more permanent installation, we
-                     need to have it permitted. You couldn't expect someone to just pay the meter indefinitely,
-                     forever.”</h3>
-                  <p><strong>María, SF Parklet Program</strong></p>
-               </div>
-               <div class="item item-2">
-
-               </div>
-               <div class="info item-2">
-                  <h3>“A parklet is a pretty heavy capital investment. Especially considering all the requirements that
-                     we have. The ADA requirements, particularly. It's not a cheap thing to do, and I think it does need
-                     an uplift from government to help a business that wouldn't be able to do it otherwise.”</h3>
-                  <p><strong>John, SF Parklet Program</strong></p>
-               </div>
-               <div class="item item-2">
-
-               </div>
-               <div class="info item-2">
-                  <h3>“Our policy framework and placemaking ordinance - Places for People - reflect the highest order of
-                     systemic change for our city and urbanism in general. We’ve synthesized all the lessons learned
-                     from years of experimentation in the public realm into a streamlined system, which itself is a
-                     statement of civic values.”</h3>
-                  <p><strong>Robin, SF Placemaking Policy Lead</strong></p>
+               <div class="accordion-right">
+                  <h3>A System</h3>
+                  <p>Uplift from the city government ensures the parklets are safe, accessible and inclusive.</p>
                </div>
             </div>
-            <div class="accordion-right">
-               <h3>A System</h3>
-               <p>Uplift from the city government ensures the parklets are safe, accessible and inclusive.</p>
-            </div>
-         </div>
-         <!-- SCROLL ARROW -->
-         <p class="wow fadeInUp arrow">
-            <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section8_container">
-               <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
-            </a>
-         </p>
-      </section>
+            <!-- SCROLL ARROW -->
+            <p class="wow fadeInUp arrow">
+               <a class="scroll-arrow wow slower heartBeat pagescroll" href="#section8_container">
+                  <img src="images/scroll-arrow.svg" alt="Scroll Down" title="Scroll Down" />
+               </a>
+            </p>
+         </section>
 
       <!--<section class="single-items center-block " id="section8">
    <div class="container">
@@ -1674,316 +2307,386 @@
       <!-- PRELOAD IMAGES-->
       <script>
 
-         var myimages = new Array()
-         function preloadimages() {
-            for (i = 0; i < preloadimages.arguments.length; i++) {
-               myimages[i] = new Image()
-               myimages[i].src = preloadimages.arguments[i]
+            var myimages = new Array()
+            function preloadimages() {
+               for (i = 0; i < preloadimages.arguments.length; i++) {
+                  myimages[i] = new Image()
+                  myimages[i].src = preloadimages.arguments[i]
+               }
             }
+   
+            //Enter path of images to be preloaded inside parenthesis. Extend list as desired.
+            preloadimages("images/taraval_1.png", "images/taraval_2.png", "images/taraval_3.png", "images/taraval_4.png", "images/gallery1.jpg", "images/gallery2.jpg", "images/gallery3.jpg", "images/gallery4.jpg", "images/gallery5.jpg", "images/gallery6.jpg", "images/gallery7.jpg", "images/gallery8.jpg", "images/gallery9.jpg", "images/gallery10.jpg", "images/person.png", "images/section2_1.jpg", "images/section2_2.jpg", "images/section2_3.jpg", "images/section2_4.jpg", "images/section2_5.jpg", "images/section2_6.jpg", "images/section2_7.jpg", "images/section2_8.jpg", "images/sponsor-1.png", "images/sponsor-2.png", "images/sponsor-3.png", "images/sponsor-4.png", "images/sponsor-5.png", "images/sponsor-6.png", "images/sponsor-1-bg.png", "images/sponsor-2-bg.png", "images/sponsor-3-bg.png", "images/sponsor-4-bg.png", "images/sponsor-5-bg.png", "images/sponsor-6-bg.png", "images/maria.png", "images/section2_3_profile.png", "images/section2_4_profile.png", "images/section2_5_profile.png", "images/section2_6_profile.png", "images/section2_7_profile.png", "images/section2_8_profile.png","images/section8_01.jpg","images/section8_02.jpg","images/section8_03.jpg", "images/section8_04.jpg", "images/section8_05.jpg", "images/section8_06.jpg", "images/section8_07.jpg", "images/section8_08.jpg", "images/section8_09.jpg")
+   
+         </script>
+
+<script>
+      // Catch scroll event
+      $(window).scroll(function () {
+         // If user didn't scroll 1200px set default z-index
+         if ($(this).scrollTop() < 6000) {
+            $("#section3_2").css("z-index", 50);
+         } else {
+            // If user scrolled 1200px change logo's z-index to 9999  
+            $("#section3_2").css("z-index", 400);
          }
+      });
+   </script>
 
-         //Enter path of images to be preloaded inside parenthesis. Extend list as desired.
-         preloadimages("images/taraval_1.png", "images/taraval_2.png", "images/taraval_3.png", "images/taraval_4.png", "images/gallery1.jpg", "images/gallery2.jpg", "images/gallery3.jpg", "images/gallery4.jpg", "images/gallery5.jpg", "images/gallery6.jpg", "images/gallery7.jpg", "images/gallery8.jpg", "images/gallery9.jpg", "images/gallery10.jpg", "images/person.png", "images/section2_1.jpg", "images/section2_2.jpg", "images/section2_3.jpg", "images/section2_4.jpg", "images/section2_5.jpg", "images/section2_6.jpg", "images/section2_7.jpg", "images/section2_8.jpg", "images/sponsor-1.png", "images/sponsor-2.png", "images/sponsor-3.png", "images/sponsor-4.png", "images/sponsor-5.png", "images/sponsor-6.png", "images/sponsor-1-bg.png", "images/sponsor-2-bg.png", "images/sponsor-3-bg.png", "images/sponsor-4-bg.png", "images/sponsor-5-bg.png", "images/sponsor-6-bg.png", "images/maria.png", "images/section2_1_profile.png", "images/section2_2_profile.png", "images/section2_3_profile.png", "images/section2_4_profile.png", "images/section2_5_profile.png", "images/section2_6_profile.png", "images/section2_7_profile.png", "images/section2_8_profile.png","images/section8_01.jpg","images/section8_02.jpg","images/section8_03.jpg", "images/section8_04.jpg", "images/section8_05.jpg", "images/section8_06.jpg", "images/section8_07.jpg", "images/section8_08.jpg", "images/section8_09.jpg")
-
-      </script>
-
-      <!-- Z-Index Hack -->
-      <!-- Section 8 Maps -->
-      <script>
-         // Catch scroll event
-         $(window).scroll(function () {
-            // If user didn't scroll 1200px set default z-index
-            if ($(this).scrollTop() < 26000) {
-               $("#section8_container").css("z-index", 50);
-            } else {
-               // If user scrolled 1200px change logo's z-index to 9999  
-               $("#section8_container").css("z-index", 700);
-            }
-         });
-      </script>
-      <!-- Section 3 Taraval -->
-      <script>
-         // Catch scroll event
-         $(window).scroll(function () {
-            // If user didn't scroll 1200px set default z-index
-            if ($(this).scrollTop() < 6000) {
-               $("#section3_2_container").css("z-index", 50);
-            } else {
-               // If user scrolled 1200px change logo's z-index to 9999  
-               $("#section3_2_container").css("z-index", 400);
-            }
-         });
-      </script>
-      <!-- Section 4 Exploratorium -->
-      <script>
-         // Catch scroll event
-         $(window).scroll(function () {
-            // If user didn't scroll 1200px set default z-index
-            if ($(this).scrollTop() < 17000) {
-               $("#section4_container").css("z-index", 20);
-            } else {
-               // If user scrolled 1200px change logo's z-index to 9999  
-               $("#section4_container").css("z-index", 500);
-            }
-         });
-      </script>
-
-      <!-- Section 6 Parklet Squares -->
-      <script>
-         // Catch scroll event
-         $(window).scroll(function () {
-            // If user didn't scroll 1200px set default z-index
-            if ($(this).scrollTop() < 22300) {
-               $("#section6_container").css("z-index", 20);
-            } else {
-               // If user scrolled 1200px change logo's z-index to 9999  
-               $("#section6_container").css("z-index", 600);
-            }
-         });
-      </script>
-      
-
-      <script>
-         $(function () {
-            $('a[href*="#"]:not([href="#"])').click(function () {
-               if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                  if (target.length) {
-                     $('html, body').animate({
-                        scrollTop: target.offset().top
-                     }, 1000);
-                     return false;
+<script>
+      // Catch scroll event
+      $(window).scroll(function () {
+         // If user didn't scroll 1200px set default z-index
+         if ($(this).scrollTop() < 21000) {
+            $("#section8_container").css("z-index", 50);
+         } else {
+            // If user scrolled 1200px change logo's z-index to 9999  
+            $("#section8_container").css("z-index", 400);
+         }
+      });
+   </script>
+   
+         <script>
+            $(function () {
+               $('a[href*="#"]:not([href="#"])').click(function () {
+                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                     var target = $(this.hash);
+                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                     if (target.length) {
+                        $('html, body').animate({
+                           scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                     }
                   }
+               });
+            });
+         </script>
+         <script>
+            $(document).ready(function () {
+               var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+               if (window.location.hash && isChrome) {
+                  setTimeout(function () {
+                     var hash = window.location.hash;
+                     window.location.hash = "";
+                     window.location.hash = hash;
+                  }, 300);
                }
             });
-         });
-      </script>
-      <script>
-         $(document).ready(function () {
-            var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-            if (window.location.hash && isChrome) {
-               setTimeout(function () {
-                  var hash = window.location.hash;
-                  window.location.hash = "";
-                  window.location.hash = hash;
-               }, 300);
-            }
-         });
-      </script>
-
-      <script>
-         AOS.init({
-            duration: 1200,
-            easing: 'linear',
-         });
-      </script>
-
-      <script>
-         /* 
-         All Thanks To Osama ElZero 
-      */
-
-         $(function () {
-
-            'use strict';
-
-            // Give Active Class
-
-            $('.item').first().addClass('active');
-
-            // Show First Info
-
-            $('.info').first().show().animate({ width: '40%' });
-
-            // Show Info On Click
-
-            $('.item').click(function () {
-
-               $(this).addClass("active").siblings('.item').removeClass('active');
-
-               $(this).next().show().animate({ width: '40%' }).siblings('.info').animate({ width: 0 }, function () {
-
-                  $(this).hide();
-
-               });
-
+         </script>
+   
+         <script>
+            AOS.init({
+               duration: 800,
+               easing: 'linear',
             });
+         </script>
+   
+         <script>
+            /* 
+            All Thanks To Osama ElZero 
+         */
+   
+            $(function () {
+   
+               'use strict';
+   
+               // Give Active Class
+   
+               $('.item').first().addClass('active');
+   
+               // Show First Info
+   
+               $('.info').first().show().animate({ width: '40%' });
+   
+               // Show Info On Click
+   
+               $('.item').click(function () {
+   
+                  $(this).addClass("active").siblings('.item').removeClass('active');
+   
+                  $(this).next().show().animate({ width: '40%' }).siblings('.info').animate({ width: 0 }, function () {
+   
+                     $(this).hide();
+   
+                  });
+   
+               });
+   
+            });
+         </script>
+         <script>
 
-         });
-      </script>
-
-      <script>
-         function infographicTab(evt, tabName) {
+               $(function () {
+            
+                  'use strict';
+            
+                  // Give Active Class
+            
+                  $('.vertical-item').first().addClass('active');
+            
+                  // Show First Info
+            
+                  $('.vertical-info').first().show().animate({ height: '420px' });
+            
+                  // Show Info On Click
+            
+                  $('.vertical-item').click(function () {
+            
+                     $(this).addClass("active").siblings('.vertical-item').removeClass('active');
+            
+                     $(this).next().show().animate({ height: '420px' }).siblings('.vertical-info').animate({ height: 0 }, function () {
+            
+                        $(this).hide();
+            
+                     });
+            
+                  });
+            
+               });
+            </script>
+         <script>
+         function mobileCheck() {
+            console.log('FUNCTION RUNNING')
+            var check = false;
+            (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+            return check;
+         };
+         console.log('mobile',mobileCheck())
+         if (mobileCheck() && window.innerHeight > window.innerWidth) {
+            var accordion = document.getElementsByClassName("horizontal")[0];
+            accordion.style.display = 'none';
+            var accordionMobile = document.getElementsByClassName("vertical")[0];
+            accordionMobile.style.display = 'block';
+         }
+         </script>
+         <!-- What People Are Saying/Doing Tooltips -->
+         <script>
+               document.querySelector('body').addEventListener('mouseover', function (e) {
+                  $('.data-tooltips').hide();
+                  if (e.target.id.startsWith('LandValue') || e.target.id.startsWith('NewBiz')){
+                     $('#'+e.target.id+'-text').show();
+                  }
+               })
+            </script>
+            <!-- What People Are Saying/Doing Tooltips -->
+            <script>
+               document.querySelector('body').addEventListener('click', function (e) {
+                  $('.tooltips').hide();
+                  if (e.target.id.startsWith('doing') || e.target.id.startsWith('saying')){
+                     $('#'+e.target.id+'-text').show();
+                  }
+               })
+            </script>
+         <script>
+            function infographicTab(evt, tabName) {
+               evt.preventDefault();
+               var i, tabcontent, tablinks;
+               tabcontent = document.getElementsByClassName("tabcontent1");
+               for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+               }
+               tablinks = document.getElementsByClassName("tablinks1");
+               for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+               }
+               document.getElementById(tabName).style.display = "block";
+               evt.currentTarget.className += " active";
+            }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+         </script>
+   
+   <script>
+         function timeseriesTab(evt, tabName) {
+            evt.preventDefault();
             var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
+            tabcontent = document.getElementsByClassName("tabcontent2");
             for (i = 0; i < tabcontent.length; i++) {
                tabcontent[i].style.display = "none";
             }
-            tablinks = document.getElementsByClassName("tablinks");
+            tablinks = document.getElementsByClassName("tablinks2");
             for (i = 0; i < tablinks.length; i++) {
                tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
          }
-         // Get the element with id="defaultOpen" and click on it
-         document.getElementById("defaultOpen").click();
+          document.getElementById("timeseriesDefault").click();
       </script>
-
-<script>
-      function timeseriesTab(evt, tabName) {
-         var i, tabcontent, tablinks;
-         tabcontent = document.getElementsByClassName("tabcontent");
-         for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-         }
-         tablinks = document.getElementsByClassName("tablinks");
-         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-         }
-         document.getElementById(tabName).style.display = "block";
-         evt.currentTarget.className += " active";
-      }
-      // Get the element with id="timeseriesDefault" and click on it
-      document.getElementById("timeseriesDefault").click();
-   </script>
-
-      <!-- Time Series Tooltips -->
-      <script>
-         $(document).ready(function () {
-
-            $(function () { // TOGGLE CLASS ON ELEMENT
-               $(".tile-top").on("click", function () {
-                  $(this).toggleClass('active');
-               });
-            }); //END TOGGLE CLASS
-
-            $(function () {  // REMOVE CLASS WHEN YOU CLICK, EXCLUDE ELEMENTS
-               var ignore = Array(".tile-top", // elements to ignore
-                  ".tile-bottom");
-               ignore.forEach(function (item) { // loop through ignore array
-                  $(item).click(function () { return false; }); // ignore item
-               });
-               $(document).on("click", function () { // remove class when you click anywhere else
-                  $(".tile-top").removeClass('active');
-               });
-            });// END REMOVE CLASS
-
-         });
-      </script>
-      <!--<script>
-         document.getElementById('Hotspot_2008').addEventListener('click', function () {
-            document.getElementById('Hotspot_2008').classList.toggle('selected');
-            document.getElementById('2008_Hotspot_display').classList.toggle('show');
-         })
-         document.getElementById('Hotspot_2009').addEventListener('click', function () {
-            document.getElementById('Hotspot_2009').classList.toggle('selected');
-            document.getElementById('2009_Hotspot_display').classList.toggle('show');
-         });
-      </script>-->
-
-      <!-- Time Series Chart Data Tooltips -->
-      <script>
-         document.querySelector('body').addEventListener('mouseover', function (e) {
-            $('.data-tooltips').hide();
-            if (e.target.id.startsWith('LandValue') || e.target.id.startsWith('NewBiz')){
-               $('#'+e.target.id+'-text').show();
-            }
-         })
-      </script>
-      <!-- What People Are Saying/Doing Tooltips -->
-      <script>
-         document.querySelector('body').addEventListener('click', function (e) {
-            $('.tooltips').hide();
-            if (e.target.id.startsWith('doing') || e.target.id.startsWith('saying')){
-               $('#'+e.target.id+'-text').show();
-            }
-         })
-      </script>
-
-      <script>
-         // When the user scrolls the page, execute myFunction 
-         window.onscroll = function () { myFunction() };
-
-         function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-         }
-      </script>
-
-      <script>
-         $(window).on("scroll touchmove", function () {
-            if ($(document).scrollTop() >= $("#section1").position().top) {
-               $('#myBar').css('background', '#4fb8aa');
-            };
-            if ($(document).scrollTop() >= $("#section2").position().top) {
-               $('#myBar').css('background', '#EC6E4E');
-            };
-            if ($(document).scrollTop() >= $("#section3").position().top) {
-               $('#myBar').css('background', '#9F82AE');
-            };
-            if ($(document).scrollTop() >= $("#section4").position().top) {
-               $('#myBar').css('background', '#E8B64D');
-            };
-            if ($(document).scrollTop() >= $("#section5").position().top) {
-               $('#myBar').css('background', '#1C8E7F');
-            };
-            if ($(document).scrollTop() >= $("#section6_container").position().top) {
-               $('#myBar').css('background', '#ED6E4D');
-            };
-            if ($(document).scrollTop() >= $("#section7").position().top) {
-               $('#myBar').css('background', '#9570A6');
-            };
-            if ($(document).scrollTop() >= $("#section8_container").position().top) {
-               $('#myBar').css('background', '#E8B64D');
-            };
-            if ($(document).scrollTop() >= $("#section9").position().top) {
-               $('#myBar').css('background', '#B5E1D6');
-            };
-         });
-      </script>
-      <!--
-      <script type="text/javascript">
-         new fullpage('#fullpage', {
-
-            slidesNavigation: false,
-            //In addition to the extension license you'll 
-            //need to acquire a fullPage.js license from https://goo.gl/5x9a22
-            licenseKey: '7A10F14A-CB234BFF-8C39528A-C00E70BC',
-
-            fadingEffect: true,
-            fadingEffectKey: '28E617A9-23FF412E-AA4EDB23-CB59B1E8', //see https://goo.gl/xkUmHS
-
-            scrollOverflow: true,
-            scrollOverflowReset: true,
-            scrollOverflowResetKey: 'F3AC68CC-28C94331-9AB1187C-9F1C9980'
-         });
-      </script>
-
-      <script>
-         $("div:contains('Unlicensed fullPage.js Extension')").css("display", "none");
-      </script>-->
-
-      <script>
-         if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
-            $('body').on("mousewheel", function (event) {
-               // remove default behavior
-               event.preventDefault(); 
-
-               //scroll without smoothing
-               var wheelDelta = event.wheelDelta;
-               var currentScrollPosition = window.pageYOffset;
-               window.scrollTo(0, currentScrollPosition - wheelDelta);
+   
+         <!-- Time Series Tooltips -->
+         <script>
+            $(document).ready(function () {
+   
+               $(function () { // TOGGLE CLASS ON ELEMENT
+                  $(".tile-top").on("click", function () {
+                     $(this).toggleClass('active');
+                  });
+               }); //END TOGGLE CLASS
+   
+               $(function () {  // REMOVE CLASS WHEN YOU CLICK, EXCLUDE ELEMENTS
+                  var ignore = Array(".tile-top", // elements to ignore
+                     ".tile-bottom");
+                  ignore.forEach(function (item) { // loop through ignore array
+                     $(item).click(function () { return false; }); // ignore item
+                  });
+                  $(document).on("click", function () { // remove class when you click anywhere else
+                     $(".tile-top").removeClass('active');
+                  });
+               });// END REMOVE CLASS
+   
             });
-         }      
-      </script>
+         </script>
 
-   <script>
-      $( "div:contains('Unlicensed fullPage.js Extension')" ).hide;
-   </script>
+         <!-- Taraval Interactive-->
+            
+         <script>
+               var el = document.getElementById("taraval-hotspot-1");
+               document.addEventListener("click", function(event) {
+                 var isClickInside = el.contains(event.target);
+         
+                 if (isClickInside) {
+                   el.classList.toggle("selected");
+                 } else {
+                   el.classList.remove("selected");
+                 }
+               });
+               var el2 = document.getElementById("taraval-hotspot-2");
+               document.addEventListener("click", function(event) {
+                 var isClickInside2 = el2.contains(event.target);
+         
+                 if (isClickInside2) {
+                   el2.classList.toggle("selected");
+                 } else {
+                   el2.classList.remove("selected");
+                 }
+               });
+               var el3 = document.getElementById("taraval-hotspot-3");
+               document.addEventListener("click", function(event) {
+                 var isClickInside3 = el3.contains(event.target);
+         
+                 if (isClickInside3) {
+                   el3.classList.toggle("selected");
+                 } else {
+                   el3.classList.remove("selected");
+                 }
+               });
+             </script>
+             <script>
+                  document.getElementById('taraval-hotspot-1').addEventListener('mouseover', function () {
+                     document.getElementById('taraval-hotspots-container').classList.add('taraval-hotspot-1');
+                  })
+                  document.getElementById('taraval-hotspot-1').addEventListener('mouseout', function () {
+                     document.getElementById('taraval-hotspots-container').classList.remove('taraval-hotspot-1');
+                  })
+                  document.getElementById('taraval-hotspot-2').addEventListener('mouseover', function () {
+                     document.getElementById('taraval-hotspots-container').classList.add('taraval-hotspot-2');
+                  })
+                  document.getElementById('taraval-hotspot-2').addEventListener('mouseout', function () {
+                     document.getElementById('taraval-hotspots-container').classList.remove('taraval-hotspot-2');
+                  })
+                  document.getElementById('taraval-hotspot-3').addEventListener('mouseover', function () {
+                     document.getElementById('taraval-hotspots-container').classList.add('taraval-hotspot-3');
+                  })
+                  document.getElementById('taraval-hotspot-3').addEventListener('mouseout', function () {
+                     document.getElementById('taraval-hotspots-container').classList.remove('taraval-hotspot-3');
+                  });
+                  </script>
+
+         <!-- Exploratorium Interactive-->
+
+         <script>
+               var el_ex = document.getElementById("exploratorium-hotspot-1");
+               document.addEventListener("click", function(event) {
+                 var isClickInside = el_ex.contains(event.target);
+                 if (isClickInside) {
+                   el_ex.classList.toggle("selected");
+                 } else {
+                   el_ex.classList.remove("selected");
+                 }
+               });
+               var el_ex2 = document.getElementById("exploratorium-hotspot-2");
+               document.addEventListener("click", function(event) {
+                 var isClickInside2 = el_ex2.contains(event.target);
+                 if (isClickInside2) {
+                   el_ex2.classList.toggle("selected");
+                 } else {
+                   el_ex2.classList.remove("selected");
+                 }
+               });
+               var el_ex3 = document.getElementById("exploratorium-hotspot-3");
+               document.addEventListener("click", function(event) {
+                 var isClickInside3 = el_ex3.contains(event.target);
+                 if (isClickInside3) {
+                   el_ex3.classList.toggle("selected");
+                 } else {
+                   el_ex3.classList.remove("selected");
+                 }
+               });
+             </script>
+   
+         <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function () { myFunction() };
+   
+            function myFunction() {
+               var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+               var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+               var scrolled = (winScroll / height) * 100;
+               document.getElementById("myBar").style.width = scrolled + "%";
+            }
+         </script>
+   
+         <script>
+            $(window).on("scroll touchmove", function () {
+               if ($(document).scrollTop() >= $("#section1").position().top) {
+                  $('#myBar').css('background', '#4fb8aa');
+               };
+               if ($(document).scrollTop() >= $("#section2").position().top) {
+                  $('#myBar').css('background', '#EC6E4E');
+               };
+               if ($(document).scrollTop() >= $("#section3").position().top) {
+                  $('#myBar').css('background', '#9F82AE');
+               };
+               if ($(document).scrollTop() >= $("#section4").position().top) {
+                  $('#myBar').css('background', '#E8B64D');
+               };
+               if ($(document).scrollTop() >= $("#section5").position().top) {
+                  $('#myBar').css('background', '#1C8E7F');
+               };
+               if ($(document).scrollTop() >= $("#section6").position().top) {
+                  $('#myBar').css('background', '#ED6E4D');
+               };
+               if ($(document).scrollTop() >= $("#section7").position().top) {
+                  $('#myBar').css('background', '#9570A6');
+               };
+               if ($(document).scrollTop() >= $("#section8_container").position().top) {
+                  $('#myBar').css('background', '#E8B64D');
+               };
+               if ($(document).scrollTop() >= $("#section9").position().top) {
+                  $('#myBar').css('background', '#B5E1D6');
+               };
+            });
+         </script>
+   
+         <script>
+            if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
+               $('body').on("mousewheel", function (event) {
+                  // remove default behavior
+                  event.preventDefault(); 
+   
+                  //scroll without smoothing
+                  var wheelDelta = event.wheelDelta;
+                  var currentScrollPosition = window.pageYOffset;
+                  window.scrollTo(0, currentScrollPosition - wheelDelta);
+               });
+            }      
+         </script>
+   
+      <script>
+         $( "div:contains('Unlicensed fullPage.js Extension')" ).hide;
+      </script>
 
    </body>
 

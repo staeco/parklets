@@ -455,7 +455,7 @@ p.arrow {
    background-color: #FCF5E9;
    z-index: 999;
    position: relative;
-   height: 40vh !important;
+   height: 50vh !important;
    overflow: hidden !important;
 }
 .container.padding {
@@ -711,11 +711,11 @@ p.arrow {
    text-align: left;
    padding: 5px 10px;
    width: 180px;
-   top: 160px;
-   right: 20px;
+   top: 180px;
+   right: 5px;
    transition: all 1s ease-in-out;
    z-index: 500;
-   background-color: #FCF5E9;
+   background-color: transparent;
 }
 .interactive .tooltips p a.source {
    color: #393A44;
@@ -833,42 +833,42 @@ p.arrow {
 }
 .taraval-interactive,
 .exploratorium-interactive {
-   width: 100vw;
-   height: 200vh;
+   width: 70%;
+   height: 100vh;
    position: absolute;
    top: 0;
-   left: 0;
+   right: 0;
 }
 .taraval-interactive .taraval-map {
    width: 100vw;
    height: 100vh;
 }
 .taraval-interactive {
-   background-size: 100%;
-   background-position: 0px 0px;
-   background-repeat: no-repeat;
-   background-image: url('../images/taraval_1.png');
    background-color: #dfd8cf;
-   background-attachment: fixed;
 }
 #taraval-hotspots-container {
-   position: fixed;
+   position: relative;
    width: 100%;
    height: 100vh;
    background-size: 100%;
-   background-position: 0px 0px;
+   background-position: top right;
    background-repeat: no-repeat;
    background-image: url('../images/taraval_1.png');
    background-color: #dfd8cf;
-   background-attachment: fixed;
    bottom: 0;
-   left: 0;
+   right: 0;
 }
 #exploratorium-hotspots-container {
-   position: sticky;
+   position: relative;
    width: 100%;
    height: 100vh;
-   background:transparent;   
+   background-size: 100%;
+   background-position: bottom right;
+   background-repeat: no-repeat;
+   background-image: url('../images/exploratorium-highlight.jpg');
+   background-color: #e8e0d2;
+   bottom: 0;
+   right: 0;  
 }
 .taraval-hotspots.selected .hidden,
 .exploratorium-hotspots.selected .hidden {
@@ -894,11 +894,11 @@ p.arrow {
 }
 #taraval-hotspot-1 {
    cursor: pointer;
-   width: 150px;
-   height: 320px;
-   position: relative;
-   top: 23%;
-   left: 42%;
+   width: 10%;
+   height: 70%;
+   position: absolute;
+   top: 0;
+   right: 47%;
 }
 #exploratorium-hotspot-1 {
    cursor: pointer;
@@ -924,6 +924,7 @@ p.arrow {
    bottom: 0%;
    right: 0%;
 }
+/*
 #taraval-hotspot-1 .taraval-popup {
    left: -270% !important;
 }
@@ -934,7 +935,7 @@ p.arrow {
 #taraval-hotspot-3 .taraval-popup {
    left: -320% !important;
    top: 35% !important;
-}
+}*/
 #exploratorium-hotspot-1 .exploratorium-popup {
    left: 120% !important;
    top: 33% !important;
@@ -944,23 +945,24 @@ p.arrow {
     top: 30% !important;
 }
 #exploratorium-hotspot-3 .exploratorium-popup {
-   left: -250% !important;
-   top: 25% !important;
+   right: 125% !important;
+   top: 15% !important;
+   left: auto;
 }
 #taraval-hotspot-2 {
    cursor: pointer;
-   width: 90px;
-   height: 290px;
+   width: 10%;
+   height: 70%;
    position: absolute;
-   top: 15%;
+   top: 0;
    right: 34%;
 }
 #taraval-hotspot-3 {
    cursor: pointer;
-   width: 150px;
-   height: 350px;
+   width: 15%;
+   height: 70%;
    position: absolute;
-   top: 9%;
+   top: 0;
    right: 21%;
 }
 .fullpage-container {
@@ -976,7 +978,8 @@ p.arrow {
 }
 .taraval-popup {
    position: absolute;
-   top: 25%;
+   left: -50%;
+   top: 60%;
    width: 380px;
    padding: 50px;
    background-color: #FCF5E9;
@@ -1323,12 +1326,11 @@ a.underline:hover {
    position: relative;
 }
 #section3 {
-   z-index: 750 !important;
    background-image: url(../images/section3-bg.svg);
    background-size: 50%;
    background-position: 100px center;
    background-repeat: no-repeat;
-   //background-attachment: fixed;
+   background-attachment: fixed;
 }
 
 #section3_2_container {
@@ -1337,15 +1339,28 @@ a.underline:hover {
    z-index: 500;
    width: 100%;
 }
-#section3_2_container iframe {
+#section3_2_container iframe,
+#section3_2,
+#section3_3 {
    height: 100vh !important;
-   position: fixed;
-   top: 0;
-   left: 0;
-   background-color: #FCF5E9;
-   background-image: url('../images/taraval_1.png');
+   background-color: #dfd8cf;
    z-index: 100;
    overflow: hidden;
+}
+#section3_2 .left-column,
+#section3_3 .left-column,
+#section4_1 .left-column,
+#section4_2 .left-column {
+   background: url(../images/left-column.svg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: top left;
+   width: 37%;
+   min-width: 250px;
+   padding: 150px 110px 85px 65px;
+   height: 150vh;
+   position: relative;
+   overflow-y: auto;
 }
 .taraval-instructions {
    width: 100%;
@@ -1357,11 +1372,6 @@ a.underline:hover {
    text-align: center;
    z-index: 400;
    display: block;
-}
-#section3_3 {
-   //height: 100vh !important;
-   background-color: #FCF5E9;
-   z-index: 750;
 }
 #section3_4 {
    height: 100vh !important;
@@ -1471,7 +1481,7 @@ a.source:hover {
    background-color: #FCF5E9;
    background-size: 100%;
    background-repeat: no-repeat;
-   background-image: url(../images/exploratorium-1.jpg);
+   /*background-image: url(../images/exploratorium-highlight.jpg);*/
    background-attachment:fixed;
    z-index: 700;
 }
@@ -1568,9 +1578,13 @@ a.source:hover {
    cursor: pointer;
    transition: all .5s ease-in-out;
 }
-.square:hover {
+.square.inactive {
    background-color: rgba(237, 110, 77, 0.25);
-   transition: all .5s ease-in-out;
+}
+.square:hover {
+   /*background-color: rgba(237, 110, 77, 0.25);*/
+   background-color: #393A44;
+   transition: all .25s ease-in-out;
    z-index: 500; 
 }
 .square .tooltiptext {
@@ -1599,6 +1613,7 @@ a.source:hover {
    padding: 0 !important;
    line-height: 18px;
    font-size: 15px;
+   text-transform: capitalize;
 }
 .square:hover .tooltiptext {
    display: block;
@@ -1608,6 +1623,7 @@ a.source:hover {
 .parklet-squares {
    border-left: 3px solid #393A44;
    padding-left: 20px;
+   padding-top: 20px;
    margin-left: 100px;
 }
 .parklet-squares-row {
@@ -1710,16 +1726,16 @@ a.source:hover {
 }
 #section6_2,
 #section6_3 {
-   height: 100vh !important;
+   height: 300vh !important;
    z-index: 700;
    background-color: #FCF5E9;
 }
 #section6_2 .left-column1,
 #section6_3 .left-column1 {
-   height: 90vh;
+   height: 100vh;
    display: block;
    width: 33%;
-   padding: 50px !important;
+   padding: 100px 70px !important;
 }
 #Path-20,
 #Path-21 {
@@ -1736,10 +1752,19 @@ a.source:hover {
 }
 #section6_2 .right-column,
 #section6_3 .right-column {
-   top: 60px;
-   height: 80vh;
+   top: 105px;
    z-index: 1;
+   /*animation: parklet-squares 2s ease-in-out;*/
 }
+/*
+@keyframes parklet-squares {
+   0% {
+      height: 0vh;
+   }
+   100% {
+      height: 80vh;
+   }
+}*/
 /*#section6_2 {
    height: 170vh !important;
    background-color: #FCF5E9;
@@ -1790,58 +1815,77 @@ a.source:hover {
    background-color: #FCF5E9;
    z-index: 750;
 }
+#section7_1.vertical {
+   height: 300vh !important;
+   background-color: #FCF5E9;
+   z-index: 750;
+   display: none;
+}
+
 .accordion-container {
    width: 95%;
    position: relative;
    overflow: hidden;
 }
+.vertical .accordion-container {
+   width: 90%;
+   position: relative;
+   overflow: hidden;
+   margin: 0 auto;
+}
 .accordion {
    margin: 20px auto;
    width: 60%;
    display: block;
-   height: 72vh;
+   height: 60vh;
    overflow: hidden;
    right: -5px;
    position: relative;
 }
-.accordion > div:nth-child(1),
-.accordion > div:nth-child(2) {
+.vertical .accordion {
+   margin: 20px auto;
+   width: 95%;
+   display: block;
+   height: 115vh;
+   overflow: hidden;
+   right: auto;
+   bottom: -5px;
+   position: relative;
+}
+
+.horizontal .accordion > div:nth-child(1),
+.horizontal .accordion > div:nth-child(2) {
    height: 60%;
    margin-top: 9%;
 }
-.accordion > div:nth-child(3),
-.accordion > div:nth-child(4) {
+.horizontal .accordion > div:nth-child(3),
+.horizontal .accordion > div:nth-child(4) {
    height: 70%;
-   margin-top: 12%;
+   margin-top: 18%;
 }
-.accordion > div:nth-child(5),
-.accordion > div:nth-child(6) {
+.horizontal .accordion > div:nth-child(5),
+.horizontal .accordion > div:nth-child(6) {
    height: 65%;
    margin-top: 14%;
 }
-.accordion > div:nth-child(7),
-.accordion > div:nth-child(8) {
-   height: 83%;
-   margin-top: 4%;
+.horizontal .accordion > div:nth-child(7),
+.horizontal .accordion > div:nth-child(8) {
+   height: 93%;
+   margin-top: 2%;
 }
-.accordion > div:nth-child(9),
-.accordion > div:nth-child(10) {
-   height: 77%;
-   margin-top: 6%;
-}
-.accordion > div:nth-child(11),
-.accordion > div:nth-child(12) {
-   height: 68%;
+.horizontal .accordion > div:nth-child(11),
+.horizontal .accordion > div:nth-child(12) {
+   height: 70%;
    margin-top: 10%;
 }
-.accordion > div:nth-child(13),
-.accordion > div:nth-child(14) {
-   height: 80%;
+.horizontal .accordion > div:nth-child(13),
+.horizontal .accordion > div:nth-child(14) {
+   height: 83%;
    margin-top: 7%;
 }
-.accordion > div:nth-child(15),
-.accordion > div:nth-child(16) {
-   height: 83%;
+.horizontal .accordion > div:nth-child(15),
+.horizontal .accordion > div:nth-child(16) {
+   height: 93%;
    margin-top: 5%;
 }
 .accordion-left {
@@ -1851,10 +1895,24 @@ a.source:hover {
    left: 20px;
    text-align: right;
 }
+.vertical .accordion-left {
+   width: 95%;
+   position: relative;
+   text-align: left;
+   display: block;
+   margin: 0 auto;
+   top: auto;
+   left: auto;
+}
 h3.accordion-title {
    margin: 0 0 50px 50px;
    width: 40%;
    position: sticky;
+}
+.vertical h3.accordion-title {
+   margin: 50px auto;
+   width: 95%;
+   position: relative;
 }
 .accordion-left p,
 .accordion-right p {
@@ -1871,7 +1929,15 @@ h3.accordion-title {
    right: 20px;
    text-align: left;
 }
-
+.vertical .accordion-right {
+   width: 95%;
+   top: auto;
+   right: auto;
+   margin: 0 auto;
+   position: relative;
+   text-align: left;
+   display: block;
+}
 .item {
    width: 7%;
    float: left;
@@ -1879,6 +1945,18 @@ h3.accordion-title {
    margin: 0px 5px;
    cursor: pointer;
    transition: all .5s ease-in-out;
+}
+.vertical-item {
+   width:100%;
+   float: left;
+   height: 55px;
+   margin: 7px 0px;
+   cursor: pointer;
+   transition: all .5s ease-in-out;
+}
+.vertical-item:hover {
+   background-color: #CBB4BC;
+   cursor: pointer;
 }
 .item:hover {
    background-color: #CBB4BC;
@@ -1892,6 +1970,10 @@ h3.accordion-title {
 .active {
     margin-right: 10px;
     transition: all .5s ease-in-out;
+}
+.vertical .active {
+   margin-bottom: 10px;
+   transition: all .5s ease-in-out;
 }
 .active:hover {
    cursor: text;
@@ -1933,13 +2015,38 @@ h3.accordion-title {
    margin-right: 5px;
 }
 .info h3 {
-   font-size: 1.05em;
+   font-size: 1.15em;
    font-weight: 100;
    line-height: 1.5em;
    transition: all .5s ease-in-out;
 }
 .info p {
-   font-size: 1em;
+   width: 100%;
+   margin: 10px 0;
+   transition: all .5s ease-in-out;
+}
+.vertical-info {
+   height: 0;
+   max-height: 420px;
+   float: left;
+   color: #FCF5E9;
+   width: 100%;
+   padding: 30px;
+   display: none;
+   text-align: left;
+   margin-top: -65px;
+   margin-bottom: 7px;
+}
+.active .vertical-info {
+   height: auto;
+}
+.vertical-info h3 {
+   font-weight: 100;
+   font-size: 1.15rem;
+   line-height: 1.5em;
+   transition: all .5s ease-in-out;
+}
+.vertical-info p {
    width: 100%;
    margin: 10px 0;
    transition: all .5s ease-in-out;
@@ -1996,14 +2103,15 @@ h3.accordion-title {
 #section8_container {
    height: 1800vh !important;
    position: relative;
-   z-index: 500;
-}
+   z-index: 200;
+}/*
 #section6_container {
    height: 400vh !important;
    position: relative;
    z-index: 600;
 }
-#section6_container iframe {
+#section6_container iframe,
+#section6 {
    height: 100vh !important;
    position: fixed;
    top: 0;
@@ -2016,13 +2124,24 @@ h3.accordion-title {
    z-index: 100;
    overflow: hidden;
 }
+#section6 {
+   height: 100vh !important;
+   background-color: #FCF5E9;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-image: url(../images/section6-bg.svg);
+   background-attachment:fixed;
+   overflow: hidden;
+}*/
 #section4_container {
    height: 300vh !important;
    position: relative;
    z-index: 500;
    width: 100%;
 }
-#section4_container iframe {
+/*
+#section4_container iframe,
+#section4_1 {
    height: 100vh !important;
    position: fixed;
    top: 0;
@@ -2034,7 +2153,7 @@ h3.accordion-title {
    background-attachment:fixed;
    z-index: 100;
    overflow: hidden;
-}
+}*/
 #section8_container iframe {
    height: 100vh !important;
    position: fixed;
@@ -3756,15 +3875,15 @@ a {
 }
 .rev_slider,
 .forcefullwidth_wrapper_tp_banner {
-   height: 40vh !important;
+   height: 50vh !important;
    overflow: hidden !important;
    z-index: 600;
 }
 .rev_slider>ul {
-   height: 40vh !important;
+   height: 50vh !important;
 }
 .rev_slider li.tp-revslider-slidesli {
-   height: 40vh !important;
+   height: 50vh !important;
 }
 
 .rev_slider .font-fourty{
@@ -5729,6 +5848,9 @@ p.logomap {
       -webkit-transform: scale(1.0);
    }
 }
+.accordion-desktop {
+   display: none;
+ }
 
 .hidden {
    display: none;
