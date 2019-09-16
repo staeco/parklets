@@ -1031,6 +1031,21 @@ and (max-device-width : 480px) {
     height: 50vh !important;
     top: 0 !important;
     z-index: 700 !important;
+    width: 100% !important;
+  }
+  .mobile #exploratorium-hotspots-container,
+  .mobile #taraval-hotspots-container {
+    height: 50vh !important;
+  }
+  .mobile .taraval-popup {
+    transform: scale(0.7) !important;
+    left: -400% !important;
+    top: 20% !important;
+  }
+  .mobile .exploratorium-popup {
+    transform: scale(0.5) !important;
+    left: -50% !important;
+    top: -10% !important;
   }
   div.mobile {
     padding: 0 !important;
