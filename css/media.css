@@ -1049,8 +1049,19 @@ and (max-device-width : 480px) {
   }
   .mobile .exploratorium-popup {
     transform: scale(0.5) !important;
+  }
+  .mobile #exploratorium-hotspot-1 .exploratorium-popup {
+    left: -10% !important;
+    top: 3% !important;
+  }
+  .mobile #exploratorium-hotspot-2 .exploratorium-popup {
     left: -50% !important;
     top: -10% !important;
+  }
+  .mobile #exploratorium-hotspot-3 .exploratorium-popup {
+    right: 0% !important;
+    top: 45% !important;
+    left: auto !important;
   }
   div.mobile {
     padding: 0 !important;

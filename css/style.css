@@ -937,16 +937,16 @@ p.arrow {
    top: 35% !important;
 }*/
 #exploratorium-hotspot-1 .exploratorium-popup {
-   left: 120% !important;
-   top: 33% !important;
+   left: 120%;
+   top: 33%;
 }
 #exploratorium-hotspot-2 .exploratorium-popup {
-   left: 20% !important;
-    top: 30% !important;
+   left: 20%;
+    top: 30%;
 }
 #exploratorium-hotspot-3 .exploratorium-popup {
-   right: 125% !important;
-   top: 15% !important;
+   right: 125%;
+   top: 15%;
    left: auto;
 }
 #taraval-hotspot-2 {
