@@ -1017,6 +1017,13 @@ and (max-device-width : 480px) {
     height: auto !important;
     padding: 40px !important;
     background-size: 150% !important;
+    margin-top: 50vh !important;
+  }
+  .mobile .taraval-interactive, 
+  .mobile .exploratorium-interactive {
+    height: 50vh !important;
+    top: 0 !important;
+    z-index: 700 !important;
   }
   div.mobile {
     padding: 0 !important;
