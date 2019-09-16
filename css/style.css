@@ -4046,10 +4046,10 @@ a {
     background: rgba(232,68,85, .75);
 }
 .cbp-item:nth-child(1) {
-   margin-top: 100px !important;
+   margin-top: 50px !important;
 }
 .cbp-item:nth-child(2) {
-   margin-top: 50px !important;
+   margin-top: 100px !important;
 }
 .cbp-item:nth-child(3) {
    margin-top: 60px !important;
@@ -4058,10 +4058,10 @@ a {
    margin-top: 100px !important;
 }
 .cbp-item:nth-child(5) {
-   margin-top: 100px !important;
+   margin-top: 0px !important;
 }
 .cbp-item:nth-child(6) {
-   margin-top: 100px !important;
+   margin-top: 70px !important;
 }
 .cbp-item:nth-child(7) {
    margin-top: 50px !important;
@@ -4073,13 +4073,13 @@ a {
    margin-top: 100px !important;
 }
 .cbp-item:nth-child(10) {
-   margin-top: 100px !important;
+   margin-top: 10px !important;
 }
 .cbp-item:nth-child(11) {
-   margin-top: 100px !important;
+   margin-top: 70px !important;
 }
 .cbp-item:nth-child(12) {
-   margin-top: 50px !important;
+   margin-top: 40px !important;
 }
 .cbp-item:hover .overlay {
    opacity: 1;
