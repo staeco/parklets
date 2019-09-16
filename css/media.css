@@ -475,7 +475,8 @@ and (max-width : 768px) {
   }
   #section3.mobile,
   #section3_1.mobile,
-  #section3_2.mobile {
+  #section3_2.mobile,
+  #section4_1.mobile {
     background-position: center center !important;
     background-size: 130% !important;
     height: auto !important;
@@ -500,7 +501,8 @@ and (max-width : 768px) {
     background: transparent !important;
     background-size: 150% !important;
   }
-  #section3_2.mobile .taraval-left {
+  #section3_2.mobile .left-column,
+  #section4_1.mobile .left-column {
     width: 100% !important;
     min-width: 100% !important;
     position: relative !important;
@@ -981,7 +983,8 @@ and (max-device-width : 480px) {
   }
   #section3.mobile,
   #section3_1.mobile,
-  #section3_2.mobile {
+  #section3_2.mobile,
+  #section4_1.mobile {
     background-position: center center !important;
     background-size: 130% !important;
     height: auto !important;
@@ -1006,7 +1009,8 @@ and (max-device-width : 480px) {
     background: transparent !important;
     background-size: 150% !important;
   }
-  #section3_2.mobile .taraval-left {
+  #section3_2.mobile .left-column,
+  #section4_1.mobile .left-column {
     width: 100% !important;
     min-width: 100% !important;
     position: relative !important;
