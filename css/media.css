@@ -320,11 +320,58 @@ and (max-width : 1024px) {
   }
 }
 
+/* tablets portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (orientation : portrait) { 
+  #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
+    padding: 85vh 30px 30px 30px !important;
+  }
+  .mobile .taraval-interactive, 
+  .mobile .exploratorium-interactive {
+    height: 50vh !important;
+    top: 0 !important;
+    z-index: 700 !important;
+    width: 100% !important;
+  }
+  .mobile #exploratorium-hotspots-container,
+  .mobile #taraval-hotspots-container {
+    height: 50vh !important;
+  }
+  .mobile .taraval-popup {
+    transform: scale(0.7) !important;
+    left: -400% !important;
+    top: 20% !important;
+  }
+  .mobile .exploratorium-popup {
+    transform: scale(0.5) !important;
+  }
+  .mobile #exploratorium-hotspot-1 .exploratorium-popup {
+    left: -10% !important;
+    top: 3% !important;
+  }
+  .mobile #exploratorium-hotspot-2 .exploratorium-popup {
+    left: -50% !important;
+    top: -10% !important;
+  }
+  .mobile #exploratorium-hotspot-3 .exploratorium-popup {
+    right: 0% !important;
+    top: 45% !important;
+    left: auto !important;
+  }
+  .vertical .accordion {
+    height: 95vh !important;
+  }
+  #section7_1.vertical {
+    height: 140vh !important;
+  }
+}
 
 /* Tablets */
 @media only screen 
-and (min-width : 320px) 
-and (max-width : 768px) {
+and (min-device-width : 320px) 
+and (max-device-width : 768px) {
   
   #home.mobile {
     background-size: 55% !important;
@@ -493,16 +540,20 @@ and (max-width : 768px) {
     border-top: 1px solid rgba(0,0,0,0.25);
     padding: 20px 0;
     background-size: 130vw !important;
-    background-position: -45vw 5vh;
+    background-position: 50% -5%;
     background-attachment: scroll !important;
   }
   #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
     width: 100% !important;
     position: relative !important;
     height: auto !important;
-    padding: 70vh 30px 30px 30px !important;
+    padding: 85vh 30px 30px 30px !important;
     background: transparent !important;
     background-size: 150% !important;
+  }
+  .mobile .left-column .small-quote img, .left-column .large-quote img {
+    width: 35% !important;
+    height: 35% !important;
   }
   #section3_2.mobile .left-column,
   #section4_1.mobile .left-column {
@@ -512,6 +563,7 @@ and (max-width : 768px) {
     height: auto !important;
     padding: 40px 20px !important;
     background-size: 150% !important;
+    margin-top: 50vh !important;
   }
   div.mobile {
     padding: 0 !important;
@@ -781,8 +833,20 @@ and (max-device-width : 320px) {
     bottom: 0px !important;
     display: none !important;
   }
+  #section6_2.mobile {
+    height: 240vh !important;
+  }
+  #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
+    background-position: 100% -3% !important;
+  }
+  #section6_2.mobile .left-column {
+    height: 75vh !important;
+  }
   #section7_1.vertical {
     display: block;
+  }
+  #section8_container {
+    height: 1200vh !important;
   }
 }
 
@@ -792,8 +856,8 @@ and (device-width : 375px)
 and (device-height : 812px) 
 and (-webkit-device-pixel-ratio : 3) { 
   #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
-    background-size: 98vh !important;
-    background-position: -95vw -30px !important;
+    background-size: 62vh !important;
+    background-position: 50% -5% !important;
   }
   .map-link {
     height: 50vh !important;
