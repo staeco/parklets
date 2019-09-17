@@ -341,7 +341,7 @@ and (orientation : portrait) {
     height: 50vh !important;
   }
   .mobile .taraval-popup {
-    transform: scale(0.7) !important;
+    transform: scale(0.55) !important;
     left: -400% !important;
     top: 20% !important;
   }
@@ -1124,7 +1124,7 @@ and (max-device-width : 480px) {
     height: 50vh !important;
   }
   .mobile .taraval-popup {
-    transform: scale(0.7) !important;
+    transform: scale(0.55) !important;
     left: -400% !important;
     top: 20% !important;
   }
