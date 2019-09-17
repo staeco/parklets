@@ -317,6 +317,7 @@ and (max-width : 1024px) {
     left: calc(100% - 90vw) !important;
     max-width: 200px !important;
     top: -10% !important;
+    font-size: 2rem;
   }
 }
 
@@ -530,6 +531,7 @@ and (max-device-width : 768px) {
   }
   #section3_2.mobile {
     padding: 40px 0 !important;
+    height: 120vh !important;
   }
 
   svg {
@@ -537,7 +539,6 @@ and (max-device-width : 768px) {
   }
   #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
     height: auto !important;
-    border-top: 1px solid rgba(0,0,0,0.25);
     padding: 20px 0;
     background-size: 130vw !important;
     background-position: 50% -5%;
@@ -661,6 +662,7 @@ and (max-device-width : 768px) {
     margin-left: -25px !important;
     top: auto !important;
     width: auto !important;
+    font-size: 2rem;
   }
   /* Gallery */
   #section5.mobile .cbp-ready .cbp-item {
@@ -673,7 +675,7 @@ and (max-device-width : 768px) {
     height: auto !important;
     background-size: calc(100% - 40px) !important;
     background-position: center 310px;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
   #section5.mobile .cbp-item:nth-child(1) {
     margin-top: 0px !important;
@@ -736,7 +738,7 @@ and (max-device-width : 768px) {
   #section6_2.mobile {
     width: 100%;
     height: 300vh !important;
-    padding: 30px !important;
+    padding: 25px !important;
   }
   #section6_2.mobile .left-column,
   #section6_2.mobile .right-column {
@@ -791,6 +793,10 @@ and (max-device-width : 320px) {
     zoom: .85 !important;
     padding-top: 5% !important;
   }
+  section {
+    background-attachment: scroll !important;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
   #home .container {
     width: 100%;
     max-width: 100% !important;
@@ -834,19 +840,24 @@ and (max-device-width : 320px) {
     display: none !important;
   }
   #section6_2.mobile {
-    height: 240vh !important;
+    height: 230vh !important;
   }
   #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
     background-position: 100% -3% !important;
   }
   #section6_2.mobile .left-column {
-    height: 75vh !important;
+    height: 70vh !important;
   }
   #section7_1.vertical {
     display: block;
+    height: 240vh !important;
   }
   #section8_container {
-    height: 1200vh !important;
+    height: 1000vh !important;
+  }
+  #section3_2.mobile {
+    padding: 40px 0 !important;
+    height: 150vh !important;
   }
 }
 
@@ -894,6 +905,11 @@ and (max-device-width : 480px) {
     font-size: 2.85rem !important;
     line-height: 3rem;
   }
+  section {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    background-attachment: scroll !important;
+
+  }
   #home.mobile {
     background-size: 65% !important;
     background-position: -60px -20px !important;
@@ -917,8 +933,9 @@ and (max-device-width : 480px) {
     padding: 160px 15px 0 15px !important;
   }
   #home.mobile p.arrow {
-    bottom: 50px !important;
+    bottom: 20px !important;
     display: block !important;
+    transform: scale(0.75);
   }
   p.arrow {
     bottom: 30px !important;
@@ -1065,13 +1082,13 @@ and (max-device-width : 480px) {
   }
   #section3_2.mobile {
     padding: 40px 0 !important;
+    height: 120vh !important;
   }
   svg {
     width: 100%;
   }
   #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
     height: auto !important;
-    border-top: 1px solid rgba(0,0,0,0.25);
     padding: 20px 0;
     background-size: 62vh !important;
     background-position: right -30px;
@@ -1223,6 +1240,7 @@ and (max-device-width : 480px) {
     margin-left: -15px !important;
     top: auto !important;
     width: auto !important;
+    font-size: 2rem;
   }
   /* Gallery */
   #section5.mobile .cbp-ready .cbp-item {
@@ -1235,7 +1253,7 @@ and (max-device-width : 480px) {
     height: auto !important;
     background-size: calc(100% - 40px) !important;
     background-position: center 310px;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
   #section5.mobile .cbp-item:nth-child(1) {
     margin-top: 0px !important;
@@ -1284,7 +1302,7 @@ and (max-device-width : 480px) {
   }
   #section6.mobile {
     height: auto !important;
-    min-height: 170vh !important;
+    min-height: 100vh !important;
     background-size: 110%;
     background-position: -50px 110px;
   }
@@ -1297,11 +1315,11 @@ and (max-device-width : 480px) {
   }
   #section6_2.mobile {
     width: 100%;
-    height: 200vh !important;
-    padding: 30px !important;
+    height: 230vh !important;
+    padding: 25px !important;
   }
   #section6_2.mobile .left-column {
-    height: 50vh !important;
+    height: 70vh !important;
   }
   #section6_2.mobile .right-column {
     top: 0px !important;
