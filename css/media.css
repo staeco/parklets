@@ -839,6 +839,11 @@ and (max-device-width : 320px) {
     bottom: 0px !important;
     display: none !important;
   }
+  #section4.mobile {
+    background-size: 120vh;
+    background-position: 0px 0px;
+    height: 120vh !important;
+  }
   #section6_2.mobile {
     height: 230vh !important;
   }
@@ -1455,8 +1460,7 @@ and (max-device-width : 480px) {
  }
  #section5.mobile,
  #gallery {
-   min-height: 400vh !important;
-   height: auto !important;
+   height: 550vh !important;
   }
   #projects {
     overflow: hidden;
