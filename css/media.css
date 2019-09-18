@@ -341,8 +341,8 @@ and (orientation : portrait) {
     height: 50vh !important;
   }
   .mobile .taraval-popup {
-    transform: scale(0.55) !important;
-    left: -400% !important;
+    transform: scale(0.40) !important;
+    left: -500% !important;
     top: 20% !important;
   }
   .mobile .exploratorium-popup {
@@ -553,8 +553,8 @@ and (max-device-width : 768px) {
     background-size: 150% !important;
   }
   .mobile .left-column .small-quote img, .left-column .large-quote img {
-    width: 35% !important;
-    height: 35% !important;
+    width: 45% !important;
+    height: 45% !important;
   }
   #section3_2.mobile .left-column,
   #section4_1.mobile .left-column {
@@ -859,6 +859,23 @@ and (max-device-width : 320px) {
     padding: 40px 0 !important;
     height: 150vh !important;
   }
+  .mobile .taraval-popup {
+    transform: scale(0.45) !important;
+    left: -500% !important;
+    top: 20% !important;
+  }
+  #section3_2.mobile #taraval-hotspot-1 .taraval-popup {
+    top: -17% !important;
+    right: auto !important;
+    left: -550% !important;
+  }
+  #section3_2.mobile #taraval-hotspot-2 .taraval-popup {
+    left: -630% !important;
+    top: 6% !important;
+  }
+  #section3_2.mobile #taraval-hotspot-3 .taraval-popup {
+    
+  }
 }
 
 /* iPhone X */
@@ -1104,6 +1121,11 @@ and (max-device-width : 480px) {
     background-position: right -30px;
     background-attachment: scroll !important;
   }
+  #section7 {
+    background-size: 160% !important;
+    background-position: 140% 115% !important;
+    height: 120vh !important;
+  }
   #section8_container.mobile {
     height: auto !important;
   }
@@ -1131,8 +1153,8 @@ and (max-device-width : 480px) {
   #section8_mobile {
     height: auto !important;
     padding: 0;
-    background-size: 170% !important;
-    background-position: 20% 10%;
+    background-size: 200% !important;
+    background-position: 20% top;
     background-attachment: scroll !important;
     background-image: url(../images/section8_bg.jpg);
     background-color: #f3ebe1;
@@ -1197,11 +1219,19 @@ and (max-device-width : 480px) {
     width: 100% !important;
     position: relative !important;
     height: auto !important;
-    padding: 52vh 30px 30px 30px !important;
+    padding: 65vh 30px 30px 30px !important;
     background: transparent !important;
     background-size: 150% !important;
   }
-  #section3_2.mobile .left-column,
+  #section3_2.mobile .left-column {
+    width: 100% !important;
+    min-width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    padding: 40px 20px !important;
+    background-size: 150% !important;
+    margin-top: 40vh !important;
+  }
   #section4_1.mobile .left-column {
     width: 100% !important;
     min-width: 100% !important;
@@ -1211,20 +1241,27 @@ and (max-device-width : 480px) {
     background-size: 150% !important;
     margin-top: 50vh !important;
   }
-  .mobile .taraval-interactive, 
-  .mobile .exploratorium-interactive {
-    height: 50vh !important;
+  .mobile .taraval-interactive {
+    height: 40vh !important;
     top: 0 !important;
     z-index: 700 !important;
     width: 100% !important;
   }
-  .mobile #exploratorium-hotspots-container,
+  .mobile .exploratorium-interactive {
+    height: 60vh !important;
+    top: 0 !important;
+    z-index: 700 !important;
+    width: 100% !important;
+  }
   .mobile #taraval-hotspots-container {
-    height: 50vh !important;
+    height: 40vh !important;
+  }
+  .mobile #exploratorium-hotspots-container {
+    height: 60vh !important;
   }
   .mobile .taraval-popup {
-    transform: scale(0.55) !important;
-    left: -400% !important;
+    transform: scale(0.5) !important;
+    left: -500% !important;
     top: 20% !important;
   }
   .mobile .exploratorium-popup {
@@ -1235,12 +1272,12 @@ and (max-device-width : 480px) {
     top: 3% !important;
   }
   .mobile #exploratorium-hotspot-2 .exploratorium-popup {
-    left: -50% !important;
-    top: -10% !important;
+    left: -80% !important;
+    top: -17% !important;
   }
   .mobile #exploratorium-hotspot-3 .exploratorium-popup {
-    right: 0% !important;
-    top: 45% !important;
+    right: -50% !important;
+    top: 30% !important;
     left: auto !important;
   }
   div.mobile {
@@ -1261,7 +1298,7 @@ and (max-device-width : 480px) {
   .map-link {
     margin: 0 !important;
     width: 100% !important;
-    height: 52vh !important;
+    height: 65vh !important;
     z-index: 900;
   }
   .small-quote h2 {
