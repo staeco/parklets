@@ -896,6 +896,9 @@ and (-webkit-device-pixel-ratio : 3) {
   #section7_1.vertical {
     display: block;
   }
+  #section9.mobile button.sponsor-button {
+    height: 90px !important;
+  }
 }
 
 
@@ -1121,7 +1124,7 @@ and (max-device-width : 480px) {
     background-position: right -30px;
     background-attachment: scroll !important;
   }
-  #section7 {
+  #section7.mobile {
     background-size: 160% !important;
     background-position: 140% 115% !important;
     height: 120vh !important;
@@ -1134,19 +1137,40 @@ and (max-device-width : 480px) {
     background-color: rgba(243, 235, 225,0.5);
     padding: 5px;
   }
+  #section8_container.mobile .map-link {
+    height: 50vh !important;
+  }
+  #section8_container.mobile h3 strong {
+    color: #E8B64D;
+    text-shadow: 1px 1px 0px solid rgba(0,0,0,0.5);
+  }
   #section8_container.mobile p.quote-source {
     background-color: transparent;
     padding: 0;
   }
   #section8_mobile .left-column,
   #section8_1_mobile .left-column,
-  #section8_2_mobile .left-column,
-  #section8_3_mobile .left-column,
-  #section8_4_mobile .left-column {
+  #section8_2_mobile .left-column {
     width: 100% !important;
     position: relative !important;
     height: auto !important;
     padding: 52vh 30px 30px 30px !important;
+    background: transparent !important;
+    background-size: 150% !important;
+  }
+  #section8_3_mobile .left-column {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    padding: 42vh 30px 30px 30px !important;
+    background: transparent !important;
+    background-size: 150% !important;
+  }
+  #section8_4_mobile .left-column {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    padding: 60vh 30px 30px 30px !important;
     background: transparent !important;
     background-size: 150% !important;
   }
@@ -1208,9 +1232,11 @@ and (max-device-width : 480px) {
     z-index: 400;
 }
 #section8_3_mobile .image-container {
-  margin-top: -180px;
+  margin-top: -170px;
 }
-
+#section8_3_mobile .map-card.large-quote {
+  padding-top: 130px !important;
+}
 #section8_3_mobile .map-card.large-quote img {
   width: 65% !important;
 }
