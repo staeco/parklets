@@ -919,6 +919,9 @@ and (max-device-width : 480px) {
     top: 0px;
     width: 100px;
   }
+  #section8_container.horizontal {
+    display: none;
+  }
   #section9.mobile {
     padding: 0px !important;
   }
@@ -1087,13 +1090,109 @@ and (max-device-width : 480px) {
   svg {
     width: 100%;
   }
-  #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
+  #section2_1.mobile, 
+  #section2_2.mobile, 
+  #section2_3.mobile, 
+  #section2_4.mobile, 
+  #section2_5.mobile, 
+  #section2_6.mobile, 
+  #section2_7.mobile, 
+  #section2_8.mobile, {
     height: auto !important;
     padding: 20px 0;
     background-size: 62vh !important;
     background-position: right -30px;
     background-attachment: scroll !important;
   }
+  #section8_container.mobile {
+    height: auto !important;
+  }
+  #section8_container.mobile h3,
+  #section8_container.mobile p {
+    background-color: rgba(243, 235, 225,0.5);
+    padding: 5px;
+  }
+  #section8_container.mobile p.quote-source {
+    background-color: transparent;
+    padding: 0;
+  }
+  #section8_mobile .left-column,
+  #section8_1_mobile .left-column,
+  #section8_2_mobile .left-column,
+  #section8_3_mobile .left-column,
+  #section8_4_mobile .left-column {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    padding: 52vh 30px 30px 30px !important;
+    background: transparent !important;
+    background-size: 150% !important;
+  }
+  #section8_mobile {
+    height: auto !important;
+    padding: 0;
+    background-size: 170% !important;
+    background-position: 20% 10%;
+    background-attachment: scroll !important;
+    background-image: url(../images/section8_bg.jpg);
+    background-color: #f3ebe1;
+    background-repeat: no-repeat;
+    z-index: 400;
+}
+#section8_1_mobile {
+    height: auto !important;
+    padding: 0;
+    background-size: 300% !important;
+    background-position: 15% 100%;
+    background-attachment: scroll !important;
+    background-image: url(../images/section8_1_bg.jpg);
+    background-color: #f3ebe1;
+    background-repeat: no-repeat;
+    z-index: 400;
+}
+
+  #section8_2_mobile {
+    height: auto !important;
+    padding: 0;
+    background-size: 400% !important;
+    background-position: 55% 82%;
+    background-attachment: scroll !important;
+    background-image: url(../images/section8_6_bg.jpg);
+    background-color: #f3ebe1;
+    background-repeat: no-repeat;
+    z-index: 400;
+}
+
+#section8_3_mobile {
+    height: auto !important;
+    padding: 0;
+    background-size: 200% !important;
+    background-position: 60% -40%;
+    background-attachment: scroll !important;
+    background-image: url(../images/section8_7_bg.jpg);
+    background-color: #f3ebe1;
+    background-repeat: no-repeat;
+    z-index: 400;
+}
+#section8_4_mobile {
+    height: auto !important;
+    padding: 0;
+    background-size: 200% !important;
+    background-position: 60% -40%;
+    background-attachment: scroll !important;
+    background-image: url(../images/section8_8_bg.jpg);
+    background-color: #f3ebe1;
+    background-repeat: no-repeat;
+    z-index: 400;
+}
+#section8_3_mobile .image-container {
+  margin-top: -180px;
+}
+
+#section8_3_mobile .map-card.large-quote img {
+  width: 65% !important;
+}
+
   #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
     width: 100% !important;
     position: relative !important;
@@ -1310,7 +1409,8 @@ and (max-device-width : 480px) {
     margin: 100px auto !important;
     padding: 0 !important;
   }
-  #section6.mobile .arrow {
+  #section6.mobile .arrow,
+  #section8_container.mobile .arrow {
     display: none;
   }
   #section6_2.mobile {
@@ -1355,9 +1455,9 @@ and (max-device-width : 480px) {
     padding: 0 !important;
     float: none !important;
   }
-  .map-card {
+  /*.map-card {
     transform: scale(0.75);
-  }
+  }*/
   #section7_1.vertical {
     display: block;
   }
