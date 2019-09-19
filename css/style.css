@@ -304,7 +304,7 @@ p {
 }
 section {
    height: 100vh;
-   overflow: hidden;
+   overflow-y: auto;
 }
 svg, text, tspan, path, g {
    font-family: 'DM Sans', sans-serif;
@@ -370,7 +370,10 @@ section {
 .logo-container li:last-child {
    margin: 0;
 }
-.logo-container li:last-child .logos {
+.logo-container li:nth-child(3) .logos {
+   height: 45px;
+}
+.logo-container li:nth-child(4) .logos {
    height: 45px;
 }
 .logo-container .logos {
@@ -1599,7 +1602,8 @@ a.source:hover {
    /* Position the tooltip */
    position: absolute;
    top: 25px;
-   left: 25px;
+   left: 50%;
+   transform: translateX(-50%);
    transition: all .5s ease-out;
    z-index: 800; 
 }
@@ -1754,7 +1758,7 @@ a.source:hover {
 #section6_3 .right-column {
    top: 160px;
    z-index: 1;
-   width: 65% !important;
+   width: 55% !important;
    /*animation: parklet-squares 2s ease-in-out;*/
 }
 /*
@@ -1817,7 +1821,8 @@ a.source:hover {
    z-index: 750;
 }
 #section7_1.vertical {
-   height: 255vh !important;
+   height: auto !important;
+   padding: 40px 0 !important;
    background-color: #FCF5E9;
    z-index: 750;
    display: none;
@@ -1827,6 +1832,11 @@ a.source:hover {
    width: 95%;
    position: relative;
    overflow: hidden;
+}
+.accordion-photo {
+   width: 30%;
+   display: block;
+   margin: 0 0 15px 0;
 }
 .vertical .accordion-container {
    width: 90%;
@@ -1847,7 +1857,7 @@ a.source:hover {
    margin: 20px auto;
    width: 95%;
    display: block;
-   height: 170vh;
+   height: auto;
    overflow: hidden;
    right: auto;
    bottom: -5px;
@@ -1911,7 +1921,7 @@ h3.accordion-title {
    position: sticky;
 }
 .vertical h3.accordion-title {
-   margin: 50px auto;
+   margin: 0px auto 50px;
    width: 95%;
    position: relative;
 }
@@ -2016,27 +2026,29 @@ h3.accordion-title {
    margin-right: 5px;
 }
 .info h3 {
-   font-size: 1.15em;
+   font-size: 1em;
    font-weight: 100;
-   line-height: 1.5em;
+   line-height: 1.55em;
    transition: all .5s ease-in-out;
 }
 .info p {
    width: 100%;
    margin: 10px 0;
    transition: all .5s ease-in-out;
+   font-size: 1em;
 }
 .vertical-info {
-   height: 0;
-   max-height: 420px;
    float: left;
    color: #FCF5E9;
    width: 100%;
    padding: 30px;
-   display: none;
+   display: block;
    text-align: left;
-   margin-top: -65px;
-   margin-bottom: 7px;
+   margin-bottom: 15px;
+}
+.vertical-info .accordion-photo {
+   width: 50% !important;
+   margin-bottom: 15px;
 }
 .active .vertical-info {
    height: auto;
@@ -2105,7 +2117,11 @@ h3.accordion-title {
    height: 900vh !important;
    position: relative;
    z-index: 200;
-}/*
+}
+#section8_container.vertical {
+   display: none;
+}
+/*
 #section6_container {
    height: 400vh !important;
    position: relative;
@@ -5853,7 +5869,8 @@ p.logomap {
    display: none;
  }
 
-.hidden {
+.hidden,
+.mobile-off {
    display: none;
 }
 
