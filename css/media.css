@@ -382,32 +382,6 @@ and (orientation : portrait) {
 
 
 
-/* iPhone X */
-@media only screen 
-and (device-width : 375px) 
-and (device-height : 812px) 
-and (-webkit-device-pixel-ratio : 3) { 
-  #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
-    background-size: 62vh !important;
-    background-position: 50% -5% !important;
-  }
-  .map-link {
-    height: 50vh !important;
-  }
-  #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
-    padding: 50vh 30px 30px 30px !important;
-  }
-  #section7_1.vertical {
-    display: block;
-  }
-  #section8_container.vertical {
-   display: block !important;
-  }
-  #section9.mobile button.sponsor-button {
-    height: 90px !important;
-  }
-}
-
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
@@ -1281,5 +1255,34 @@ and (max-device-width : 320px) {
   }
   #section3_2.mobile #taraval-hotspot-3 .taraval-popup {
     
+  }
+}
+
+/* iPhone X */
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) { 
+  #section2_1.mobile, #section2_2.mobile, #section2_3.mobile, #section2_4.mobile, #section2_5.mobile, #section2_6.mobile, #section2_7.mobile, #section2_8.mobile {
+    background-size: 62vh !important;
+    background-position: 50% -5% !important;
+  }
+  #home.mobile {
+    background-size: 95% !important;
+  }
+  #projects {
+    height: 365vh !important;
+  }
+  .map-link {
+    height: 50vh !important;
+  }
+  #section2_1 .left-column, #section2_2 .left-column, #section2_3 .left-column, #section2_4 .left-column, #section2_5 .left-column, #section2_6 .left-column, #section2_7 .left-column, #section2_8 .left-column {
+    padding: 55vh 25px 5px 25px !important;
+  }
+  #section7_1.vertical {
+    display: block;
+  }
+  #section8_container.vertical {
+   display: block !important;
   }
 }
