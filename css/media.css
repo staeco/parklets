@@ -1070,8 +1070,7 @@ and (max-device-width : 480px) {
    height: auto !important;
   }
   #projects {
-    overflow: hidden;
-    height: 440vh !important;
+    height: 460vh !important;
   }
   #section6.mobile {
     height: auto !important;
