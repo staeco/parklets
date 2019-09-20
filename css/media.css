@@ -441,6 +441,14 @@ and (max-device-width : 480px) {
   body#approach .photo img {
     min-height: inherit !important;
   }
+  body#approach section.mobile {
+    height: auto !important;
+    margin: 0 !important;
+  }
+  body#approach footer.mobile {
+    margin: 0 !important;
+    padding: 40px 25px !important;
+  }
   .photo-caption {
     font-size: .90em !important;
   }
