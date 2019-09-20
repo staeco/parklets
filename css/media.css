@@ -416,6 +416,9 @@ and (max-device-width : 480px) {
   .mobile-on {
     display: block !important;
   }
+  .mobile-off {
+    display: none !important;
+  }
   .square .tooltiptext {
     padding: 10px 17px !important;
     width: 70vw !important;
@@ -831,8 +834,8 @@ and (max-device-width : 480px) {
     position: relative !important;
     height: auto !important;
     padding: 40px 25px !important;
-    background-size: 150% !important;
     margin-top: 45vh !important;
+    background: #FCF5E9 !important;
   }
   #section4_1.mobile .left-column {
     width: 100% !important;
@@ -840,8 +843,8 @@ and (max-device-width : 480px) {
     position: relative !important;
     height: auto !important;
     padding: 40px 25px !important;
-    background-size: 150% !important;
     margin-top: 50vh !important;
+    background: #FCF5E9 !important;
   }
   .parklet-icons {
     
@@ -1236,8 +1239,8 @@ and (max-device-width : 320px) {
     display: none !important;
   }
   #section4.mobile {
-    background-size: 120vh;
-    background-position: 0px 0px;
+    background-size: 105vh;
+    background-position: 0px bottom;
     height: auto !important;
   }
   #section6_2.mobile {

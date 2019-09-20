@@ -5869,8 +5869,7 @@ p.logomap {
    display: none;
  }
 
-.hidden,
-.mobile-off {
+.hidden, .mobile-on {
    display: none;
 }
 
